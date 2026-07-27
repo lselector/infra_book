@@ -1,0 +1,1628 @@
+[
+  {
+    "cat": "01_foundations",
+    "file": "gcp-iaas-paas-saas.md",
+    "title": "PaaS vs IaaS vs SaaS — cloud service models (Google Cloud)",
+    "url": "https://cloud.google.com/learn/paas-vs-iaas-vs-saas"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "aws-what-is-cloud-computing.md",
+    "title": "What is cloud computing? (AWS)",
+    "url": "https://aws.amazon.com/what-is-cloud-computing/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "aws-what-is-serverless.md",
+    "title": "What is serverless computing? (AWS)",
+    "url": "https://aws.amazon.com/what-is/serverless-computing/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "12factor-intro.md",
+    "title": "The Twelve-Factor App — introduction",
+    "url": "https://12factor.net/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "12factor-config.md",
+    "title": "Twelve-Factor III: Config — store config in the environment",
+    "url": "https://12factor.net/config"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "12factor-backing-services.md",
+    "title": "Twelve-Factor IV: Backing services as attached resources",
+    "url": "https://12factor.net/backing-services"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "12factor-logs.md",
+    "title": "Twelve-Factor XI: Logs as event streams",
+    "url": "https://12factor.net/logs"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "12factor-dev-prod-parity.md",
+    "title": "Twelve-Factor X: Dev/prod parity",
+    "url": "https://12factor.net/dev-prod-parity"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "mdn-what-is-a-domain-name.md",
+    "title": "What is a domain name? (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "mdn-what-is-a-web-server.md",
+    "title": "What is a web server? (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "mdn-http-overview.md",
+    "title": "An overview of HTTP (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "cloudflare-what-is-dns.md",
+    "title": "What is DNS? (Cloudflare Learning Center)",
+    "url": "https://www.cloudflare.com/learning/dns/what-is-dns/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "cloudflare-dns-records.md",
+    "title": "DNS record types explained (Cloudflare)",
+    "url": "https://www.cloudflare.com/learning/dns/dns-records/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "cloudflare-what-is-ssl.md",
+    "title": "What is SSL / TLS? (Cloudflare)",
+    "url": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "cloudflare-what-is-a-cdn.md",
+    "title": "What is a CDN? (Cloudflare)",
+    "url": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/"
+  },
+  {
+    "cat": "01_foundations",
+    "file": "cloudflare-what-is-load-balancing.md",
+    "title": "What is load balancing? (Cloudflare)",
+    "url": "https://www.cloudflare.com/learning/performance/what-is-load-balancing/"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-progressive-web-apps.md",
+    "title": "Progressive web apps — overview (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-pwa-making-installable.md",
+    "title": "Making PWAs installable (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-web-app-manifest.md",
+    "title": "Web app manifest reference (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-responsive-design.md",
+    "title": "Responsive design (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-viewport-meta-element.md",
+    "title": "Viewport meta element (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Viewport_meta_element"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-media-queries-using.md",
+    "title": "Using media queries (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-web-storage-api.md",
+    "title": "Web Storage API — localStorage and sessionStorage (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-fetch-api-using.md",
+    "title": "Using the Fetch API (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "mdn-cors.md",
+    "title": "Cross-Origin Resource Sharing (CORS) (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "web-dev-rendering-on-the-web.md",
+    "title": "Rendering on the web: SSR, SSG, CSR (web.dev)",
+    "url": "https://web.dev/articles/rendering-on-the-web"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "web-dev-vitals.md",
+    "title": "Web Vitals — user-centric performance metrics (web.dev)",
+    "url": "https://web.dev/articles/vitals"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "azure-multitenant-overview.md",
+    "title": "Architecting multitenant solutions — overview (Microsoft Learn)",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "azure-multitenant-tenancy-models.md",
+    "title": "Tenancy models for a multitenant solution (Microsoft Learn)",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/considerations/tenancy-models"
+  },
+  {
+    "cat": "02_architectures",
+    "file": "azure-multitenant-storage-data.md",
+    "title": "Architectural approaches for storage and data in multitenant solutions",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/storage-data"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-overview.md",
+    "title": "Cloudflare Pages — overview",
+    "url": "https://developers.cloudflare.com/pages/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-direct-upload.md",
+    "title": "Cloudflare Pages — deploy by direct upload",
+    "url": "https://developers.cloudflare.com/pages/get-started/direct-upload/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-git-integration.md",
+    "title": "Cloudflare Pages — Git integration (GitHub/GitLab builds)",
+    "url": "https://developers.cloudflare.com/pages/get-started/git-integration/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-c3.md",
+    "title": "Cloudflare Pages — create-cloudflare CLI (C3)",
+    "url": "https://developers.cloudflare.com/pages/get-started/c3/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-custom-domains.md",
+    "title": "Cloudflare Pages — custom domains",
+    "url": "https://developers.cloudflare.com/pages/configuration/custom-domains/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-build-config.md",
+    "title": "Cloudflare Pages — build configuration",
+    "url": "https://developers.cloudflare.com/pages/configuration/build-configuration/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-redirects.md",
+    "title": "Cloudflare Pages — redirects",
+    "url": "https://developers.cloudflare.com/pages/configuration/redirects/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-headers.md",
+    "title": "Cloudflare Pages — custom headers and caching",
+    "url": "https://developers.cloudflare.com/pages/configuration/headers/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-pages-preview-deployments.md",
+    "title": "Cloudflare Pages — preview deployments",
+    "url": "https://developers.cloudflare.com/pages/configuration/preview-deployments/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-wrangler-install.md",
+    "title": "Wrangler CLI — install and update",
+    "url": "https://developers.cloudflare.com/workers/wrangler/install-and-update/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-wrangler-pages-commands.md",
+    "title": "Wrangler CLI — pages commands (wrangler pages deploy)",
+    "url": "https://developers.cloudflare.com/workers/wrangler/commands/pages/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-registrar-overview.md",
+    "title": "Cloudflare Registrar — register or transfer a domain",
+    "url": "https://developers.cloudflare.com/registrar/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-dns-full-setup.md",
+    "title": "Cloudflare DNS — full setup (change nameservers)",
+    "url": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-dns-records-manage.md",
+    "title": "Cloudflare DNS — manage DNS records",
+    "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-cache-purge.md",
+    "title": "Cloudflare cache — purge cached content",
+    "url": "https://developers.cloudflare.com/cache/how-to/purge-cache/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-docs-index.md",
+    "title": "Caddy documentation — index",
+    "url": "https://caddyserver.com/docs/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-quickstart-reverse-proxy.md",
+    "title": "Caddy quick start — reverse proxy",
+    "url": "https://caddyserver.com/docs/quick-starts/reverse-proxy"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-quickstart-static-files.md",
+    "title": "Caddy quick start — static file server",
+    "url": "https://caddyserver.com/docs/quick-starts/static-files"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-quickstart-https.md",
+    "title": "Caddy quick start — HTTPS",
+    "url": "https://caddyserver.com/docs/quick-starts/https"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-automatic-https.md",
+    "title": "Caddy — automatic HTTPS (certificate issuance and renewal)",
+    "url": "https://caddyserver.com/docs/automatic-https"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-caddyfile-concepts.md",
+    "title": "Caddy — Caddyfile concepts",
+    "url": "https://caddyserver.com/docs/caddyfile/concepts"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-install.md",
+    "title": "Caddy — installation",
+    "url": "https://caddyserver.com/docs/install"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "caddy-running-service.md",
+    "title": "Caddy — running as a systemd service",
+    "url": "https://caddyserver.com/docs/running"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "nginx-beginners-guide.md",
+    "title": "nginx — beginner's guide",
+    "url": "https://nginx.org/en/docs/beginners_guide.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "nginx-reverse-proxy-guide.md",
+    "title": "nginx — reverse proxy guide",
+    "url": "https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "ubuntu-server-openssh.md",
+    "title": "Ubuntu Server — OpenSSH server setup and key auth",
+    "url": "https://documentation.ubuntu.com/server/how-to/security/openssh-server/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "ubuntu-server-firewall.md",
+    "title": "Ubuntu Server — firewall (ufw / iptables)",
+    "url": "https://documentation.ubuntu.com/server/how-to/security/firewalls/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "ubuntu-community-ufw.md",
+    "title": "UFW — Uncomplicated Firewall (Ubuntu community help)",
+    "url": "https://help.ubuntu.com/community/UFW"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "ubuntu-automatic-updates.md",
+    "title": "Ubuntu Server — automatic (unattended) security updates",
+    "url": "https://documentation.ubuntu.com/server/how-to/software/automatic-updates/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "systemd-service-unit.md",
+    "title": "systemd.service(5) — service unit configuration",
+    "url": "https://man7.org/linux/man-pages/man5/systemd.service.5.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "letsencrypt-getting-started.md",
+    "title": "Let's Encrypt — getting started",
+    "url": "https://letsencrypt.org/getting-started/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "letsencrypt-how-it-works.md",
+    "title": "Let's Encrypt — how it works (ACME)",
+    "url": "https://letsencrypt.org/how-it-works/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "certbot-using.md",
+    "title": "Certbot — user guide",
+    "url": "https://eff-certbot.readthedocs.io/en/stable/using.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "hetzner-create-a-server.md",
+    "title": "Hetzner Cloud — creating a server",
+    "url": "https://docs.hetzner.com/cloud/servers/getting-started/creating-a-server"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "digitalocean-droplet-quickstart.md",
+    "title": "DigitalOcean — Droplet quickstart",
+    "url": "https://docs.digitalocean.com/products/droplets/getting-started/quickstart/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "aws-ec2-get-started.md",
+    "title": "AWS — get started with Amazon EC2",
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "flyio-launch.md",
+    "title": "Fly.io — deploy an app with fly launch",
+    "url": "https://fly.io/docs/launch/deploy/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "flyio-getting-started-launch.md",
+    "title": "Fly.io — getting started: launch an existing app",
+    "url": "https://fly.io/docs/getting-started/launch/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "render-web-services.md",
+    "title": "Render — web services",
+    "url": "https://render.com/docs/web-services"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "railway-quick-start.md",
+    "title": "Railway — quick start",
+    "url": "https://docs.railway.com/quick-start"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "docker-compose-overview.md",
+    "title": "Docker Compose — overview",
+    "url": "https://docs.docker.com/compose/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "docker-compose-production.md",
+    "title": "Docker Compose in production",
+    "url": "https://docs.docker.com/compose/how-tos/production/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "docker-build-best-practices.md",
+    "title": "Docker — building best practices for images",
+    "url": "https://docs.docker.com/build/building/best-practices/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "aws-lambda-welcome.md",
+    "title": "AWS Lambda — developer guide introduction",
+    "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "aws-apigateway-welcome.md",
+    "title": "Amazon API Gateway — developer guide introduction",
+    "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "aws-s3-website-hosting.md",
+    "title": "Amazon S3 — hosting a static website",
+    "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "kubernetes-overview.md",
+    "title": "Kubernetes — what is Kubernetes?",
+    "url": "https://kubernetes.io/docs/concepts/overview/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "aws-ecs-fargate.md",
+    "title": "AWS Fargate for Amazon ECS",
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "aws-what-is-vpc.md",
+    "title": "What is Amazon VPC?",
+    "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "aws-vpc-security-groups.md",
+    "title": "Amazon VPC — security groups",
+    "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "aws-vpc-subnets.md",
+    "title": "Amazon VPC — subnets",
+    "url": "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "aws-s3-welcome.md",
+    "title": "Amazon S3 — user guide introduction",
+    "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "cloudflare-r2-overview.md",
+    "title": "Cloudflare R2 — object storage without egress fees",
+    "url": "https://developers.cloudflare.com/r2/index.md"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "gcp-cloud-storage-overview.md",
+    "title": "Google Cloud Storage — product overview",
+    "url": "https://cloud.google.com/storage/docs/introduction"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "sqlite-when-to-use.md",
+    "title": "SQLite — appropriate uses for SQLite",
+    "url": "https://www.sqlite.org/whentouse.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "sqlite-about.md",
+    "title": "SQLite — about",
+    "url": "https://www.sqlite.org/about.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "sqlite-wal.md",
+    "title": "SQLite — write-ahead logging (WAL mode)",
+    "url": "https://www.sqlite.org/wal.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "sqlite-backup.md",
+    "title": "SQLite — backup API and safe copies",
+    "url": "https://www.sqlite.org/backup.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "sqlite-quirks.md",
+    "title": "SQLite — quirks, caveats and gotchas",
+    "url": "https://www.sqlite.org/quirks.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-tutorial-start.md",
+    "title": "PostgreSQL — getting started tutorial",
+    "url": "https://www.postgresql.org/docs/current/tutorial-start.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-runtime-config-connection.md",
+    "title": "PostgreSQL — connections and authentication settings",
+    "url": "https://www.postgresql.org/docs/current/runtime-config-connection.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-pg-hba-conf.md",
+    "title": "PostgreSQL — the pg_hba.conf file (client authentication)",
+    "url": "https://www.postgresql.org/docs/current/auth-pg-hba-conf.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-database-roles.md",
+    "title": "PostgreSQL — database roles and privileges",
+    "url": "https://www.postgresql.org/docs/current/user-manag.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-backup-dump.md",
+    "title": "PostgreSQL — SQL dump backups (pg_dump)",
+    "url": "https://www.postgresql.org/docs/current/backup-dump.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-ssl-tcp.md",
+    "title": "PostgreSQL — secure TCP/IP connections with SSL",
+    "url": "https://www.postgresql.org/docs/current/ssl-tcp.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "postgresql-warm-standby.md",
+    "title": "PostgreSQL — log-shipping standby servers and replication",
+    "url": "https://www.postgresql.org/docs/current/warm-standby.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "mariadb-vs-mysql.md",
+    "title": "MariaDB vs MySQL — compatibility and differences",
+    "url": "https://mariadb.com/kb/en/mariadb-vs-mysql-compatibility/"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "aws-rds-what-is.md",
+    "title": "What is Amazon RDS? (managed relational databases)",
+    "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "redis-data-store-get-started.md",
+    "title": "Redis — get started as a data store / cache",
+    "url": "https://redis.io/docs/latest/develop/get-started/data-store/"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "rabbitmq-tutorial-work-queues.md",
+    "title": "RabbitMQ — work queues tutorial (Python)",
+    "url": "https://www.rabbitmq.com/tutorials/tutorial-two-python"
+  },
+  {
+    "cat": "04_network_storage_db",
+    "file": "restic-backup-docs.md",
+    "title": "restic — backup basics and repositories",
+    "url": "https://restic.readthedocs.io/en/stable/040_backup.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-actions-understanding.md",
+    "title": "Understanding GitHub Actions",
+    "url": "https://docs.github.com/en/actions/get-started/understanding-github-actions"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-actions-workflow-syntax.md",
+    "title": "GitHub Actions — workflow syntax reference",
+    "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-actions-secrets.md",
+    "title": "GitHub Actions — using secrets in workflows",
+    "url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-actions-deployment.md",
+    "title": "GitHub Actions — continuous deployment concepts",
+    "url": "https://docs.github.com/en/actions/concepts/overview/continuous-deployment"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gitlab-ci-quick-start.md",
+    "title": "GitLab CI/CD — get started",
+    "url": "https://docs.gitlab.com/ci/quick_start/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-auth-overview.md",
+    "title": "Firebase Authentication — overview",
+    "url": "https://firebase.google.com/docs/auth"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-auth-web-start.md",
+    "title": "Firebase Authentication — get started on the web",
+    "url": "https://firebase.google.com/docs/auth/web/start"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-auth-google-signin.md",
+    "title": "Firebase Authentication — Google sign-in on the web",
+    "url": "https://firebase.google.com/docs/auth/web/google-signin"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-auth-password-auth.md",
+    "title": "Firebase Authentication — email/password auth on the web",
+    "url": "https://firebase.google.com/docs/auth/web/password-auth"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-auth-manage-users.md",
+    "title": "Firebase Authentication — manage users on the web",
+    "url": "https://firebase.google.com/docs/auth/web/manage-users"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "firebase-security-rules-get-started.md",
+    "title": "Firebase Security Rules — get started",
+    "url": "https://firebase.google.com/docs/rules/get-started"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "supabase-auth-overview.md",
+    "title": "Supabase Auth — overview",
+    "url": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "auth0-get-started.md",
+    "title": "Auth0 — get started / core concepts",
+    "url": "https://auth0.com/docs/get-started"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "clerk-overview.md",
+    "title": "Clerk — overview and quickstarts",
+    "url": "https://clerk.com/docs"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-top-ten.md",
+    "title": "OWASP Top 10 web application security risks",
+    "url": "https://owasp.org/www-project-top-ten/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-secrets-management-cheatsheet.md",
+    "title": "OWASP — secrets management cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-authentication-cheatsheet.md",
+    "title": "OWASP — authentication cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-tls-cheatsheet.md",
+    "title": "OWASP — transport layer security cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "mdn-content-security-policy.md",
+    "title": "Content Security Policy (CSP) (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "sre-book-monitoring.md",
+    "title": "Google SRE Book — monitoring distributed systems",
+    "url": "https://sre.google/sre-book/monitoring-distributed-systems/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "sre-book-slos.md",
+    "title": "Google SRE Book — service level objectives",
+    "url": "https://sre.google/sre-book/service-level-objectives/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "prometheus-overview.md",
+    "title": "Prometheus — overview",
+    "url": "https://prometheus.io/docs/introduction/overview/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "grafana-loki-get-started.md",
+    "title": "Grafana Loki — get started with log aggregation",
+    "url": "https://grafana.com/docs/loki/latest/get-started/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "uptime-kuma-readme.md",
+    "title": "Uptime Kuma — self-hosted uptime monitoring (README)",
+    "url": "https://raw.githubusercontent.com/louislam/uptime-kuma/master/README.md"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-budgets-managing-costs.md",
+    "title": "AWS Budgets — managing your costs",
+    "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-billing-budgets.md",
+    "title": "Google Cloud — create budgets and budget alerts",
+    "url": "https://cloud.google.com/billing/docs/how-to/budgets"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-home.md",
+    "title": "Web3Forms — contact forms for static sites (home)",
+    "url": "https://web3forms.com"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-docs.md",
+    "title": "Web3Forms — documentation",
+    "url": "https://docs.web3forms.com/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-getting-started.md",
+    "title": "Web3Forms — installation and first form (access key)",
+    "url": "https://docs.web3forms.com/getting-started/installation"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-spam-protection.md",
+    "title": "Web3Forms — spam protection (honeypot, captcha)",
+    "url": "https://docs.web3forms.com/getting-started/customizations/spam-protection/spam-protection"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aweber-home.md",
+    "title": "AWeber — email marketing and autoresponders (home)",
+    "url": "https://www.aweber.com"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aweber-email-automation.md",
+    "title": "AWeber — email automation and autoresponder campaigns",
+    "url": "https://www.aweber.com/email-automation.htm"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "mailchimp-double-opt-in.md",
+    "title": "About double opt-in for email lists (Mailchimp)",
+    "url": "https://mailchimp.com/help/about-double-opt-in/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aweber-pricing.md",
+    "title": "AWeber — plans and pricing (free tier limits)",
+    "url": "https://www.aweber.com/pricing.htm"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "mailchimp-landing-pages.md",
+    "title": "Mailchimp — about landing pages",
+    "url": "https://mailchimp.com/help/about-landing-pages/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "mailchimp-signup-forms.md",
+    "title": "Mailchimp — add a signup form to your website",
+    "url": "https://mailchimp.com/help/add-a-signup-form-to-your-website/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "stripe-how-checkout-works.md",
+    "title": "Stripe Checkout — how Checkout works",
+    "url": "https://docs.stripe.com/payments/checkout/how-checkout-works"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "stripe-subscriptions-overview.md",
+    "title": "Stripe Billing — subscriptions overview",
+    "url": "https://docs.stripe.com/billing/subscriptions/overview"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "schema-org-product.md",
+    "title": "schema.org Product — structured data for catalog items",
+    "url": "https://schema.org/Product"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "google-search-central-structured-data.md",
+    "title": "Google Search Central — intro to structured data markup",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "mdn-responsive-images.md",
+    "title": "Responsive images — srcset and sizes (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web-dev-image-formats.md",
+    "title": "web.dev — choose the right image format",
+    "url": "https://web.dev/articles/choose-the-right-image-format"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "python-http-server-docs.md",
+    "title": "Python http.server — simple local dev server",
+    "url": "https://docs.python.org/3/library/http.server.html"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "crontab-5-man-page.md",
+    "title": "crontab(5) — cron table format for scheduled backups",
+    "url": "https://man7.org/linux/man-pages/man5/crontab.5.html"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "rsync-man-page.md",
+    "title": "rsync(1) — file transfer and backup",
+    "url": "https://man7.org/linux/man-pages/man1/rsync.1.html"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "ssh-keygen-man-page.md",
+    "title": "ssh-keygen(1) — generating SSH keys",
+    "url": "https://man7.org/linux/man-pages/man1/ssh-keygen.1.html"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "pg-dump-man.md",
+    "title": "PostgreSQL — pg_dump reference",
+    "url": "https://www.postgresql.org/docs/current/app-pgdump.html"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "fastapi-run-server-manually.md",
+    "title": "FastAPI — run a server manually (Uvicorn/Gunicorn behind a proxy)",
+    "url": "https://fastapi.tiangolo.com/deployment/manually/"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "fastapi-deployment-concepts.md",
+    "title": "FastAPI — deployment concepts",
+    "url": "https://fastapi.tiangolo.com/deployment/concepts/"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "django-deployment-checklist.md",
+    "title": "Django — deployment checklist",
+    "url": "https://docs.djangoproject.com/en/stable/howto/deployment/checklist/"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "cloudflare-pages-deploy-anything.md",
+    "title": "Cloudflare Pages — deploy any static site (framework guide)",
+    "url": "https://developers.cloudflare.com/pages/framework-guides/deploy-anything/index.md"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "mdn-lazy-loading.md",
+    "title": "Lazy loading images and iframes (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "web-dev-service-worker-caching.md",
+    "title": "Service workers and caching strategies (web.dev)",
+    "url": "https://web.dev/learn/pwa/service-workers"
+  },
+  {
+    "cat": "07_playbooks",
+    "file": "fail2ban-readme.md",
+    "title": "Fail2Ban — README (SSH brute-force protection)",
+    "url": "https://raw.githubusercontent.com/fail2ban/fail2ban/master/README.md"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "terraform-intro.md",
+    "title": "Terraform — what is Terraform / intro to IaC",
+    "url": "https://developer.hashicorp.com/terraform/intro"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "terraform-language.md",
+    "title": "Terraform — configuration language overview",
+    "url": "https://developer.hashicorp.com/terraform/language"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "pulumi-iac-concepts.md",
+    "title": "Pulumi — infrastructure as code concepts",
+    "url": "https://www.pulumi.com/docs/iac/concepts/"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "github-environments.md",
+    "title": "GitHub Actions — managing deployment environments",
+    "url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "martinfowler-feature-toggles.md",
+    "title": "Feature toggles (feature flags) — Martin Fowler",
+    "url": "https://martinfowler.com/articles/feature-toggles.html"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "martinfowler-microservice-premium.md",
+    "title": "MicroservicePremium — don't start with microservices",
+    "url": "https://martinfowler.com/bliki/MicroservicePremium.html"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "martinfowler-monolith-first.md",
+    "title": "MonolithFirst — Martin Fowler",
+    "url": "https://martinfowler.com/bliki/MonolithFirst.html"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "postgresql-partitioning.md",
+    "title": "PostgreSQL — table partitioning",
+    "url": "https://www.postgresql.org/docs/current/ddl-partitioning.html"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "pgbouncer-config.md",
+    "title": "PgBouncer — connection pooling configuration",
+    "url": "https://www.pgbouncer.org/config.html"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "aws-well-architected-reliability.md",
+    "title": "AWS Well-Architected — reliability pillar",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "aws-well-architected-framework.md",
+    "title": "AWS Well-Architected Framework — overview",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "gcp-architecture-framework.md",
+    "title": "Google Cloud Architecture Framework",
+    "url": "https://cloud.google.com/architecture/framework"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "azure-web-app-reference-architecture.md",
+    "title": "Azure — basic web application reference architecture",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/web-apps/app-service/architectures/basic-web-app"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "usersnap-saas-architecture.md",
+    "title": "Cloud-based SaaS architecture fundamentals (Usersnap)",
+    "url": "https://usersnap.com/blog/cloud-based-saas-architecture-fundamentals/"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "freecodecamp-build-first-saas.md",
+    "title": "How to build your first SaaS (freeCodeCamp)",
+    "url": "https://www.freecodecamp.org/news/how-to-build-your-first-saas/"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "roadmap-sh-devops.md",
+    "title": "roadmap.sh — DevOps learning roadmap",
+    "url": "https://roadmap.sh/devops"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "sre-book-index.md",
+    "title": "Google SRE Book — table of contents (free online)",
+    "url": "https://sre.google/sre-book/table-of-contents/"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "cloudflare-pages-limits.md",
+    "title": "Cloudflare Pages — platform limits and pricing tiers",
+    "url": "https://developers.cloudflare.com/pages/platform/limits/index.md"
+  },
+  {
+    "cat": "09_appendices",
+    "file": "cloudflare-pages-functions.md",
+    "title": "Cloudflare Pages Functions — get started",
+    "url": "https://developers.cloudflare.com/pages/functions/get-started/index.md"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-autoresponder.md",
+    "title": "Web3Forms — autoresponder (automatic reply to the submitter)",
+    "url": "https://docs.web3forms.com/getting-started/pro-features/autoresponder"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-ajax-form-example.md",
+    "title": "Web3Forms — AJAX contact form with JavaScript (example)",
+    "url": "https://docs.web3forms.com/getting-started/examples/ajax-contact-form-using-javascript"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-redirection.md",
+    "title": "Web3Forms — redirect to a thank-you page after submit",
+    "url": "https://docs.web3forms.com/getting-started/customizations/redirection"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "web3forms-google-sheets.md",
+    "title": "Web3Forms — send submissions to Google Sheets",
+    "url": "https://docs.web3forms.com/getting-started/integrations/google-sheets"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "terraform-iac-tutorial.md",
+    "title": "Terraform — what is infrastructure as code (tutorial)",
+    "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "cloudflare-wrangler-workers-commands.md",
+    "title": "Wrangler CLI — Workers commands (dev, deploy, versions)",
+    "url": "https://developers.cloudflare.com/workers/wrangler/commands/workers/index.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "docker-compose-services-reference.md",
+    "title": "Docker Compose — services top-level element reference",
+    "url": "https://docs.docker.com/reference/compose-file/services/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-secrets-manager-intro.md",
+    "title": "AWS Secrets Manager — what it is and when to use it",
+    "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-parameter-store.md",
+    "title": "AWS Systems Manager Parameter Store — cheap config and secret storage",
+    "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-secret-manager-overview.md",
+    "title": "Google Cloud Secret Manager — overview",
+    "url": "https://cloud.google.com/secret-manager/docs/overview"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "vault-what-is-vault.md",
+    "title": "HashiCorp Vault — what is Vault?",
+    "url": "https://developer.hashicorp.com/vault/docs/what-is-vault"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "cloudflare-workers-secrets.md",
+    "title": "Cloudflare Workers / Pages — storing secrets",
+    "url": "https://developers.cloudflare.com/workers/configuration/secrets/index.md"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-secret-scanning.md",
+    "title": "GitHub — about secret scanning (finding committed credentials)",
+    "url": "https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-push-protection.md",
+    "title": "GitHub — push protection for secrets",
+    "url": "https://docs.github.com/en/code-security/secret-scanning/introduction/about-push-protection"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gitleaks-readme.md",
+    "title": "Gitleaks — scan git history for hardcoded secrets (README)",
+    "url": "https://raw.githubusercontent.com/gitleaks/gitleaks/master/README.md"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "sops-readme.md",
+    "title": "SOPS — encrypted secrets files in git (README)",
+    "url": "https://raw.githubusercontent.com/getsops/sops/main/README.rst"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "docker-compose-secrets.md",
+    "title": "Docker Compose — using secrets in services",
+    "url": "https://docs.docker.com/compose/how-tos/use-secrets/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "systemd-credentials.md",
+    "title": "systemd — passing credentials to services (LoadCredential)",
+    "url": "https://systemd.io/CREDENTIALS/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-iam-best-practices.md",
+    "title": "AWS IAM — security best practices (least privilege)",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-kms-product-page.md",
+    "title": "AWS Key Management Service (KMS) — product overview",
+    "url": "https://aws.amazon.com/kms/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-kms-overview.md",
+    "title": "AWS KMS — developer guide overview",
+    "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-kms-concepts.md",
+    "title": "AWS KMS — concepts: KMS keys, data keys, envelope encryption",
+    "url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-kms-key-policies.md",
+    "title": "AWS KMS — key policies and access control",
+    "url": "https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-kms-rotate-keys.md",
+    "title": "AWS KMS — rotating KMS keys",
+    "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-cloudhsm-intro.md",
+    "title": "AWS CloudHSM — what is a hardware security module?",
+    "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-kms-overview.md",
+    "title": "Google Cloud KMS — key management service overview",
+    "url": "https://cloud.google.com/kms/docs/key-management-service"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-kms-envelope-encryption.md",
+    "title": "Google Cloud KMS — envelope encryption explained",
+    "url": "https://cloud.google.com/kms/docs/envelope-encryption"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-cloud-hsm.md",
+    "title": "Google Cloud HSM — FIPS 140-2 Level 3 hardware-backed keys",
+    "url": "https://cloud.google.com/kms/docs/hsm"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-kms-key-rotation.md",
+    "title": "Google Cloud KMS — key rotation",
+    "url": "https://cloud.google.com/kms/docs/key-rotation"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "azure-key-vault-overview.md",
+    "title": "Azure Key Vault — overview (keys, secrets, certificates)",
+    "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-s3-sse-kms.md",
+    "title": "Amazon S3 — server-side encryption with KMS keys (SSE-KMS)",
+    "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-cryptographic-storage-cheatsheet.md",
+    "title": "OWASP — cryptographic storage cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-key-management-cheatsheet.md",
+    "title": "OWASP — key management cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "nist-cmvp-fips-140.md",
+    "title": "NIST Cryptographic Module Validation Program (FIPS 140-3)",
+    "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-wstg.md",
+    "title": "OWASP Web Security Testing Guide (WSTG)",
+    "url": "https://owasp.org/www-project-web-security-testing-guide/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-asvs.md",
+    "title": "OWASP Application Security Verification Standard (ASVS)",
+    "url": "https://owasp.org/www-project-application-security-verification-standard/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "zap-getting-started.md",
+    "title": "OWASP ZAP — getting started with the web app scanner",
+    "url": "https://www.zaproxy.org/getting-started/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "zap-docker-baseline-scan.md",
+    "title": "OWASP ZAP — automated baseline scan in Docker / CI",
+    "url": "https://www.zaproxy.org/docs/docker/baseline-scan/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "mdn-security-practical-guides.md",
+    "title": "MDN — practical security implementation guides (headers, TLS, cookies)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-wstg-stable.md",
+    "title": "OWASP Web Security Testing Guide — stable release (test checklist)",
+    "url": "https://owasp.org/www-project-web-security-testing-guide/stable/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-code-scanning.md",
+    "title": "GitHub — about code scanning (CodeQL static analysis)",
+    "url": "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "github-dependabot-alerts.md",
+    "title": "GitHub — about Dependabot alerts (vulnerable dependencies)",
+    "url": "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "npm-audit.md",
+    "title": "npm audit — scanning JavaScript dependencies",
+    "url": "https://docs.npmjs.com/cli/v10/commands/npm-audit"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "pip-audit-readme.md",
+    "title": "pip-audit — scanning Python dependencies (README)",
+    "url": "https://raw.githubusercontent.com/pypa/pip-audit/main/README.md"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "trivy-overview.md",
+    "title": "Trivy — container, filesystem and IaC vulnerability scanner",
+    "url": "https://trivy.dev/latest/docs/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "lynis-readme.md",
+    "title": "Lynis — Linux server security auditing (README)",
+    "url": "https://raw.githubusercontent.com/CISOfy/lynis/master/README.md"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "portswigger-web-security-academy.md",
+    "title": "PortSwigger Web Security Academy — free hands-on labs",
+    "url": "https://portswigger.net/web-security"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-penetration-testing-policy.md",
+    "title": "AWS — customer support policy for penetration testing (authorization)",
+    "url": "https://aws.amazon.com/security/penetration-testing/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-input-validation-cheatsheet.md",
+    "title": "OWASP — input validation cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-sql-injection-prevention.md",
+    "title": "OWASP — SQL injection prevention cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-xss-prevention.md",
+    "title": "OWASP — cross-site scripting prevention cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-csrf-prevention.md",
+    "title": "OWASP — cross-site request forgery prevention cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-vulnerable-dependency-management.md",
+    "title": "OWASP — vulnerable dependency management cheat sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "zap-desktop-getting-started.md",
+    "title": "OWASP ZAP — desktop UI: running your first scan",
+    "url": "https://www.zaproxy.org/docs/desktop/start/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aicpa-soc2-overview.md",
+    "title": "AICPA — SOC 2 examinations overview (the authority that defines SOC 2)",
+    "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-soc-faqs.md",
+    "title": "AWS — SOC compliance FAQs (SOC 1/2/3, shared responsibility)",
+    "url": "https://aws.amazon.com/compliance/soc-faqs/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-artifact-what-is.md",
+    "title": "AWS Artifact — downloading your provider's SOC 2 report",
+    "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-soc2-compliance.md",
+    "title": "Google Cloud — SOC 2 compliance offering",
+    "url": "https://cloud.google.com/security/compliance/soc-2"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "cloudflare-trust-hub-compliance.md",
+    "title": "Cloudflare Trust Hub — compliance certifications and reports",
+    "url": "https://www.cloudflare.com/trust-hub/compliance-resources/"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-well-architected-security-pillar.md",
+    "title": "AWS Well-Architected — security pillar: design principles",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/security.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-ebs-encryption.md",
+    "title": "Amazon EBS encryption — encrypting volumes at rest",
+    "url": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-rds-encryption.md",
+    "title": "Amazon RDS — encrypting database resources at rest",
+    "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-cmek.md",
+    "title": "Google Cloud — customer-managed encryption keys (CMEK)",
+    "url": "https://cloud.google.com/kms/docs/cmek"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-encryption-at-rest.md",
+    "title": "Google Cloud — default encryption at rest",
+    "url": "https://cloud.google.com/docs/security/encryption/default-encryption"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "postgresql-encryption-options.md",
+    "title": "PostgreSQL — encryption options (at rest and in transit)",
+    "url": "https://www.postgresql.org/docs/current/encryption-options.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "mdn-strict-transport-security.md",
+    "title": "HTTP Strict-Transport-Security (HSTS) — enforcing TLS (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-cloudtrail-user-guide.md",
+    "title": "AWS CloudTrail — audit trail of API activity",
+    "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "gcp-cloud-audit-logs.md",
+    "title": "Google Cloud Audit Logs — who did what, where, and when",
+    "url": "https://cloud.google.com/logging/docs/audit"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-config-what-is.md",
+    "title": "AWS Config — continuous configuration compliance monitoring",
+    "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-logging-cheatsheet.md",
+    "title": "OWASP — logging cheat sheet (what to log, what never to log)",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "owasp-authorization-cheatsheet.md",
+    "title": "OWASP — authorization cheat sheet (least privilege, access reviews)",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-iam-access-analyzer.md",
+    "title": "AWS IAM Access Analyzer — finding overly broad access",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "aws-backup-what-is.md",
+    "title": "AWS Backup — centralized, policy-based backups (availability criterion)",
+    "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "nist-incident-handling-guide.md",
+    "title": "NIST SP 800-61 — computer security incident handling guide",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+  },
+  {
+    "cat": "05_ops_cicd_security",
+    "file": "cis-controls-list.md",
+    "title": "CIS Critical Security Controls — prioritized control list",
+    "url": "https://www.cisecurity.org/controls/cis-controls-list"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "vanta-what-is-soc2.md",
+    "title": "What is SOC 2? Type I vs Type II, criteria and timeline (Vanta)",
+    "url": "https://www.vanta.com/collection/soc-2/what-is-soc-2"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "drata-soc2-compliance.md",
+    "title": "SOC 2 compliance guide — scoping, evidence, audit (Drata)",
+    "url": "https://drata.com/grc-central/soc-2"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "vanta-soc2-checklist.md",
+    "title": "SOC 2 compliance checklist — controls, evidence and timeline (Vanta)",
+    "url": "https://www.vanta.com/collection/soc-2/soc-2-compliance-checklist"
+  },
+  {
+    "cat": "08_scaling_maturity",
+    "file": "iso-27001-offering.md",
+    "title": "ISO/IEC 27001 — what the standard covers (Microsoft Learn compliance offering)",
+    "url": "https://learn.microsoft.com/en-us/compliance/regulatory/offering-iso-27001"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-product-page.md",
+    "title": "Amazon SES — product overview and use cases",
+    "url": "https://aws.amazon.com/ses/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-pricing.md",
+    "title": "Amazon SES — pricing (per-1,000-email cost, EC2 free tier)",
+    "url": "https://aws.amazon.com/ses/pricing/"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-welcome.md",
+    "title": "Amazon SES — developer guide introduction",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/Welcome.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-send-email-sdk.md",
+    "title": "Amazon SES — sending email programmatically with the AWS SDK",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-an-email-using-sdk-programmatically.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-verify-identities.md",
+    "title": "Amazon SES — creating and verifying sender identities (domain, email)",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-dkim.md",
+    "title": "Amazon SES — DKIM signing (Easy DKIM, BYODKIM)",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-dkim.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-spf.md",
+    "title": "Amazon SES — SPF and custom MAIL FROM domain",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-spf.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-dmarc.md",
+    "title": "Amazon SES — complying with DMARC",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-dmarc.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-production-access.md",
+    "title": "Amazon SES — moving out of the sandbox (request production access)",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-sending-quotas.md",
+    "title": "Amazon SES — sending quotas and rate limits",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-smtp.md",
+    "title": "Amazon SES — sending via the SMTP interface",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-email-smtp.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-event-publishing.md",
+    "title": "Amazon SES — event publishing (bounces, complaints, deliveries)",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/monitor-using-event-publishing.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-bounce-complaint-handling.md",
+    "title": "Amazon SES — deliverability: handling bounces and complaints",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/send-email-concepts-deliverability.html"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "cloudflare-dns-email-records.md",
+    "title": "Cloudflare DNS — email records (SPF, DKIM, DMARC, MX)",
+    "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/email-records/index.md"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "google-bulk-sender-guidelines.md",
+    "title": "Google — email sender guidelines (authentication, spam rate, unsubscribe)",
+    "url": "https://support.google.com/a/answer/81126"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "resend-introduction.md",
+    "title": "Resend — developer-first transactional email (introduction)",
+    "url": "https://resend.com/docs/introduction"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "postmark-developer-docs.md",
+    "title": "Postmark — transactional email developer documentation",
+    "url": "https://postmarkapp.com/developer"
+  },
+  {
+    "cat": "06_product_patterns",
+    "file": "aws-ses-custom-mail-from.md",
+    "title": "Amazon SES — using a custom MAIL FROM domain (SPF alignment, MX record)",
+    "url": "https://docs.aws.amazon.com/ses/latest/dg/mail-from.html"
+  }
+]

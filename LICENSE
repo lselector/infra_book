@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 Lev Selector
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Third-party content
+-------------------
+
+This license covers the code and the original writing in this repository:
+the Python scripts, the shell scripts, the `d*.md` guides, and the
+hand-written wiki pages under `Context-Wiki-Infra/Wiki/Concepts/` and
+`Context-Wiki-Infra/Wiki/Entities/`.
+
+It does NOT cover third-party documentation.
+
+`Context-Wiki-Infra/Raw/` holds verbatim captures of documentation published
+by AWS, Cloudflare, Google, Microsoft, Mozilla (MDN), OWASP, the PostgreSQL
+and SQLite projects, and others. Those remain under their own licences and
+are deliberately excluded from version control (see `.gitignore`); run
+`python raw_download.py` to fetch your own copies. Each capture records its
+source URL and retrieval date in a provenance header, and every source is
+listed in `Context-Wiki-Infra/Raw/sources.md`.
+
+The pages under `Context-Wiki-Infra/Wiki/Summaries/` quote short lead
+passages and heading outlines from those sources for identification and
+navigation, with attribution and a link to the original in every case.

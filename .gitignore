@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+temp/
+**/.DS_Store
+
+# wiki server runtime files
+wiki_server.log
+.wiki_server.pid
+
+# per-machine Claude Code settings (the shared rules in
+# .claude/rules/ are checked in; this file is not)
+.claude/settings.local.json
+
+# Downloaded third-party documentation. Not redistributed
+# here: the sources are other people's copyrighted docs.
+# Rebuild the whole corpus (271 files, ~5.6 MB) with:
+#     python raw_download.py
+# The registry Raw/sources.md is checked in, so nothing
+# about the corpus is lost - only the copies.
+Context-Wiki-Infra/Raw/*/*.md

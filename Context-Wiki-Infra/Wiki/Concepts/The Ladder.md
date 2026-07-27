@@ -1,0 +1,47 @@
+---
+type: Concept
+title: "The Ladder"
+description: "Ten example stacks in increasing complexity, each adding exactly one capability to the one below."
+tags: [architectures, orientation]
+timestamp: "2026-07-27T00:00:00Z"
+---
+
+# The Ladder
+
+The organising idea of this wiki: infrastructure choices
+form a ladder, and you should climb it one rung at a time
+in response to a real signal — never in anticipation.
+
+The full worked index, with costs and per-rung sources,
+is [[Stacks]].
+
+## The rungs
+
+1. Static site — [[Cloudflare Pages]]
+2. + build script — [[File-Based CMS]]
+3. + [[Forms Without a Backend]] — [[Web3Forms]]
+4. + [[Landing Page Email Capture]] — [[AWeber]]
+5. + a server — [[One-Box Deployment]], [[Caddy]],
+   [[FastAPI]]
+6. + a database — [[SQLite]] or [[PostgreSQL]]
+7. + [[Transactional Email]] — [[Amazon SES]]
+8. + [[Authentication]] — [[Firebase Authentication]]
+9. + payments and hygiene — [[Stripe]],
+   [[Secrets Management]], [[Continuous Integration and Delivery]]
+10. + [[SOC 2]], [[Read Replicas]],
+    [[Infrastructure as Code]]
+
+## The two observations worth carrying
+
+- **Rungs 1 to 4 have no server at all.** Content,
+  catalog, lead capture and email nurture are all
+  achievable with nothing to patch and nothing to page you.
+- **The expensive jump is 4 to 5**, where you take on a
+  machine. Everything above rung 5 is incremental by
+  comparison. Check hard whether a rung-3 or rung-4 answer
+  really is impossible before climbing.
+
+## Related
+
+[[Stacks]] · [[Cloud Service Models]] ·
+[[One-Box Deployment]] · [[Cost Control]]
