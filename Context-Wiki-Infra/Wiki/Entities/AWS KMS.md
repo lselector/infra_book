@@ -2,6 +2,7 @@
 type: Service
 title: "AWS KMS"
 description: "Managed key management backed by FIPS-validated HSMs - about $1 per key per month."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

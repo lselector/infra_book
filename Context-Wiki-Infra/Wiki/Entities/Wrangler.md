@@ -2,6 +2,7 @@
 type: Tool
 title: "Wrangler"
 description: "Cloudflare's CLI - the command that deploys a folder to Pages."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [deployments, cli]
 timestamp: "2026-07-27T00:00:00Z"
 ---

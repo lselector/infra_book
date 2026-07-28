@@ -2,6 +2,7 @@
 type: Service
 title: "Cloudflare R2"
 description: "S3-compatible object storage with no egress charges."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

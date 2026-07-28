@@ -2,6 +2,7 @@
 type: Service
 title: "Auth0"
 description: "Enterprise-grade identity - SAML, SSO and complex rules, at enterprise prices."
+wikipedia: "https://en.wikipedia.org/wiki/Okta,_Inc."
 tags: [ops-and-security, auth]
 timestamp: "2026-07-27T00:00:00Z"
 ---

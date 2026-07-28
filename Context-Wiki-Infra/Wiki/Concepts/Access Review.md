@@ -2,6 +2,7 @@
 type: Concept
 title: "Access Review"
 description: "Periodically confirming that everyone who has access still needs it."
+wikipedia: "https://en.wikipedia.org/wiki/Identity_and_access_management"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

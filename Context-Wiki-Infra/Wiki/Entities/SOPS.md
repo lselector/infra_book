@@ -2,6 +2,7 @@
 type: Tool
 title: "SOPS"
 description: "Encrypted secrets files that live in Git, decrypted by a KMS key."
+website: "https://getsops.io/"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

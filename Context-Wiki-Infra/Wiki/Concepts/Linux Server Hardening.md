@@ -2,6 +2,7 @@
 type: Concept
 title: "Linux Server Hardening"
 description: "The short list that takes a fresh VPS from exposed to reasonable in under an hour."
+wikipedia: "https://en.wikipedia.org/wiki/Hardening_(computing)"
 tags: [deployments, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -42,7 +43,7 @@ tells you what you actually left open.
 
 [[One-Box Deployment]] · [[SSH Key Authentication]] ·
 [[Unattended Upgrades]] · [[Least Privilege]] ·
-[[Security Testing]]
+[[Security Testing]] · [[Development Setup]]
 
 ## Sources
 

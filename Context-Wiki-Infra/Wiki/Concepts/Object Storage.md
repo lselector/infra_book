@@ -2,6 +2,7 @@
 type: Concept
 title: "Object Storage"
 description: "Buckets of files addressed by key - where user uploads, backups and big assets belong."
+wikipedia: "https://en.wikipedia.org/wiki/Object_storage"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

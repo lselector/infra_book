@@ -2,6 +2,7 @@
 type: Vendor
 title: "Render"
 description: "Conventional, predictable PaaS - connect a repo and get a URL."
+website: "https://render.com/"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

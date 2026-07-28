@@ -2,6 +2,7 @@
 type: Concept
 title: "Monitoring and Alerting"
 description: "Knowing the site is down before your users tell you - starting with one uptime check."
+wikipedia: "https://en.wikipedia.org/wiki/Observability_(software)"
 tags: [ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

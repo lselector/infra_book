@@ -2,6 +2,7 @@
 type: Tool
 title: "Gitleaks"
 description: "Scans Git history for committed credentials - run it before you need it."
+website: "https://gitleaks.io/"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

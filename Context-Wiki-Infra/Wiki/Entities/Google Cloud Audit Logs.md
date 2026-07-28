@@ -2,6 +2,7 @@
 type: Service
 title: "Google Cloud Audit Logs"
 description: "Google Cloud's record of administrative and data access activity."
+wikipedia: "https://en.wikipedia.org/wiki/Google_Cloud_Platform"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "Grafana Loki"
 description: "Log aggregation that indexes labels rather than content - cheap to run."
+wikipedia: "https://en.wikipedia.org/wiki/Grafana"
 tags: [ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

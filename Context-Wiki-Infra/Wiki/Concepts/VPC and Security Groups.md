@@ -2,6 +2,7 @@
 type: Concept
 title: "VPC and Security Groups"
 description: "The minimal network mental model - private subnets, and firewalls attached to instances."
+wikipedia: "https://en.wikipedia.org/wiki/Virtual_private_cloud"
 tags: [storage-and-databases, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

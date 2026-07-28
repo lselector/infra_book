@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Config"
 description: "Continuous recording of resource configuration, and rules that flag drift."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

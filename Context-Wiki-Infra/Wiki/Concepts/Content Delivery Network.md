@@ -2,6 +2,7 @@
 type: Concept
 title: "Content Delivery Network"
 description: "Caching copies of your site near users - the cheapest performance win available to a small site."
+wikipedia: "https://en.wikipedia.org/wiki/Content_delivery_network"
 tags: [foundations, performance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

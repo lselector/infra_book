@@ -2,6 +2,7 @@
 type: Tool
 title: "Django"
 description: "Batteries-included Python framework - admin, ORM and auth out of the box."
+wikipedia: "https://en.wikipedia.org/wiki/Django_(web_framework)"
 tags: [deployments, application]
 timestamp: "2026-07-27T00:00:00Z"
 ---

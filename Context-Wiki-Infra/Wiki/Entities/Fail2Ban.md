@@ -2,6 +2,7 @@
 type: Tool
 title: "Fail2Ban"
 description: "Watches logs and bans IPs that keep failing to log in."
+wikipedia: "https://en.wikipedia.org/wiki/Fail2ban"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

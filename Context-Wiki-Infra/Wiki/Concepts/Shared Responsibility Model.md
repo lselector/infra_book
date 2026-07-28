@@ -2,6 +2,7 @@
 type: Concept
 title: "Shared Responsibility Model"
 description: "Which security controls your cloud provider owns and which remain yours - the question every audit asks."
+wikipedia: "https://en.wikipedia.org/wiki/Cloud_computing_security"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

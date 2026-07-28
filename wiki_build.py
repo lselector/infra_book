@@ -59,7 +59,8 @@ CATEGORY_TAGS = {
 
 # Page names too short or too common to auto-link
 # safely when scanning summary text.
-LINK_STOPLIST = {"Caching", "Firewall", "Monitoring"}
+LINK_STOPLIST = {"Caching", "Firewall", "Monitoring",
+                 "Bash", "GitHub"}
 
 
 # --------------------------------------------------------------
@@ -329,7 +330,9 @@ def build_index():
         "`wiki_build.py index` — do not hand-edit.",
         "",
         "Start with [[Stacks]] for the ten-rung ladder of",
-        "example stacks, or [[Topics]] for the keyword",
+        "example stacks — it is also the site's front",
+        "page. [[Development Setup]] covers the tools on",
+        "your own machine first; [[Topics]] is the keyword",
         "plan.",
         "",
         index_section(

@@ -2,6 +2,7 @@
 type: Concept
 title: "Email Authentication"
 description: "SPF, DKIM and DMARC - the three DNS records that let receivers verify your mail is really yours."
+wikipedia: "https://en.wikipedia.org/wiki/Email_authentication"
 tags: [product-patterns, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

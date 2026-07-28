@@ -2,6 +2,7 @@
 type: Concept
 title: "Web App Manifest"
 description: "The JSON file that tells a browser how to install your site as an app."
+wikipedia: "https://en.wikipedia.org/wiki/Progressive_web_app"
 tags: [architectures, mobile]
 timestamp: "2026-07-27T00:00:00Z"
 ---

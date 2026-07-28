@@ -2,6 +2,7 @@
 type: Concept
 title: "Dependency Auditing"
 description: "Knowing when a library you depend on turns out to be vulnerable, and having a route to updating it."
+wikipedia: "https://en.wikipedia.org/wiki/Software_composition_analysis"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

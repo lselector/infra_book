@@ -2,6 +2,7 @@
 type: Tool
 title: "OWASP ZAP"
 description: "A free web application scanner that runs happily in CI."
+wikipedia: "https://en.wikipedia.org/wiki/ZAP_(software)"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "Kubernetes"
 description: "Container orchestration at cluster scale - and a clear-eyed account of when you do not need it."
+wikipedia: "https://en.wikipedia.org/wiki/Kubernetes"
 tags: [deployments, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

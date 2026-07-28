@@ -2,6 +2,7 @@
 type: Tool
 title: "SQLite"
 description: "A whole database in one file, with no server - the right default for a very simple app."
+wikipedia: "https://en.wikipedia.org/wiki/SQLite"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

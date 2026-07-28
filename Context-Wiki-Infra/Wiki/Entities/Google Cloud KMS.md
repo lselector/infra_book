@@ -2,6 +2,7 @@
 type: Service
 title: "Google Cloud KMS"
 description: "Google's key management service - the same envelope-encryption model, with CMEK across GCP."
+wikipedia: "https://en.wikipedia.org/wiki/Google_Cloud_Platform"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

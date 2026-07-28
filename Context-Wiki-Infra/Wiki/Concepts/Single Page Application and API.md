@@ -2,6 +2,7 @@
 type: Concept
 title: "Single Page Application and API"
 description: "A static frontend calling a separate backend - clean separation, at the cost of CORS and auth plumbing."
+wikipedia: "https://en.wikipedia.org/wiki/Single-page_application"
 tags: [architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---

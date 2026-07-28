@@ -2,6 +2,7 @@
 type: Concept
 title: "Anti-Patterns"
 description: "The expensive mistakes small teams reliably make, and the cheaper thing to do instead."
+wikipedia: "https://en.wikipedia.org/wiki/Anti-pattern"
 tags: [scaling, orientation]
 timestamp: "2026-07-27T00:00:00Z"
 ---

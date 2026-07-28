@@ -2,6 +2,7 @@
 type: Concept
 title: "Backend-Free Interactivity"
 description: "Filtering, sorting, galleries and saved state in the browser, against generated data files."
+wikipedia: "https://en.wikipedia.org/wiki/Dynamic_web_page"
 tags: [architectures, product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

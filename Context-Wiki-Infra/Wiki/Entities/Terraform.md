@@ -2,6 +2,7 @@
 type: Tool
 title: "Terraform"
 description: "The default infrastructure-as-code tool - declare resources, plan, apply."
+wikipedia: "https://en.wikipedia.org/wiki/Terraform_(software)"
 tags: [scaling, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

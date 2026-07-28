@@ -2,6 +2,7 @@
 type: Vendor
 title: "Drata"
 description: "Compliance automation platform - the main alternative to Vanta."
+website: "https://drata.com/"
 tags: [compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

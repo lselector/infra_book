@@ -2,6 +2,7 @@
 type: Vendor
 title: "Postmark"
 description: "Transactional email with a deliverability reputation - more per message, far less setup."
+website: "https://postmarkapp.com/"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -6,6 +6,10 @@ Wikipedia-style site: navigable wiki links, per-section
 listings, page infoboxes from OKF frontmatter, backlinks
 ("what links here"), and full-text search.
 
+"/" serves the page named by HOME_PAGE (Stacks — the
+ladder of example stacks); NAV_PAGES are pinned above
+the section list in the sidebar.
+
 Usage:
     python wiki_server.py
     # then open http://localhost:8020
@@ -27,7 +31,7 @@ import html
 import os
 import re
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 import markdown as md
 import yaml
@@ -47,6 +51,11 @@ SECTION_DIRS = {
     "Summaries": "Wiki/Summaries",
     "Dashboards": "Dashboards",
 }
+
+# The page served at "/", and the pages pinned above
+# the section list in the sidebar, in order.
+HOME_PAGE = "Stacks"
+NAV_PAGES = ["Development Setup", "Index"]
 
 RAW_DIR = WIKI_ROOT / "Raw"
 
@@ -84,6 +93,9 @@ nav h3 { font-size:0.85em; color:#54595d;
 nav ul { list-style:none; padding-left:6px;
   margin:6px 0; }
 nav li { margin:4px 0; }
+nav li.home { font-weight:bold; }
+nav hr { border:0;
+  border-top:1px solid #eaecf0; margin:8px 6px; }
 main { flex:1; background:#fff;
   border:1px solid #a7d7f9; padding:24px 32px;
   margin:16px 0; min-height:70vh; }
@@ -114,6 +126,8 @@ td, th { border:1px solid #c8ccd1;
   padding:4px 8px; }
 code { background:#f8f9fa;
   border:1px solid #eaecf0; padding:1px 4px; }
+a.ext::after { content:"\\2197"; font-size:0.75em;
+  vertical-align:super; margin-left:1px; }
 """
 
 app = Flask(__name__)
@@ -177,12 +191,31 @@ def raw_count():
 
 
 # --------------------------------------------------------------
+def nav_items(idx):
+    """Pinned sidebar entries: home page, then key pages."""
+    items = [
+        '<li class="home"><a href="/">'
+        f"{html.escape(HOME_PAGE)}</a></li>"
+    ]
+    for name in NAV_PAGES:
+        if name not in idx:
+            continue
+        url = "/wiki/" + quote(name)
+        items.append(
+            f'<li><a href="{url}">'
+            f"{html.escape(name)}</a></li>"
+        )
+    items.append("<hr>")
+    return items
+
+
+# --------------------------------------------------------------
 def sidebar_html(idx):
     """Build the navigation sidebar."""
     counts = {}
     for sec, _ in idx.values():
         counts[sec] = counts.get(sec, 0) + 1
-    items = ['<li><a href="/">Main Page</a></li>']
+    items = nav_items(idx)
     for sec in SECTION_DIRS:
         n = counts.get(sec, 0)
         url = "/section/" + quote(sec)
@@ -249,25 +282,60 @@ def resolve_raw(rel):
 
 
 # --------------------------------------------------------------
+def ext_link(url, label):
+    """Off-site link: new tab, and no window.opener."""
+    return (
+        f'<a class="ext" href="{html.escape(url, True)}"'
+        ' target="_blank" rel="noopener noreferrer">'
+        f"{html.escape(label)}</a>"
+    )
+
+
+# --------------------------------------------------------------
+def wikipedia_link(url):
+    """Link to an article, labelled with its title."""
+    slug = url.rsplit("/", 1)[-1]
+    return ext_link(url, unquote(slug).replace("_", " "))
+
+
+# --------------------------------------------------------------
+def website_link(url):
+    """Link to a project's own site, labelled by host."""
+    label = re.sub(r"^https?://(www\.)?", "", url)
+    return ext_link(url, label.rstrip("/"))
+
+
+# --------------------------------------------------------------
+def infobox_value(key, val):
+    """Render one infobox value according to its key."""
+    if isinstance(val, list):
+        val = ", ".join(str(v) for v in val)
+    val = str(val)
+    if key == "wikipedia":
+        return wikipedia_link(val)
+    if key == "website":
+        return website_link(val)
+    safe = html.escape(val)
+    if key == "resource":
+        return f'<a href="{safe}">source&nbsp;link</a>'
+    if key == "source_file":
+        return raw_link(safe)
+    return safe
+
+
+# --------------------------------------------------------------
 def infobox_html(meta):
     """Render OKF frontmatter as a floating infobox."""
     rows = []
-    for key in ("type", "description", "resource",
-                "source_file", "tags"):
+    for key in ("type", "description", "wikipedia",
+                "website", "resource", "source_file",
+                "tags"):
         val = meta.get(key)
         if not val:
             continue
-        if isinstance(val, list):
-            val = ", ".join(str(v) for v in val)
-        val = html.escape(str(val))
-        if key == "resource":
-            val = (f'<a href="{val}">source'
-                   "&nbsp;link</a>")
-        elif key == "source_file":
-            val = raw_link(val)
         rows.append(
             f"<tr><th>{key}</th>"
-            f"<td>{val}</td></tr>"
+            f"<td>{infobox_value(key, val)}</td></tr>"
         )
     if not rows:
         return ""
@@ -317,18 +385,19 @@ def make_snippet(text, pos, qlen):
 # --------------------------------------------------------------
 @app.route("/")
 def home():
-    """Main page: the wiki's generated index."""
+    """Main page: the Stacks ladder."""
     idx = page_index()
-    if "Index" in idx:
-        _, path = idx["Index"]
+    if HOME_PAGE in idx:
+        _, path = idx[HOME_PAGE]
         text = path.read_text(encoding="utf-8")
         _, body = split_frontmatter(text)
         content = md.markdown(
             wikify(body, idx), extensions=MD_EXTS
         )
     else:
-        content = "<h1>Wiki index not found</h1>"
-    return page_html("Main Page", content, idx)
+        content = (f"<h1>{html.escape(HOME_PAGE)} page"
+                   " not found</h1>")
+    return page_html(HOME_PAGE, content, idx)
 
 
 # --------------------------------------------------------------
@@ -514,8 +583,9 @@ def not_found(_err):
     return page_html(
         "Page not found",
         "<h1>Page not found</h1>"
-        '<p>Try the <a href="/">Main Page</a> or '
-        "the search box above.</p>", idx
+        '<p>Try the <a href="/">Stacks</a> ladder, the '
+        '<a href="/wiki/Index">Index</a>, or the search '
+        "box above.</p>", idx
     ), 404
 
 

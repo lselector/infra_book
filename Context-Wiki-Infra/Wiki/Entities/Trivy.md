@@ -2,6 +2,7 @@
 type: Tool
 title: "Trivy"
 description: "One scanner for container images, filesystems, dependencies and IaC."
+website: "https://trivy.dev/"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

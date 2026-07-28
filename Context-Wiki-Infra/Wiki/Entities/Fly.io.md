@@ -2,6 +2,7 @@
 type: Vendor
 title: "Fly.io"
 description: "PaaS that runs your container close to users, with a CLI-first workflow."
+website: "https://fly.io/"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

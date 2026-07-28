@@ -2,6 +2,7 @@
 type: Concept
 title: "Connection Pooling"
 description: "Reusing database connections, because opening one is expensive and Postgres has a hard ceiling."
+wikipedia: "https://en.wikipedia.org/wiki/Connection_pool"
 tags: [storage-and-databases, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

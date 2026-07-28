@@ -2,6 +2,7 @@
 type: Service
 title: "Supabase Auth"
 description: "Authentication attached to a Postgres database, with row-level security as the authorisation model."
+website: "https://supabase.com/auth"
 tags: [ops-and-security, auth]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Load Balancing"
 description: "Spreading requests across several servers - and why a small project usually should not have one yet."
+wikipedia: "https://en.wikipedia.org/wiki/Load_balancing_(computing)"
 tags: [foundations, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

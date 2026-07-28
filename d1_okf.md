@@ -51,6 +51,8 @@ Recommended (optional):
 | `title`       | Display name (defaults to filename)      |
 | `description` | Single-sentence summary                  |
 | `resource`    | URI of the underlying real asset         |
+| `wikipedia`   | URL of the matching encyclopedia article |
+| `website`     | URL of the subject's own site            |
 | `tags`        | YAML list for filtering / grouping       |
 | `timestamp`   | ISO 8601 datetime of last modification   |
 

@@ -2,6 +2,7 @@
 type: Service
 title: "Amazon S3"
 description: "The original object store - durable, ubiquitous, and metered on the way out."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_S3"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Trust Services Criteria"
 description: "The five criteria a SOC 2 report can cover, and what each asks of a small infrastructure."
+wikipedia: "https://en.wikipedia.org/wiki/System_and_organization_controls"
 tags: [compliance, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

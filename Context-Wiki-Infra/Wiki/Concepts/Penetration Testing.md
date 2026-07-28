@@ -2,6 +2,7 @@
 type: Concept
 title: "Penetration Testing"
 description: "A human attacking your system on purpose - what it finds that scanners cannot, and when to buy one."
+wikipedia: "https://en.wikipedia.org/wiki/Penetration_test"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

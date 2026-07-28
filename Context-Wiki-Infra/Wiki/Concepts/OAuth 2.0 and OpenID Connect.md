@@ -2,6 +2,7 @@
 type: Concept
 title: "OAuth 2.0 and OpenID Connect"
 description: "Delegated authorisation, and the identity layer built on top of it."
+wikipedia: "https://en.wikipedia.org/wiki/OAuth"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

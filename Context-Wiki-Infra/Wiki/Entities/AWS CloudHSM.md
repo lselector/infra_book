@@ -2,6 +2,7 @@
 type: Service
 title: "AWS CloudHSM"
 description: "A dedicated, single-tenant HSM cluster - expensive, and required only when a contract says so."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

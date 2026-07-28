@@ -2,6 +2,7 @@
 type: Service
 title: "Cloudflare Pages"
 description: "Free static hosting on the edge, with Git builds, preview deployments and automatic TLS."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [deployments, static]
 timestamp: "2026-07-27T00:00:00Z"
 ---

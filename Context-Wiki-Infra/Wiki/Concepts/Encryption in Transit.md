@@ -2,6 +2,7 @@
 type: Concept
 title: "Encryption in Transit"
 description: "TLS everywhere, including the hops you forgot - proxy to app, app to database, app to backup."
+wikipedia: "https://en.wikipedia.org/wiki/Transport_Layer_Security"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

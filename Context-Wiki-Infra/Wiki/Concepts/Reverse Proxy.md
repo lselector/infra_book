@@ -2,6 +2,7 @@
 type: Concept
 title: "Reverse Proxy"
 description: "The process in front of your app that terminates TLS, serves static files and forwards the rest."
+wikipedia: "https://en.wikipedia.org/wiki/Reverse_proxy"
 tags: [deployments, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

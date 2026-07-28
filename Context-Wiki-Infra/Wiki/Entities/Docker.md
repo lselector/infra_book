@@ -2,6 +2,7 @@
 type: Tool
 title: "Docker"
 description: "Packaging an app with its dependencies so it runs the same everywhere."
+wikipedia: "https://en.wikipedia.org/wiki/Docker_(software)"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

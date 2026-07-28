@@ -2,6 +2,7 @@
 type: Vendor
 title: "Cloudflare"
 description: "Registrar, DNS, CDN and static hosting in one account - the cheap front door for almost any small site."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [deployments, vendor]
 timestamp: "2026-07-27T00:00:00Z"
 ---

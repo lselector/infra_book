@@ -2,6 +2,7 @@
 type: Concept
 title: "Core Web Vitals"
 description: "The three user-experience metrics Google measures, and the small number of fixes that move them."
+wikipedia: "https://en.wikipedia.org/wiki/Web_performance"
 tags: [architectures, performance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

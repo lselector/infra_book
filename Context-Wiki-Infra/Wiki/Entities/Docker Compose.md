@@ -2,6 +2,7 @@
 type: Tool
 title: "Docker Compose"
 description: "Several containers defined in one file - the practical way to run containers on a single box."
+wikipedia: "https://en.wikipedia.org/wiki/Docker_(software)"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -32,4 +32,4 @@ Source: <https://12factor.net/dev-prod-parity>
 
 ## Related pages
 
-[[Django]] · [[Docker]] · [[HTTP]] · [[Nginx]] · [[PostgreSQL]] · [[RabbitMQ]] · [[Redis]] · [[SQLite]] · [[Twelve-Factor App]]
+[[Django]] · [[Docker]] · [[HTTP]] · [[Homebrew]] · [[Nginx]] · [[PostgreSQL]] · [[RabbitMQ]] · [[Redis]] · [[SQLite]] · [[Twelve-Factor App]]

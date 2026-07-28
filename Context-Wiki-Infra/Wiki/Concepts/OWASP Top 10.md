@@ -2,6 +2,7 @@
 type: Concept
 title: "OWASP Top 10"
 description: "The consensus list of the most critical web application risks - a checklist, not a syllabus."
+wikipedia: "https://en.wikipedia.org/wiki/OWASP"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

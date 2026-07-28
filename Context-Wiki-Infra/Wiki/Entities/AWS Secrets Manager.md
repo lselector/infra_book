@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Secrets Manager"
 description: "Managed secret storage with built-in rotation - and a per-secret monthly fee."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

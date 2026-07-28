@@ -2,6 +2,7 @@
 type: Concept
 title: "Containers in Production"
 description: "Docker Compose on one box - most of the benefit of containers, almost none of the orchestration cost."
+wikipedia: "https://en.wikipedia.org/wiki/OS-level_virtualization"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

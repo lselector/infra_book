@@ -2,6 +2,7 @@
 type: Concept
 title: "Catalog and Inventory Sites"
 description: "Products, categories, detail pages and photo galleries - with no database and no admin panel."
+wikipedia: "https://en.wikipedia.org/wiki/Online_shopping"
 tags: [product-patterns, architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---

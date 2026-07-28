@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Backup"
 description: "Policy-driven backups across AWS services, with vaults you cannot casually delete."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [storage-and-databases, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

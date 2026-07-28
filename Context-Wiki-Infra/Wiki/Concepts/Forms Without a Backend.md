@@ -2,6 +2,7 @@
 type: Concept
 title: "Forms Without a Backend"
 description: "Accepting contact and quote requests on a static site by posting to somebody else's API."
+wikipedia: "https://en.wikipedia.org/wiki/HTML_form"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

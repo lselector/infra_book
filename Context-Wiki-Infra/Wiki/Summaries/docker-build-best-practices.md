@@ -48,4 +48,4 @@ Source: <https://docs.docker.com/build/building/best-practices/>
 
 ## Related pages
 
-[[Cache Busting]] · [[Docker]] · [[GitHub Actions]] · [[Nginx]]
+[[Cache Busting]] · [[Docker]] · [[GitHub Actions]] · [[Nginx]] · [[Visual Studio Code]]

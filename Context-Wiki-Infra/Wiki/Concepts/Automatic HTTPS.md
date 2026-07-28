@@ -2,6 +2,7 @@
 type: Concept
 title: "Automatic HTTPS"
 description: "Certificates obtained, installed and renewed with no cron job and no human - the modern default."
+wikipedia: "https://en.wikipedia.org/wiki/HTTPS"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

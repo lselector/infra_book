@@ -2,6 +2,7 @@
 type: Service
 title: "Amazon EC2"
 description: "AWS virtual machines - the IaaS baseline, worth it mainly when you are already in AWS."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

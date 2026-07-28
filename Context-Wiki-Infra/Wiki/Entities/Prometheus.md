@@ -2,6 +2,7 @@
 type: Tool
 title: "Prometheus"
 description: "Pull-based metrics and alerting - the open-source standard, and more than a small site needs."
+wikipedia: "https://en.wikipedia.org/wiki/Prometheus_(software)"
 tags: [ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

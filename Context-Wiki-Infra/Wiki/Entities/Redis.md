@@ -2,6 +2,7 @@
 type: Tool
 title: "Redis"
 description: "In-memory data store - cache, session store, rate limiter and simple queue."
+wikipedia: "https://en.wikipedia.org/wiki/Redis"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

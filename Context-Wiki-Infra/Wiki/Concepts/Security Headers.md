@@ -2,6 +2,7 @@
 type: Concept
 title: "Security Headers"
 description: "A handful of response headers that shut down whole classes of browser attack."
+wikipedia: "https://en.wikipedia.org/wiki/List_of_HTTP_header_fields"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Service Level Objectives"
 description: "A target for reliability you actually intend to meet, and the error budget it implies."
+wikipedia: "https://en.wikipedia.org/wiki/Service-level_objective"
 tags: [ops-and-security, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "One-Box Deployment"
 description: "Everything on a single small VPS - the cheapest way to run real server-side code, and where ops burden begins."
+wikipedia: "https://en.wikipedia.org/wiki/Virtual_private_server"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

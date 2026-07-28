@@ -2,6 +2,7 @@
 type: Concept
 title: "Twelve-Factor App"
 description: "A dozen conventions that make an app cheap to deploy, scale and move between hosts."
+wikipedia: "https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology"
 tags: [foundations, architecture]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Fargate"
 description: "Containers on AWS without managing servers - the middle ground between a VPS and a cluster."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

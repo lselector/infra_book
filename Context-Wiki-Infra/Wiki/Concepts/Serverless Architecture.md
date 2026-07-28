@@ -2,6 +2,7 @@
 type: Concept
 title: "Serverless Architecture"
 description: "Functions that run on demand and cost nothing at rest - with real constraints attached."
+wikipedia: "https://en.wikipedia.org/wiki/Serverless_computing"
 tags: [deployments, architecture]
 timestamp: "2026-07-27T00:00:00Z"
 ---

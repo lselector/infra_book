@@ -2,6 +2,7 @@
 type: Service
 title: "Amazon SES"
 description: "AWS's email sending service - about $0.10 per thousand, with real setup work."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [product-patterns, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

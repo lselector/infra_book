@@ -2,6 +2,7 @@
 type: Concept
 title: "Infrastructure as Code"
 description: "Declaring infrastructure in files - valuable when there is enough of it to forget."
+wikipedia: "https://en.wikipedia.org/wiki/Infrastructure_as_code"
 tags: [scaling, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "restic"
 description: "Encrypted, deduplicated, incremental backups to almost any storage backend."
+wikipedia: "https://en.wikipedia.org/wiki/Restic"
 tags: [storage-and-databases, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

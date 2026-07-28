@@ -2,6 +2,7 @@
 type: Concept
 title: "Database Backups"
 description: "A backup you have never restored is not a backup - the nightly dump, the offsite copy, and the drill."
+wikipedia: "https://en.wikipedia.org/wiki/Backup"
 tags: [storage-and-databases, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

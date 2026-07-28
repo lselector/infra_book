@@ -2,6 +2,7 @@
 type: Concept
 title: "Monolithic Web App"
 description: "One deployable process serving HTML and handling writes - the right default for a small team."
+wikipedia: "https://en.wikipedia.org/wiki/Monolithic_application"
 tags: [architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---

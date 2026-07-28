@@ -2,6 +2,7 @@
 type: Concept
 title: "Authorization"
 description: "What an authenticated user may do - enforced on the server, in one place, failing closed."
+wikipedia: "https://en.wikipedia.org/wiki/Authorization"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

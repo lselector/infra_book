@@ -2,6 +2,7 @@
 type: Concept
 title: "Responsive Design"
 description: "One layout that works from a phone to a desktop - viewport, fluid layout, media queries, touch targets."
+wikipedia: "https://en.wikipedia.org/wiki/Responsive_web_design"
 tags: [architectures, mobile]
 timestamp: "2026-07-27T00:00:00Z"
 ---

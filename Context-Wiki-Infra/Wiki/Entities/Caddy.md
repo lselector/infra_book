@@ -2,6 +2,7 @@
 type: Tool
 title: "Caddy"
 description: "A web server that obtains and renews TLS certificates by itself - the recommended reverse proxy here."
+wikipedia: "https://en.wikipedia.org/wiki/Caddy_(web_server)"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -48,4 +48,4 @@ Source: <https://raw.githubusercontent.com/gitleaks/gitleaks/master/README.md>
 
 ## Related pages
 
-[[DigitalOcean]] · [[Docker]] · [[Gitleaks]] · [[HTTP]]
+[[DigitalOcean]] · [[Docker]] · [[Gitleaks]] · [[HTTP]] · [[Homebrew]]

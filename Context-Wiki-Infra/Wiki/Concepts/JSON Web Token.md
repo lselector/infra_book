@@ -2,6 +2,7 @@
 type: Concept
 title: "JSON Web Token"
 description: "A signed, self-describing token - convenient, and awkward to revoke."
+wikipedia: "https://en.wikipedia.org/wiki/JSON_Web_Token"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

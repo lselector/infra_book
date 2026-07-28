@@ -2,6 +2,7 @@
 type: Concept
 title: "CORS"
 description: "The browser rule that stops one origin reading another's responses, and the headers that relax it."
+wikipedia: "https://en.wikipedia.org/wiki/Cross-origin_resource_sharing"
 tags: [architectures, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

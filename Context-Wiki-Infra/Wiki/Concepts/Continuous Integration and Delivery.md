@@ -2,6 +2,7 @@
 type: Concept
 title: "Continuous Integration and Delivery"
 description: "Automated test, build and deploy on push - and the minimum worth having on a small project."
+wikipedia: "https://en.wikipedia.org/wiki/CI%2FCD"
 tags: [ops-and-security, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

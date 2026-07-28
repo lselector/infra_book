@@ -2,6 +2,7 @@
 type: Service
 title: "Firebase Authentication"
 description: "Google's hosted authentication - email, Google sign-in and MFA without building any of it."
+wikipedia: "https://en.wikipedia.org/wiki/Firebase"
 tags: [ops-and-security, auth]
 timestamp: "2026-07-27T00:00:00Z"
 ---

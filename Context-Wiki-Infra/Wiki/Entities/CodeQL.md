@@ -2,6 +2,7 @@
 type: Tool
 title: "CodeQL"
 description: "GitHub's static analysis - queries your code as if it were a database."
+wikipedia: "https://en.wikipedia.org/wiki/Semmle"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

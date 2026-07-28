@@ -308,3 +308,150 @@ and structural changes.
   and only `.md` files inside `Raw/` are readable.
   The full trail is now one click each way:
   Concept -> Summary -> Raw capture -> original URL.
+
+## 2026-07-27 — Front page, and rung zero
+
+* **`Stacks` is now the front page.** `wiki_server.py`
+  serves `Dashboards/Stacks.md` at `/` (constant
+  `HOME_PAGE`), so the wiki opens on the ten-rung
+  ladder rather than on a 444-line list of pages. The
+  generated index is still one click away at
+  `/wiki/Index`.
+* **Sidebar reworked.** Three pinned entries above a
+  rule, then the section counts: `Stacks` (bold, links
+  to `/`), `Development Setup`, `Index`. The old
+  "Main Page" entry is gone — the page it pointed at is
+  `Index`, and it is now named that in the navigation.
+  Pinned pages are the `NAV_PAGES` constant; the 404
+  page points at the same two destinations.
+* **New dashboard: `Development Setup`** — rung zero,
+  the developer machine every rung of `Stacks` assumes.
+  Nine sections, each ending in something checkable: a
+  Unix-based environment (Linux / macOS / WSL), a
+  password manager, a terminal, working `bash`
+  knowledge, an editor, an AI coding agent, Homebrew
+  with the starting `brew install` list, a GitHub
+  account with `git config --global` and a secrets-aware
+  `.gitignore`, and an `~/.ssh` setup with one key per
+  purpose, a `config` file and the permissions SSH
+  insists on. Ends with the whole thing as a
+  nine-row checklist.
+* **11 new Entity pages** to keep it linked rather than
+  listed: `Homebrew`, `Bitwarden`, `iTerm2`, `Bash`,
+  `Zed`, `Visual Studio Code`, `Claude Code`, `uv`,
+  `Git`, `GitHub`, `Windows Subsystem for Linux`.
+  Entities: 81 -> 92; the vault now holds 450 pages and
+  3,399 links, still with no dangling targets.
+  These are the first pages in the wiki with no `Raw/`
+  capture behind them — the corpus was downloaded
+  against `TOC_infra.md`, which starts at rung 1. Each
+  cites its upstream documentation URL and says so
+  explicitly in `## Sources`, so the gap is visible
+  rather than papered over.
+* Cross-referenced both ways: `Stacks` and `Topics`
+  point at `Development Setup`, `Topics` gains a
+  `00_dev_environment` keyword section (marked as
+  having no `Raw/` folder), and `wiki_build.py index`
+  now names it in the index preamble.
+* Re-ran `wiki_build.py crosslink`: 7 summaries picked
+  up genuinely relevant new links (Homebrew in the
+  dev/prod-parity and server-setup captures, WSL in a
+  DigitalOcean one, VS Code, Claude Code). `GitHub` and
+  `Bash` went into `LINK_STOPLIST` first — a bare
+  `github.com` URL appears in 116 captures, which would
+  have made `[[GitHub]]` a link on almost every summary
+  and meant nothing.
+* Ripple update, by hand where it belonged: the
+  `## Related` lines of `SSH Key Authentication`,
+  `Secrets Management`, `Git-Driven Deployment`,
+  `Linux Server Hardening`, `GitHub Actions` and
+  `Static Build Pipeline` now point back at
+  `Development Setup` and the new tool pages, so the
+  graph is bi-directional rather than one-way. The new
+  dashboard has 18 inbound links.
+* Verified in the browser: `/` renders the ladder,
+  `/wiki/Index` the index, all 11 new pages 200, the
+  sidebar reads Stacks / Development Setup / Index,
+  and the whole vault has zero dangling links.
+
+## 2026-07-27 — Wikipedia links on every content page
+
+* **All 173 content pages now carry an English Wikipedia
+  link** — 156 with an article (128 distinct articles),
+  17 deliberately without. It shows in the infobox,
+  labelled with the *article's* title, and opens in a new
+  tab (`target="_blank"`, `rel="noopener noreferrer"`,
+  with a ↗ marker so an off-site link looks different
+  from an internal one).
+* **New field, new tooling.** `wikipedia:` is an optional
+  OKF frontmatter field (documented in `d1_okf.md`),
+  written by the new `wikipedia_links.py` from the
+  curated map in `wikipedia_links.json`:
+  `status` (offline coverage), `check` (verify against
+  the MediaWiki API), `apply` (write the frontmatter,
+  idempotently). Full write-up in `d8_wikipedia_links.md`.
+* **Titles are curated, never guessed** — and `check`
+  exists because guessing fails in ways that are hard to
+  spot afterwards. It reports missing, redirected and
+  disambiguation targets, and prints each article's first
+  sentence. Caught during the first pass:
+  `Trivy` is a commune in Saône-et-Loire, not the
+  scanner; `Resend` redirects to *Retransmission (data
+  networks)*; `Railway`, `Render`, `Postmark` and `Clerk`
+  are all ordinary English words with articles about
+  something else entirely; `Data at rest` and
+  `Data in transit` both redirect to *Digital data*
+  (used *Disk encryption* and *Transport Layer Security*
+  instead); `Email deliverability` redirects to
+  *Cold email* (used *Anti-spam techniques*).
+* **Two rules produced the map.** Link the article about
+  *this* thing where it exists; otherwise link the vendor
+  or family article, never a generic concept — so the AWS
+  services without articles point at *Amazon Web
+  Services* and the six Cloudflare pages at *Cloudflare*,
+  while the concept articles stay attached to the Concept
+  pages that own them. Because the infobox shows the
+  target title, a broader link is visible as one.
+* **Nothing for the summaries.** A summary is about a
+  specific captured document rather than a subject; its
+  infobox already links the capture in `Raw/`.
+* Verified twice over: `check` reports 0 problems across
+  the 156 titles, and an HTTP sweep of all 128 distinct
+  URLs returns 200 for every one, including the awkward
+  forms — `Let's_Encrypt`, `Stripe,_Inc.`,
+  `Zed_(text_editor)`, `1.1.1.1`.
+* `status` fails loudly if a content page is missing from
+  the map or the map names a page that no longer exists,
+  so the two cannot drift apart; the librarian
+  instructions in `claude.md` now make that Step 5.
+
+## 2026-07-27 — Official-site links where Wikipedia has none
+
+* **The 15 pages Wikipedia does not cover now link to the
+  project's own site**, so no content page is a dead end.
+  URLs supplied and used verbatim: AWeber, Clerk, Drata,
+  Fly.io, Gitleaks, Postmark, Railway, Render, Resend,
+  SOPS, Supabase Auth, Trivy, Uptime Kuma, uv, Web3Forms.
+* **New `website:` OKF field**, rendered in the infobox
+  exactly like `wikipedia:` — new tab, `noopener
+  noreferrer`, ↗ marker — but labelled with the host and
+  path rather than an article title (`trivy.dev`,
+  `docs.astral.sh/uv`, `supabase.com/auth`). Wikipedia
+  takes precedence where both could exist: it is the
+  neutral description, the vendor site is the sales one.
+* `wikipedia_links.json` gained a `websites` map beside
+  `links`; `wikipedia_links.py` writes both fields,
+  `status` counts both, and `check` now fetches every
+  site URL as well as verifying every article title.
+  All 15 answered 200. A `403` is reported as `WAF`
+  rather than a failure — Drata's site sits behind a bot
+  challenge that refuses automated clients, which says
+  nothing about whether the URL is right.
+* Coverage is now: 156 pages with a Wikipedia article,
+  15 with their own site, and 2 with neither —
+  `Cost Control` and `The Ladder`, which are this wiki's
+  own framing rather than subjects anyone else describes.
+* Note for later: the Uptime Kuma URL used is the one
+  supplied, `uptimekuma.org`. The project's own docs live
+  at `uptime.kuma.pet` (repo: `louislam/uptime-kuma`);
+  both answer, so this is a choice, not an error.

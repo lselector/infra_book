@@ -2,6 +2,7 @@
 type: Service
 title: "Amazon RDS"
 description: "Managed relational databases - you stop doing backups and patching, and start paying for it."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Relational_Database_Service"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

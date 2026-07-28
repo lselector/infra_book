@@ -2,6 +2,7 @@
 type: Concept
 title: "Domain Names and DNS"
 description: "How a name becomes an IP address, and what a registrar, nameserver and resolver each do."
+wikipedia: "https://en.wikipedia.org/wiki/Domain_Name_System"
 tags: [foundations, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

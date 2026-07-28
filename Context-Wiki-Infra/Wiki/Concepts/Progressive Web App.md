@@ -2,6 +2,7 @@
 type: Concept
 title: "Progressive Web App"
 description: "A website that installs to the home screen and works offline, without an app store."
+wikipedia: "https://en.wikipedia.org/wiki/Progressive_web_app"
 tags: [architectures, mobile]
 timestamp: "2026-07-27T00:00:00Z"
 ---

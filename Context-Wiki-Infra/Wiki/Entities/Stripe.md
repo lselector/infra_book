@@ -2,6 +2,7 @@
 type: Vendor
 title: "Stripe"
 description: "Payments and subscription billing - hosted checkout that keeps card data off your servers."
+wikipedia: "https://en.wikipedia.org/wiki/Stripe,_Inc."
 tags: [product-patterns, saas]
 timestamp: "2026-07-27T00:00:00Z"
 ---

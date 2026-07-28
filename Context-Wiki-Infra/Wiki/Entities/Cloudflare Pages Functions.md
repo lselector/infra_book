@@ -2,6 +2,7 @@
 type: Service
 title: "Cloudflare Pages Functions"
 description: "Serverless endpoints alongside a Pages site, for the small amount of dynamic behaviour a static site needs."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [deployments, serverless]
 timestamp: "2026-07-27T00:00:00Z"
 ---

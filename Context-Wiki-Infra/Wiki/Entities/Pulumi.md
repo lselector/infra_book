@@ -2,6 +2,7 @@
 type: Tool
 title: "Pulumi"
 description: "Infrastructure as code in a real programming language."
+wikipedia: "https://en.wikipedia.org/wiki/Pulumi"
 tags: [scaling, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

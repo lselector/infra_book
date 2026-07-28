@@ -2,6 +2,7 @@
 type: Concept
 title: "Secrets Management"
 description: "Where credentials live, how they get to the app, and what to do when one leaks."
+wikipedia: "https://en.wikipedia.org/wiki/Key_management"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -43,7 +44,8 @@ need them.
 ## Related
 
 [[Envelope Encryption]] · [[Least Privilege]] ·
-[[Key Rotation]] · [[Gitleaks]] · [[Twelve-Factor App]]
+[[Key Rotation]] · [[Gitleaks]] · [[Twelve-Factor App]] ·
+[[Bitwarden]] · [[Development Setup]]
 
 ## Sources
 

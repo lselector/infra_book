@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Systems Manager Parameter Store"
 description: "Free encrypted parameter storage - the cheap default for configuration and API keys on AWS."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

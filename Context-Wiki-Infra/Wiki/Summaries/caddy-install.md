@@ -48,4 +48,4 @@ Source: <https://caddyserver.com/docs/install>
 
 ## Related pages
 
-[[Caddy]] · [[Docker]] · [[Docker Compose]] · [[Railway]] · [[systemd]]
+[[Caddy]] · [[Docker]] · [[Docker Compose]] · [[Homebrew]] · [[Railway]] · [[systemd]]

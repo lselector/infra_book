@@ -2,6 +2,7 @@
 type: Vendor
 title: "Mailchimp"
 description: "The best-known email marketing platform - and the clearest documentation of the mechanics."
+wikipedia: "https://en.wikipedia.org/wiki/Mailchimp"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

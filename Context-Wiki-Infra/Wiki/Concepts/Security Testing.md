@@ -2,6 +2,7 @@
 type: Concept
 title: "Security Testing"
 description: "Finding your own vulnerabilities first - the scan, the audit and the manual pass before launch."
+wikipedia: "https://en.wikipedia.org/wiki/Security_testing"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "AWS CloudTrail"
 description: "The audit log of everything done in an AWS account."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

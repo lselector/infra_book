@@ -2,6 +2,7 @@
 type: Concept
 title: "Service Worker"
 description: "A script between your page and the network - the mechanism behind offline support and precaching."
+wikipedia: "https://en.wikipedia.org/wiki/Web_worker"
 tags: [architectures, mobile]
 timestamp: "2026-07-27T00:00:00Z"
 ---

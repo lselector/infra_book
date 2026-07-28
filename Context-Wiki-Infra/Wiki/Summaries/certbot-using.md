@@ -48,4 +48,4 @@ Source: <https://eff-certbot.readthedocs.io/en/stable/using.html>
 
 ## Related pages
 
-[[ACME Protocol]] · [[Authentication]] · [[Authorization]] · [[Certbot]] · [[Cloudflare]] · [[DigitalOcean]] · [[Docker]] · [[HTTP]] · [[Hetzner Cloud]] · [[Let's Encrypt]] · [[Nginx]] · [[systemd]]
+[[ACME Protocol]] · [[Authentication]] · [[Authorization]] · [[Certbot]] · [[Cloudflare]] · [[DigitalOcean]] · [[Docker]] · [[Hetzner Cloud]] · [[Homebrew]] · [[Let's Encrypt]] · [[Nginx]] · [[systemd]]

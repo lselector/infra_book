@@ -2,6 +2,7 @@
 type: Concept
 title: "Read Replicas"
 description: "Copies of the database that serve reads - the first real scaling step, with a lag you must design around."
+wikipedia: "https://en.wikipedia.org/wiki/Replication_(computing)"
 tags: [storage-and-databases, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

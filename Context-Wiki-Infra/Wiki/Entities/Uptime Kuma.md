@@ -2,6 +2,7 @@
 type: Tool
 title: "Uptime Kuma"
 description: "Self-hosted uptime monitoring with a good UI - the first monitoring you should set up."
+website: "https://uptimekuma.org/"
 tags: [ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

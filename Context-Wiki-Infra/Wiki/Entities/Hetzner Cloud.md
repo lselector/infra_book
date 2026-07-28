@@ -2,6 +2,7 @@
 type: Vendor
 title: "Hetzner Cloud"
 description: "European VPS provider with the best price-to-resource ratio in this book."
+wikipedia: "https://en.wikipedia.org/wiki/Hetzner"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

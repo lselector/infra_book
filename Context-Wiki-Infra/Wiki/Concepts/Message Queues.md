@@ -2,6 +2,7 @@
 type: Concept
 title: "Message Queues"
 description: "Handing slow work to a background worker so the request can return immediately."
+wikipedia: "https://en.wikipedia.org/wiki/Message_queue"
 tags: [storage-and-databases, architecture]
 timestamp: "2026-07-27T00:00:00Z"
 ---

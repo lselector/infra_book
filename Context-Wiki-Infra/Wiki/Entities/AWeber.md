@@ -2,6 +2,7 @@
 type: Vendor
 title: "AWeber"
 description: "Long-established email marketing service - lists, sign-up forms and autoresponder campaigns."
+website: "https://www.aweber.com/"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

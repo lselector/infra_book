@@ -2,6 +2,7 @@
 type: Concept
 title: "Encryption at Rest"
 description: "Encrypting stored data - what the provider does for you, and what remains your decision."
+wikipedia: "https://en.wikipedia.org/wiki/Disk_encryption"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "UFW"
 description: "Uncomplicated Firewall - three commands between a fresh VPS and a closed one."
+wikipedia: "https://en.wikipedia.org/wiki/Uncomplicated_Firewall"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

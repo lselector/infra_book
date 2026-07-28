@@ -74,19 +74,25 @@ so links and filenames must agree exactly:
 ## Frontmatter
 
 Every non-reserved page carries OKF frontmatter. The
-server renders `type`, `description`, `resource`,
-`source_file` and `tags` as the page infobox, so those
-five fields are the ones worth filling in:
+server renders `type`, `description`, `wikipedia`,
+`website`, `resource`, `source_file` and `tags` as the
+page infobox, so those are the fields worth filling in:
 
 ```yaml
 ---
 type: Concept
 title: "Envelope Encryption"
 description: "Encrypt data with a data key, encrypt the data key with a KMS key."
+wikipedia: "https://en.wikipedia.org/wiki/Key_wrap"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---
 ```
+
+`wikipedia` and `website` are written by
+`wikipedia_links.py` from a curated map rather than by
+hand — see
+[d8_wikipedia_links.md](d8_wikipedia_links.md).
 
 `Dashboards/Index.md` and `Dashboards/Log.md` are OKF
 reserved filenames and correctly have no frontmatter.

@@ -2,6 +2,7 @@
 type: Concept
 title: "Database Sharding"
 description: "Splitting data across databases by key - powerful, irreversible in practice, and rarely needed."
+wikipedia: "https://en.wikipedia.org/wiki/Shard_(database_architecture)"
 tags: [storage-and-databases, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

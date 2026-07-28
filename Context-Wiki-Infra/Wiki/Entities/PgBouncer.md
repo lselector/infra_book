@@ -2,6 +2,7 @@
 type: Tool
 title: "PgBouncer"
 description: "A tiny connection pooler in front of PostgreSQL - the fix for connection exhaustion."
+wikipedia: "https://en.wikipedia.org/wiki/PostgreSQL"
 tags: [storage-and-databases, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

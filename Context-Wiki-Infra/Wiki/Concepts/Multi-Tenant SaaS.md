@@ -2,6 +2,7 @@
 type: Concept
 title: "Multi-Tenant SaaS"
 description: "Serving many customers from one system - shared database, database per tenant, and the isolation trade-off."
+wikipedia: "https://en.wikipedia.org/wiki/Multitenancy"
 tags: [architectures, saas]
 timestamp: "2026-07-27T00:00:00Z"
 ---

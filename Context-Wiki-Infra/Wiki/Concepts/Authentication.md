@@ -2,6 +2,7 @@
 type: Concept
 title: "Authentication"
 description: "Proving who a user is - and the strong argument for never building it yourself."
+wikipedia: "https://en.wikipedia.org/wiki/Authentication"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

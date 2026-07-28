@@ -2,6 +2,7 @@
 type: Concept
 title: "Cloud Service Models"
 description: "IaaS, PaaS, serverless and SaaS - who operates what, and what you give up for convenience."
+wikipedia: "https://en.wikipedia.org/wiki/Cloud_computing"
 tags: [foundations, architecture]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Incident Response"
 description: "A short written plan for the day it goes wrong, decided in advance rather than at 3am."
+wikipedia: "https://en.wikipedia.org/wiki/Computer_security_incident_management"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

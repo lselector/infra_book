@@ -2,6 +2,7 @@
 type: Vendor
 title: "DigitalOcean"
 description: "VPS provider with excellent documentation - often the best first server."
+wikipedia: "https://en.wikipedia.org/wiki/DigitalOcean"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "AWS IAM"
 description: "Identity and access management on AWS - roles, policies, and the case against long-lived keys."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

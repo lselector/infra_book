@@ -2,6 +2,7 @@
 type: Tool
 title: "Certbot"
 description: "The EFF's ACME client - how Nginx and Apache get Let's Encrypt certificates."
+wikipedia: "https://en.wikipedia.org/wiki/Let's_Encrypt"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

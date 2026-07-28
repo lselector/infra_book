@@ -2,6 +2,7 @@
 type: Concept
 title: "Relational Databases"
 description: "Tables, constraints and transactions - and the choice between SQLite, self-hosted Postgres and managed."
+wikipedia: "https://en.wikipedia.org/wiki/Relational_database"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

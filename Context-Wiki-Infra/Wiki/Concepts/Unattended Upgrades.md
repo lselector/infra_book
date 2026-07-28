@@ -2,6 +2,7 @@
 type: Concept
 title: "Unattended Upgrades"
 description: "Letting the machine install its own security patches, because you will not."
+wikipedia: "https://en.wikipedia.org/wiki/Patch_(computing)"
 tags: [deployments, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

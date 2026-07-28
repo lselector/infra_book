@@ -2,6 +2,7 @@
 type: Tool
 title: "RabbitMQ"
 description: "A real message broker - for when a database table or Redis list is no longer enough."
+wikipedia: "https://en.wikipedia.org/wiki/RabbitMQ"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

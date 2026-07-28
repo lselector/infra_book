@@ -11,7 +11,8 @@ Recommended — the control scripts (background run,
 PID file `.wiki_server.pid`, log `wiki_server.log`):
 
 ```bash
-./server_start.sh     # start on port 8020
+./server_start.sh     # start on port 8020 (restarts
+                      #   if it is already in use)
 ./server_stop.sh      # stop (PID file, then any
                       #   process on the port)
 ./server_restart.sh   # stop + start
@@ -29,9 +30,17 @@ PATH; override with `PYTHON=/path/to/python
 ./server_start.sh` if you keep the dependencies in a
 particular virtualenv.)
 
-`server_start.sh` refuses to start if port 8020 is
-already in use; `server_stop.sh` also cleans up any
-stray process holding the port.
+If port 8020 is already in use, `server_start.sh` stops
+whatever is holding it (by calling `server_stop.sh`) and
+starts a fresh server — so starting twice restarts
+rather than failing, and `server_restart.sh` is now just
+the explicit spelling of the same thing. If the port is
+*still* occupied after that — something not yours, which
+`kill` cannot touch — it reports the port and exits 1
+instead of launching a server that cannot bind.
+
+`server_stop.sh` stops the recorded PID, then any stray
+process left listening on the port.
 
 Serve a different wiki:
 
@@ -46,10 +55,12 @@ Port: **8020** (constant `PORT` in the script).
 
 | Feature | Details |
 |---------|---------|
-| Main page | Renders `Dashboards/Index.md` |
+| Main page | Renders `Dashboards/Stacks.md` — the ladder of example stacks (constant `HOME_PAGE`) |
+| Pinned nav | `Stacks` (top, bold), then `Development Setup` and `Index` above the section list (constant `NAV_PAGES`) |
 | Wiki links | `[[Name]]` and `[[Name\|alias]]` become links; links to missing pages show in red |
 | Sections | Sidebar navigation to Concepts, Entities, Summaries, Dashboards with page counts |
-| Infobox | OKF frontmatter (type, description, resource, source_file, tags) rendered as a floating box; `resource` becomes a clickable source link and `source_file` links to the capture in `Raw/` |
+| Infobox | OKF frontmatter (type, description, wikipedia, website, resource, source_file, tags) rendered as a floating box; `resource` becomes a clickable source link and `source_file` links to the capture in `Raw/` |
+| Outside links | Every Concept and Entity page links out: to its English Wikipedia article (labelled with the article title), or — where Wikipedia has no article — to the project's own site (labelled with the host). Both open in a new tab (`target="_blank"`, `rel="noopener noreferrer"`, ↗ marker) — see [d8_wikipedia_links.md](d8_wikipedia_links.md) |
 | Raw captures | The immutable downloads in `Raw/` are browsable and readable, so every derived page can be traced to its source in one click |
 | Backlinks | "What links here" at the bottom of every page |
 | Search | Full-text, case-insensitive, ranked (title matches first, then hit count), with highlighted snippets |
@@ -59,7 +70,8 @@ Port: **8020** (constant `PORT` in the script).
 
 | URL | Content |
 |-----|---------|
-| `/` | Main page (wiki index) |
+| `/` | Main page — the `Stacks` ladder |
+| `/wiki/Index` | The generated index of every page |
 | `/wiki/<Page Name>` | One page |
 | `/section/<Section>` | Section listing |
 | `/raw/` | All immutable captures, grouped by category |

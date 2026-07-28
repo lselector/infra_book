@@ -2,6 +2,7 @@
 type: Concept
 title: "Audit Logging"
 description: "An immutable record of who did what and when - required for compliance, invaluable during an incident."
+wikipedia: "https://en.wikipedia.org/wiki/Audit_trail"
 tags: [ops-and-security, compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

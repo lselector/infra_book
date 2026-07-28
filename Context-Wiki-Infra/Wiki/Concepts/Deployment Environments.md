@@ -2,6 +2,7 @@
 type: Concept
 title: "Deployment Environments"
 description: "Production, staging and previews - how many you need, and when a second one starts paying for itself."
+wikipedia: "https://en.wikipedia.org/wiki/Deployment_environment"
 tags: [ops-and-security, scaling]
 timestamp: "2026-07-27T00:00:00Z"
 ---

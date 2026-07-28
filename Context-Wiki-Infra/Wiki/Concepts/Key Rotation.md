@@ -2,6 +2,7 @@
 type: Concept
 title: "Key Rotation"
 description: "Replacing key material on a schedule, and why it does not mean re-encrypting everything."
+wikipedia: "https://en.wikipedia.org/wiki/Key_management"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

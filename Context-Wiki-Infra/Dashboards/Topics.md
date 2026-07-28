@@ -15,7 +15,31 @@ per Part, matching the `Raw/` category folders.
 
 See also [Stacks.md](Stacks.md) — the same material
 arranged as a ten-rung ladder of example stacks in
-increasing order of complexity.
+increasing order of complexity — and
+[Development Setup.md](Development%20Setup.md), the
+tools on your own machine that come before rung 1.
+
+## 00_dev_environment — Your Development Machine
+keywords: unix-based development environment, Linux,
+macOS, WSL, Windows Subsystem for Linux, WSL 2,
+password manager, Bitwarden, master password,
+recovery codes, MFA on developer accounts, terminal
+emulator, iTerm2, Windows Terminal, split panes,
+bash shell, shell basics, pipes and redirection,
+shell scripting, set -euo pipefail, shellcheck,
+coding editor, Zed, VS Code, Cursor, Sublime Text,
+WebStorm, PyCharm, RustRover, Neovim, Vim, Helix,
+format on save, AI coding agent, Claude Code,
+CLAUDE.md conventions, reviewing agent diffs,
+Homebrew, brew install, formulae and casks, uv,
+Python project and package management, uv.lock,
+GitHub account, git config --global, .gitignore for
+secrets, secret scanning, ssh configuration,
+~/.ssh/config, ssh-keygen ed25519, key per host,
+authorized_keys, file permissions on keys
+note: no `Raw/` category folder — this Part is written
+from first-hand practice and vendor sites, not from the
+downloaded corpus.
 
 ## 01_foundations — Thinking About Infrastructure
 keywords: infrastructure for web and SaaS, IaaS vs

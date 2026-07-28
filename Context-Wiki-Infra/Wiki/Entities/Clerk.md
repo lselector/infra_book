@@ -2,6 +2,7 @@
 type: Service
 title: "Clerk"
 description: "Authentication with the UI included - drop-in components for sign-in and account management."
+website: "https://clerk.com/"
 tags: [ops-and-security, auth]
 timestamp: "2026-07-27T00:00:00Z"
 ---

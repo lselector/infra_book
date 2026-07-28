@@ -12,6 +12,9 @@ An example-based index. Ten rungs, each a working
 stack you could ship this week. Every rung adds
 **one** capability to the one below it.
 
+Before rung 1, see [[Development Setup]] — the tools on
+your own machine that all of this assumes.
+
 Read it two ways:
 
 * **Bottom-up** — start at rung 1 and climb only when
@@ -309,6 +312,8 @@ answer really is impossible.
 
 ## See also
 
+* [[Development Setup]] — rung zero: the tools on your
+  own machine that every rung above assumes.
 * [[Topics]] — the keyword plan behind these rungs.
 * `myprompts/TOC_infra.md` — chapter 6 narrates this
   ladder; the per-rung chapter numbers are cited above.

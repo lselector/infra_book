@@ -2,6 +2,7 @@
 type: Service
 title: "Dependabot"
 description: "Automated pull requests for vulnerable and outdated dependencies."
+wikipedia: "https://en.wikipedia.org/wiki/GitHub"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

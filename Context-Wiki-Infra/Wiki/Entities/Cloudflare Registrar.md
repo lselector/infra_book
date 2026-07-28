@@ -2,6 +2,7 @@
 type: Service
 title: "Cloudflare Registrar"
 description: "Domains sold at cost - no renewal markup, no upsells."
+wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Autoresponder Sequence"
 description: "A pre-written series of emails sent on a schedule after signup - marketing email, not transactional."
+wikipedia: "https://en.wikipedia.org/wiki/Autoresponder"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

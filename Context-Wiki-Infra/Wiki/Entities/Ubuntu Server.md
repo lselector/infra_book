@@ -2,6 +2,7 @@
 type: Platform
 title: "Ubuntu Server"
 description: "The default Linux for a cheap VPS - long-term support, and the distribution every guide assumes."
+wikipedia: "https://en.wikipedia.org/wiki/Ubuntu"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

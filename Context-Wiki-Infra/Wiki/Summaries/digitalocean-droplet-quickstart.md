@@ -34,4 +34,4 @@ Source: <https://docs.digitalocean.com/products/droplets/getting-started/quickst
 
 ## Related pages
 
-[[DigitalOcean]]
+[[DigitalOcean]] · [[Windows Subsystem for Linux]]

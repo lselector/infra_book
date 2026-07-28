@@ -7,9 +7,10 @@ Notes on how to create and maintain your own knowledge base wiki (context wiki) 
 ```bash
 pip install flask markdown pyyaml requests html2text beautifulsoup4
 
-python raw_download.py     # fetch the 271 source documents into Raw/
-python wiki_build.py all   # build summaries, cross-link, rebuild the index
-./server_start.sh          # browse at http://localhost:8020
+python raw_download.py       # fetch the 271 source documents into Raw/
+python wiki_build.py all     # build summaries, cross-link, rebuild the index
+python wikipedia_links.py apply   # add the Wikipedia link to each page
+./server_start.sh            # browse at http://localhost:8020
 ```
 
 The first step is needed because `Context-Wiki-Infra/Raw/`
@@ -53,6 +54,12 @@ and readable without downloading anything.
   naming and linking conventions, frontmatter rules, and
   the checks to run afterwards.
 
+- [d8_wikipedia_links.md](d8_wikipedia_links.md) — the
+  outside link attached to every content page: the
+  English Wikipedia article, or the project's own site
+  where Wikipedia has none. The curated maps, how targets
+  are verified, and why exactly two pages have neither.
+
 ## Code
 
 - [wiki_tools.py](wiki_tools.py) — stdlib-only find /
@@ -67,6 +74,13 @@ and readable without downloading anything.
   `Wiki/Summaries/` from `Raw/`, cross-links them, and
   regenerates `Dashboards/Index.md`
   (see d7_wiki_build.md).
+- [wikipedia_links.py](wikipedia_links.py) — verifies the
+  curated targets in
+  [wikipedia_links.json](wikipedia_links.json) — article
+  titles against the MediaWiki API, project sites by
+  fetching them — and writes the `wikipedia:` and
+  `website:` fields into every content page
+  (see d8_wikipedia_links.md).
 - `server_start.sh` / `server_stop.sh` /
   `server_restart.sh` — control scripts for the wiki
   server.
@@ -87,7 +101,12 @@ and readable without downloading anything.
   order of complexity, from a static site on Cloudflare
   Pages up to a replicated, SOC 2-audited SaaS, with
   the cost, ops burden, and "climb when" signal for
-  each rung.
+  each rung. It is also the wiki server's front page.
+  Before rung 1:
+  [Development Setup.md](Context-Wiki-Infra/Dashboards/Development%20Setup.md)
+  — the tools on your own machine (Unix environment,
+  password manager, terminal, bash, editor, AI coding
+  agent, Homebrew, GitHub and SSH config).
   Sources collected in `Raw/` are grouped into nine
   category folders (`01_foundations` …
   `09_appendices`) and registered in
@@ -109,9 +128,9 @@ and readable without downloading anything.
   Refresh or extend them with `python raw_download.py`
   (see [d6_raw_download.md](d6_raw_download.md)).
 
-  The wiki built from them holds **438 OKF pages** joined
-  by **3,201 wiki links**: 271 extractive summaries (one
-  per capture), 81 hand-written concept pages, 81
+  The wiki built from them holds **450 OKF pages** joined
+  by **3,399 wiki links**: 271 extractive summaries (one
+  per capture), 81 hand-written concept pages, 92
   hand-written entity pages, and the dashboards. Browse
   it with `./server_start.sh` at
   <http://localhost:8020>, or rebuild the generated

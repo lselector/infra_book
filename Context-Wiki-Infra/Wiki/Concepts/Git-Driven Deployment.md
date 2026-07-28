@@ -2,6 +2,7 @@
 type: Concept
 title: "Git-Driven Deployment"
 description: "From SSH-and-git-pull to a pipeline - the progression, and why the first step is legitimate."
+wikipedia: "https://en.wikipedia.org/wiki/Continuous_deployment"
 tags: [ops-and-security, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -39,7 +40,8 @@ nobody can say what is deployed.
 ## Related
 
 [[Continuous Integration and Delivery]] · [[Deployment Environments]] ·
-[[Static Build Pipeline]] · [[Infrastructure as Code]]
+[[Static Build Pipeline]] · [[Infrastructure as Code]] ·
+[[Git]] · [[GitHub]] · [[Development Setup]]
 
 ## Sources
 

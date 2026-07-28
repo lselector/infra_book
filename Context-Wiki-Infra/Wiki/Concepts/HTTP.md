@@ -2,6 +2,7 @@
 type: Concept
 title: "HTTP"
 description: "Methods, status codes, headers and caching - the protocol every layer of this book manipulates."
+wikipedia: "https://en.wikipedia.org/wiki/HTTP"
 tags: [foundations, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Envelope Encryption"
 description: "Encrypt data with a data key, encrypt the data key with a KMS key - the pattern behind every cloud KMS."
+wikipedia: "https://en.wikipedia.org/wiki/Key_wrap"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

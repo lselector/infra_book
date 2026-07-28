@@ -2,6 +2,7 @@
 type: Vendor
 title: "Vanta"
 description: "Compliance automation - continuous evidence collection for SOC 2 and friends."
+wikipedia: "https://en.wikipedia.org/wiki/Vanta_(company)"
 tags: [compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

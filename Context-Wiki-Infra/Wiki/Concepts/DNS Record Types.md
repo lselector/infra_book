@@ -2,6 +2,7 @@
 type: Concept
 title: "DNS Record Types"
 description: "A, AAAA, CNAME, MX, TXT and the handful of records a small site actually needs."
+wikipedia: "https://en.wikipedia.org/wiki/List_of_DNS_record_types"
 tags: [foundations, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

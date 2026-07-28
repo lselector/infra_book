@@ -2,6 +2,7 @@
 type: Concept
 title: "Hardware Security Module"
 description: "A tamper-resistant device that holds keys and never gives them back - and when you need a dedicated one."
+wikipedia: "https://en.wikipedia.org/wiki/Hardware_security_module"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

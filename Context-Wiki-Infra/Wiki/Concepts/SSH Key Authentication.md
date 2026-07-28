@@ -2,6 +2,7 @@
 type: Concept
 title: "SSH Key Authentication"
 description: "Replacing passwords with keypairs - the single highest-value change on a new server."
+wikipedia: "https://en.wikipedia.org/wiki/Secure_Shell"
 tags: [deployments, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -41,7 +42,8 @@ setting.
 ## Related
 
 [[Linux Server Hardening]] · [[Least Privilege]] ·
-[[Secrets Management]] · [[Access Review]]
+[[Secrets Management]] · [[Access Review]] ·
+[[Development Setup]] · [[GitHub]]
 
 ## Sources
 

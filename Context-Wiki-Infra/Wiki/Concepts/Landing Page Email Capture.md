@@ -2,6 +2,7 @@
 type: Concept
 title: "Landing Page Email Capture"
 description: "Name and email into a list, and a welcome sequence that starts automatically."
+wikipedia: "https://en.wikipedia.org/wiki/Landing_page"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

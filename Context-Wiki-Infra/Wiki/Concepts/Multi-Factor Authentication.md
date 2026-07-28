@@ -2,6 +2,7 @@
 type: Concept
 title: "Multi-Factor Authentication"
 description: "A second factor - the highest-value security control per unit of effort, starting with your own accounts."
+wikipedia: "https://en.wikipedia.org/wiki/Multi-factor_authentication"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "Least Privilege"
 description: "Every identity gets exactly the access it needs - the control that limits every other failure."
+wikipedia: "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

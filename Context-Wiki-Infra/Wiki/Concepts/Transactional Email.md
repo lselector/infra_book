@@ -2,6 +2,7 @@
 type: Concept
 title: "Transactional Email"
 description: "Email your application sends because a user did something - receipts, resets, notifications."
+wikipedia: "https://en.wikipedia.org/wiki/Email"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

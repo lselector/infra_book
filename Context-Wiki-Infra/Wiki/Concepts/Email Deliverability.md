@@ -2,6 +2,7 @@
 type: Concept
 title: "Email Deliverability"
 description: "Whether your mail reaches the inbox - a reputation you build slowly and lose quickly."
+wikipedia: "https://en.wikipedia.org/wiki/Anti-spam_techniques"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

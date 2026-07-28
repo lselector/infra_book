@@ -2,6 +2,7 @@
 type: Tool
 title: "Lynis"
 description: "Audits a running Linux system and tells you what hardening you actually missed."
+wikipedia: "https://en.wikipedia.org/wiki/Lynis"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

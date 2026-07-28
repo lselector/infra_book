@@ -2,6 +2,7 @@
 type: Tool
 title: "HashiCorp Vault"
 description: "Self-hostable secret management with dynamic, short-lived credentials."
+wikipedia: "https://en.wikipedia.org/wiki/HashiCorp"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Vendor
 title: "Resend"
 description: "Developer-first transactional email - modern SDKs, React email templates."
+website: "https://resend.com/"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

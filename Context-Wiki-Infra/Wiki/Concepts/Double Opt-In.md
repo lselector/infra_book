@@ -2,6 +2,7 @@
 type: Concept
 title: "Double Opt-In"
 description: "Requiring a click in a confirmation email before adding someone to a list."
+wikipedia: "https://en.wikipedia.org/wiki/Opt-in_email"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

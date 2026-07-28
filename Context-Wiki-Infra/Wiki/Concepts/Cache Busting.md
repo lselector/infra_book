@@ -2,6 +2,7 @@
 type: Concept
 title: "Cache Busting"
 description: "Changing an asset URL when its contents change, so caches can be told to keep everything forever."
+wikipedia: "https://en.wikipedia.org/wiki/Cache_invalidation"
 tags: [architectures, performance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Lambda"
 description: "Functions that run on demand - the serverless compute primitive."
+wikipedia: "https://en.wikipedia.org/wiki/AWS_Lambda"
 tags: [deployments, serverless]
 timestamp: "2026-07-27T00:00:00Z"
 ---

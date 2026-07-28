@@ -2,6 +2,7 @@
 type: Service
 title: "GitLab CI"
 description: "GitLab's built-in pipelines - the equivalent when your code lives there."
+wikipedia: "https://en.wikipedia.org/wiki/GitLab"
 tags: [ops-and-security, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

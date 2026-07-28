@@ -2,6 +2,7 @@
 type: Concept
 title: "Static Site Hosting"
 description: "Serving pre-built files from a CDN - no server, no patching, effectively no cost."
+wikipedia: "https://en.wikipedia.org/wiki/Static_web_page"
 tags: [architectures, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

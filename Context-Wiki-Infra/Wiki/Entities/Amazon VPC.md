@@ -2,6 +2,7 @@
 type: Service
 title: "Amazon VPC"
 description: "Your private network in AWS - subnets, routing and security groups."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Virtual_Private_Cloud"
 tags: [storage-and-databases, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "Let's Encrypt"
 description: "A free, automated certificate authority - the reason HTTPS stopped being a line item."
+wikipedia: "https://en.wikipedia.org/wiki/Let's_Encrypt"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "PostgreSQL"
 description: "The default serious relational database - free, capable, and happy on the same box as your app."
+wikipedia: "https://en.wikipedia.org/wiki/PostgreSQL"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

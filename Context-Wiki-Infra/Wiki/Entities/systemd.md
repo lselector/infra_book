@@ -2,6 +2,7 @@
 type: Tool
 title: "systemd"
 description: "The Linux service manager - what makes your app start on boot and restart when it dies."
+wikipedia: "https://en.wikipedia.org/wiki/Systemd"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Concept
 title: "File-Based CMS"
 description: "A directory of JSON plus images as the content store - version-controlled, no database, no admin panel."
+wikipedia: "https://en.wikipedia.org/wiki/Static_site_generator"
 tags: [architectures, product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "Cloudflare DNS"
 description: "Authoritative DNS with a fast API, free at any volume."
+wikipedia: "https://en.wikipedia.org/wiki/1.1.1.1"
 tags: [deployments, networking]
 timestamp: "2026-07-27T00:00:00Z"
 ---

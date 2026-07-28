@@ -2,6 +2,7 @@
 type: Service
 title: "GitHub Actions"
 description: "CI/CD built into the repository - the default pipeline for projects in this book."
+wikipedia: "https://en.wikipedia.org/wiki/GitHub"
 tags: [ops-and-security, deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -47,7 +48,8 @@ management under [[SOC 2]].
 
 [[Continuous Integration and Delivery]] ·
 [[Git-Driven Deployment]] · [[Secrets Management]] ·
-[[Deployment Environments]] · [[Dependabot]]
+[[Deployment Environments]] · [[Dependabot]] ·
+[[GitHub]] · [[Git]]
 
 ## Sources
 

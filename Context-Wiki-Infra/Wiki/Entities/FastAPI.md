@@ -2,6 +2,7 @@
 type: Tool
 title: "FastAPI"
 description: "A modern Python web framework - the backend assumed in this book's one-box stack."
+wikipedia: "https://en.wikipedia.org/wiki/FastAPI"
 tags: [deployments, application]
 timestamp: "2026-07-27T00:00:00Z"
 ---

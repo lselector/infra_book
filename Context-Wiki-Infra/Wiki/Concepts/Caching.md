@@ -2,6 +2,7 @@
 type: Concept
 title: "Caching"
 description: "Keeping expensive answers around - and the two hard problems that come with it."
+wikipedia: "https://en.wikipedia.org/wiki/Cache_(computing)"
 tags: [storage-and-databases, performance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

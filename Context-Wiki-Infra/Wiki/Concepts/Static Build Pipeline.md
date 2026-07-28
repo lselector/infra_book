@@ -2,6 +2,7 @@
 type: Concept
 title: "Static Build Pipeline"
 description: "Validate, optimise images, build, cache-bust, deploy - numbered scripts you run in order."
+wikipedia: "https://en.wikipedia.org/wiki/Build_automation"
 tags: [architectures, playbooks]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -42,7 +43,8 @@ page.
 ## Related
 
 [[File-Based CMS]] · [[Cache Busting]] · [[Wrangler]] ·
-[[Continuous Integration and Delivery]] · [[Git-Driven Deployment]]
+[[Continuous Integration and Delivery]] · [[Git-Driven Deployment]] ·
+[[uv]] · [[Development Setup]]
 
 ## Sources
 

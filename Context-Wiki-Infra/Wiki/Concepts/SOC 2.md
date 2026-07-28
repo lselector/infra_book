@@ -2,6 +2,7 @@
 type: Concept
 title: "SOC 2"
 description: "An audited report on how you protect customer data - what it is, what it costs, and when to start."
+wikipedia: "https://en.wikipedia.org/wiki/System_and_organization_controls"
 tags: [compliance, ops-and-security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

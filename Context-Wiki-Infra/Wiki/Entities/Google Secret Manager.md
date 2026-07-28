@@ -2,6 +2,7 @@
 type: Service
 title: "Google Secret Manager"
 description: "Google Cloud's secret store - versioned, IAM-controlled, audit-logged."
+wikipedia: "https://en.wikipedia.org/wiki/Google_Cloud_Platform"
 tags: [ops-and-security, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

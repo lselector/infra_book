@@ -2,6 +2,7 @@
 type: Tool
 title: "Nginx"
 description: "The incumbent reverse proxy and web server - more configuration, more control, certificates sold separately."
+wikipedia: "https://en.wikipedia.org/wiki/Nginx"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Tool
 title: "MariaDB"
 description: "The MySQL-compatible fork - relevant mainly when something you inherited speaks MySQL."
+wikipedia: "https://en.wikipedia.org/wiki/MariaDB"
 tags: [storage-and-databases]
 timestamp: "2026-07-27T00:00:00Z"
 ---

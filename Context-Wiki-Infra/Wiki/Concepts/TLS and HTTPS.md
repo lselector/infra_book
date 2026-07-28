@@ -2,6 +2,7 @@
 type: Concept
 title: "TLS and HTTPS"
 description: "What a certificate proves, how it is issued and renewed, and why HTTPS is now the floor rather than an upgrade."
+wikipedia: "https://en.wikipedia.org/wiki/Transport_Layer_Security"
 tags: [foundations, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -2,6 +2,7 @@
 type: Service
 title: "Web3Forms"
 description: "A form endpoint for static sites - a public access key and no backend."
+website: "https://web3forms.com/"
 tags: [product-patterns]
 timestamp: "2026-07-27T00:00:00Z"
 ---

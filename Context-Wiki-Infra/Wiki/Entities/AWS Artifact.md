@@ -2,6 +2,7 @@
 type: Service
 title: "AWS Artifact"
 description: "Where you download AWS's own SOC 2 report to give your auditor."
+wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
 tags: [compliance]
 timestamp: "2026-07-27T00:00:00Z"
 ---

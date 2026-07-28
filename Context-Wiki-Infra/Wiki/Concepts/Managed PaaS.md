@@ -2,6 +2,7 @@
 type: Concept
 title: "Managed PaaS"
 description: "Push code, get a running service - paying money to not own a machine."
+wikipedia: "https://en.wikipedia.org/wiki/Platform_as_a_service"
 tags: [deployments]
 timestamp: "2026-07-27T00:00:00Z"
 ---

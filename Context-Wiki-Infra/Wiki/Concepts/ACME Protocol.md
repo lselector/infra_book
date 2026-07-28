@@ -2,6 +2,7 @@
 type: Concept
 title: "ACME Protocol"
 description: "The automated exchange that proves domain control and issues a certificate."
+wikipedia: "https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment"
 tags: [deployments, security]
 timestamp: "2026-07-27T00:00:00Z"
 ---

@@ -1,5 +1,7 @@
 #!/bin/bash
 # Start the wiki server (port 8020) in the background.
+# If the port is already in use, stop that server first
+# and start a fresh one - i.e. start doubles as restart.
 # Usage: ./server_start.sh
 
 cd "$(dirname "$0")"
@@ -17,8 +19,17 @@ PIDFILE=.wiki_server.pid
 LOGFILE=wiki_server.log
 
 if lsof -ti :$PORT > /dev/null 2>&1; then
-    echo "Port $PORT already in use - server running?"
-    echo "Use ./server_stop.sh or ./server_restart.sh"
+    echo "Port $PORT already in use - restarting"
+    ./server_stop.sh
+    sleep 1
+fi
+
+# Whatever holds the port was not ours to kill, or did
+# not die: better to say so than to start a server that
+# cannot bind.
+if lsof -ti :$PORT > /dev/null 2>&1; then
+    echo "Port $PORT is still in use - not starting"
+    echo "Check with: lsof -i :$PORT"
     exit 1
 fi
 
