@@ -687,3 +687,59 @@ and structural changes.
   meaningless. Stoplisted and re-run: 0 false matches,
   and the 47 genuinely-changed summaries from the earlier
   pass are unaffected.
+
+## 2026-07-28 — gmake and Invoke, cross-linked with just
+
+* **Two new Entity pages**, completing the task-runner
+  family: `GNU Make` (the page a search for *gmake*
+  lands on) and `Invoke`, the Python task runner.
+  Entities 118 -> 120; the vault now holds 506 pages and
+  4,880 links, no dangling targets.
+* `GNU Make` is deliberately **not** written as the
+  loser of the earlier `just` comparison. It leads with
+  what Make is uniquely good at — incremental work driven
+  by file timestamps, and `make -j` parallelism for free
+  — and states the test plainly: *if you find yourself
+  writing "skip this if the output is newer" in a script,
+  you are reimplementing Make badly.* The friction list
+  follows, framed as the cost of a build system charged
+  to a use case that is not a build.
+* It also answers the question the name raises.
+  **`gmake` is GNU Make under a name that distinguishes
+  it from BSD make** — and on macOS `/usr/bin/make` is
+  GNU Make **3.81 from 2006**, kept for licence reasons,
+  which is why `brew install make` ships 4.x as `gmake`
+  and why documentation writes `gmake` at all.
+* `Invoke` covers what neither runner can do: tasks are
+  **Python functions**, so they can loop, branch, import
+  and raise. The `@task` signature becomes the CLI —
+  parameters to options, booleans to flags, docstrings
+  to help. Two things get named that are easy to miss:
+  **Fabric** is the same `@task` functions aimed at a
+  server over SSH (the honest middle ground between
+  hand-run commands and [[Infrastructure as Code]] for a
+  [[One-Box Deployment]]), and the **bootstrap problem**
+  — `inv` cannot create the Python environment it lives
+  in, which [[uv]] solves with `uv run inv build`.
+* **All three now cross-link both ways**, and each
+  carries the comparison from its own angle rather than
+  one table copied three times. The decision rule is
+  stated identically on each page: the tool decides
+  whether the work is needed → [[GNU Make]]; you decide,
+  and it is a one-liner → [[just]]; the task needs real
+  programming or a remote host → [[Invoke]].
+  `Static Build Pipeline`,
+  `Continuous Integration and Delivery`,
+  `Development Setup`, `Homebrew` and `uv` link to all
+  three.
+* **`Invoke` joined `just` in `LINK_STOPLIST`** before
+  the first crosslink run — it is an ordinary English
+  verb, and "invoke the function" / "Lambda invoke"
+  appears throughout the corpus. `GNU Make` needed no
+  guard: as a two-word phrase it matches nothing by
+  accident. Result: 0 false links from either.
+* Outside links: `GNU Make` -> *Make (software)*;
+  Wikipedia has nothing for `Invoke` (`Invoke
+  (software)` and `Pyinvoke` are both missing), so it
+  links to <https://www.pyinvoke.org/>. Coverage is now
+  204 articles, 22 project sites, 3 with neither.

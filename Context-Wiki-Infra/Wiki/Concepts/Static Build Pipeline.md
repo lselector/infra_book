@@ -31,7 +31,9 @@ so the order is obvious to anyone who opens the folder.
 - A `justfile` on top names the chain once — `just build`,
   `just deploy` — so nobody runs stage 4 having skipped
   stage 1, and CI calls the same recipe you do
-  ([[just]]).
+  ([[just]]; [[Invoke]] if the steps need real logic,
+  [[GNU Make]] if stage 2 should skip images it has
+  already resized).
 - Each stage is independently runnable, so a failed deploy
   does not mean re-optimising every image.
 - The same chain runs identically on a laptop and in
@@ -48,7 +50,8 @@ page.
 
 [[File-Based CMS]] · [[Cache Busting]] · [[Wrangler]] ·
 [[Continuous Integration and Delivery]] · [[Git-Driven Deployment]] ·
-[[uv]] · [[just]] · [[Development Setup]]
+[[uv]] · [[just]] · [[GNU Make]] · [[Invoke]] ·
+[[Development Setup]]
 
 ## Sources
 

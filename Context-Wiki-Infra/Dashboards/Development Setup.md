@@ -163,7 +163,10 @@ On Ubuntu/Debian the same list is `apt install`, minus
 `uv` (install it with the upstream script). See [[uv]]
 for why it replaces `pip`, `venv` and `pyenv` at once,
 and [[just]] for why a `justfile` beats a `Makefile` for
-the handful of commands every project accumulates.
+the handful of commands every project accumulates —
+[[GNU Make]] for when it does not, and [[Invoke]] when a
+task needs to be a Python function rather than a shell
+line.
 
 Keep it tidy: `brew update && brew upgrade`, then
 `brew cleanup`, every few weeks.

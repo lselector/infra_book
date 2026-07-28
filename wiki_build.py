@@ -63,7 +63,7 @@ CATEGORY_TAGS = {
 # Express"; "React" with the verb, as in "react to".
 LINK_STOPLIST = {"Caching", "Firewall", "Monitoring",
                  "Bash", "GitHub", "Express", "React",
-                 "just"}
+                 "just", "Invoke"}
 
 
 # --------------------------------------------------------------

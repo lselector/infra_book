@@ -58,6 +58,12 @@ makes the file its own README.
 
 ## Why not make
 
+[[GNU Make]] is a build system: it compares file
+timestamps and skips work it thinks is done. Used as a
+menu of project commands — which is what most
+`Makefile`s in web projects are — every one of its
+features becomes friction.
+
 | | `make` / `gmake` | `just` |
 |---|---|---|
 | Purpose | Build files from files | Run named commands |
@@ -74,6 +80,13 @@ Make is excellent at what it was built for — compiling C
 when the sources change. Almost nobody uses it for that
 any more; they use it as a menu of project commands, and
 for *that* job `just` is simply the better tool.
+
+**The third option is [[Invoke]]**, whose tasks are
+Python functions rather than shell recipes. Pick by what
+the task is: a one-liner you want to name → `just`; a
+file that should only be rebuilt when its inputs change →
+[[GNU Make]]; something that needs loops, conditionals or
+an SSH connection → [[Invoke]].
 
 ## Why it earns a place on the ladder
 
@@ -113,8 +126,8 @@ install alongside it.
 
 - **It is not a build system.** If you genuinely need
   incremental rebuilds based on file times, that is
-  `make`, `ninja` or your language's own tool. `just`
-  will happily run the slow thing every time.
+  [[GNU Make]], `ninja` or your language's own tool.
+  `just` will happily run the slow thing every time.
 - **Recipes run with `sh` by default.** Set
   `set shell := ["bash", "-uc"]` if you rely on bash
   features, and keep the strictness habits from
@@ -131,8 +144,8 @@ install alongside it.
 
 ## Related
 
-[[Development Setup]] · [[Homebrew]] · [[Bash]] ·
-[[Static Build Pipeline]] ·
+[[GNU Make]] · [[Invoke]] · [[Development Setup]] ·
+[[Homebrew]] · [[Bash]] · [[Static Build Pipeline]] ·
 [[Continuous Integration and Delivery]] ·
 [[Git-Driven Deployment]] · [[Automated Testing]] ·
 [[uv]] · [[Rust]] · [[Wrangler]] ·

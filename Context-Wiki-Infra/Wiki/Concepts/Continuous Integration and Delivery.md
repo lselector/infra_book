@@ -91,8 +91,9 @@ bypassed. The usual wins, in order:
   under a few minutes ([[Automated Testing]]).
 
 Have the workflow call the same commands you run locally
-— `just test`, `just build` ([[just]]) — so the pipeline
-and the laptop cannot drift apart.
+— `just test`, `just build` ([[just]], or [[Invoke]] /
+[[GNU Make]]) — so the pipeline and the laptop cannot
+drift apart.
 
 ## Credentials, without long-lived keys
 
@@ -136,7 +137,8 @@ permissions the deploy needs ([[Least Privilege]],
 [[Dependency Auditing]] · [[Container Images]] ·
 [[Docker Build Cache]] · [[BuildKit]] ·
 [[Secrets Management]] · [[Least Privilege]] ·
-[[Infrastructure as Code]] · [[SOC 2]] · [[just]]
+[[Infrastructure as Code]] · [[SOC 2]] · [[just]] ·
+[[GNU Make]] · [[Invoke]]
 
 ## Sources
 

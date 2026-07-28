@@ -124,7 +124,7 @@ Ideas, patterns and practices — the "what and why" layer.
 - [[Web App Manifest]] — The JSON file that tells a browser how to install your site as an app.
 - [[WebAssembly]] — Compiled code running in the browser at near-native speed - what it is genuinely good for, and what it is not.
 
-## Entities (118)
+## Entities (120)
 
 Concrete products, services and tools — the "which one" layer.
 
@@ -182,6 +182,7 @@ Concrete products, services and tools — the "which one" layer.
 - [[Firebase Authentication]] — Google's hosted authentication - email, Google sign-in and MFA without building any of it.
 - [[Firecracker]] — Amazon's open-source micro-VM monitor - the thing under Lambda and Fargate that boots a VM in ~125 ms.
 - [[Fly.io]] — PaaS that runs your container close to users, with a CLI-first workflow.
+- [[GNU Make]] — make / gmake - the build tool on every machine, what it is genuinely good at, and why people misuse it as a task runner.
 - [[Git]] — The version control system underneath everything here - your history, your rollback, and the trigger for most deployments.
 - [[GitHub Actions]] — CI/CD built into the repository - the default pipeline for projects in this book.
 - [[GitHub]] — Where the repository lives - and, through Actions and build integrations, the thing most deployments hang off.
@@ -195,6 +196,7 @@ Concrete products, services and tools — the "which one" layer.
 - [[HashiCorp Vault]] — Self-hostable secret management with dynamic, short-lived credentials.
 - [[Hetzner Cloud]] — European VPS provider with the best price-to-resource ratio in this book.
 - [[Homebrew]] — The package manager for macOS (and Linux) - one command to install the Unix tools, languages and libraries this wiki assumes.
+- [[Invoke]] — Python task runner - tasks.py with @task decorators, so project commands can contain real logic.
 - [[Kubernetes]] — Container orchestration at cluster scale - and a clear-eyed account of when you do not need it.
 - [[Leptos]] — A full web UI framework in Rust - fine-grained reactivity, compiled to WebAssembly, with optional SSR.
 - [[Let's Encrypt]] — A free, automated certificate authority - the reason HTTPS stopped being a line item.
