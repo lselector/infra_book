@@ -28,6 +28,10 @@ so the order is obvious to anyone who opens the folder.
 
 - Numbered scripts are self-documenting. `s1_`, `s2_`,
   `s3_`, `s4_` tells a newcomer the order without a README.
+- A `justfile` on top names the chain once — `just build`,
+  `just deploy` — so nobody runs stage 4 having skipped
+  stage 1, and CI calls the same recipe you do
+  ([[just]]).
 - Each stage is independently runnable, so a failed deploy
   does not mean re-optimising every image.
 - The same chain runs identically on a laptop and in
@@ -44,7 +48,7 @@ page.
 
 [[File-Based CMS]] · [[Cache Busting]] · [[Wrangler]] ·
 [[Continuous Integration and Delivery]] · [[Git-Driven Deployment]] ·
-[[uv]] · [[Development Setup]]
+[[uv]] · [[just]] · [[Development Setup]]
 
 ## Sources
 

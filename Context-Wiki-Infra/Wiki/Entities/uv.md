@@ -54,7 +54,7 @@ layer caches.
 
 [[Development Setup]] · [[Homebrew]] · [[FastAPI]] ·
 [[GitHub Actions]] · [[Docker]] · [[Twelve-Factor App]] ·
-[[Static Build Pipeline]]
+[[Static Build Pipeline]] · [[just]] · [[pytest]]
 
 ## Sources
 

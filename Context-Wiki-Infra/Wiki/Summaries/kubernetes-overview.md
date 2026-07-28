@@ -33,4 +33,4 @@ Source: <https://kubernetes.io/docs/concepts/overview/>
 
 ## Related pages
 
-[[Kubernetes]] · [[Load Balancing]]
+[[Container Images]] · [[Kubernetes]] · [[Load Balancing]]

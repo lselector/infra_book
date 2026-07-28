@@ -58,9 +58,12 @@ CATEGORY_TAGS = {
 }
 
 # Page names too short or too common to auto-link
-# safely when scanning summary text.
+# safely when scanning summary text. "Express" also
+# collides with "S3 Express One Zone" and "SQL Server
+# Express"; "React" with the verb, as in "react to".
 LINK_STOPLIST = {"Caching", "Firewall", "Monitoring",
-                 "Bash", "GitHub"}
+                 "Bash", "GitHub", "Express", "React",
+                 "just"}
 
 
 # --------------------------------------------------------------

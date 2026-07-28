@@ -49,7 +49,9 @@ more expensive later.
 
 [[The Ladder]] · [[Cost Control]] ·
 [[Monolithic Web App]] · [[Kubernetes]] ·
-[[Infrastructure as Code]]
+[[Infrastructure as Code]] · [[Failure Modes]] ·
+[[Split Brain]] · [[Cascading Failure]] ·
+[[Deployment Strategies]]
 
 ## Sources
 

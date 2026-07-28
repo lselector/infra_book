@@ -48,4 +48,4 @@ Source: <https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html>
 
 ## Related pages
 
-[[AWS CloudTrail]] · [[AWS Lambda]] · [[Amazon EC2]] · [[Amazon S3]] · [[Authentication]] · [[HTTP]] · [[Object Storage]]
+[[AWS CloudTrail]] · [[AWS Lambda]] · [[Amazon EC2]] · [[Amazon S3]] · [[Apache Spark]] · [[Authentication]] · [[HTTP]] · [[Object Storage]]

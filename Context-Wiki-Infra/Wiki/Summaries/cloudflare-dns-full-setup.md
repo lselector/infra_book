@@ -45,4 +45,4 @@ Source: <https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/inde
 
 ## Related pages
 
-[[Authorization]] · [[Cloudflare]] · [[Cloudflare DNS]] · [[Cloudflare Registrar]] · [[HTTP]]
+[[Authorization]] · [[Cloudflare]] · [[Cloudflare DNS]] · [[Cloudflare Registrar]] · [[Cloudflare Workers]] · [[HTTP]]

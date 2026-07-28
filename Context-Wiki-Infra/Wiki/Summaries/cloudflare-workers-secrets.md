@@ -41,4 +41,4 @@ Source: <https://developers.cloudflare.com/workers/configuration/secrets/index.m
 
 ## Related pages
 
-[[Cloudflare]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Workers]] · [[Node.js]] · [[Wrangler]]

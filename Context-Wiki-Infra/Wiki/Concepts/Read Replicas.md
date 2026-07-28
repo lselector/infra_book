@@ -37,7 +37,8 @@ surface; indexes do not.
 
 [[Relational Databases]] · [[PostgreSQL]] ·
 [[Connection Pooling]] · [[Database Sharding]] ·
-[[Caching]]
+[[Caching]] · [[Replication Lag]] · [[Split Brain]] ·
+[[Hot Partition]] · [[Failure Modes]]
 
 ## Sources
 

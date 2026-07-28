@@ -48,4 +48,4 @@ Source: <https://docs.stripe.com/payments/checkout/how-checkout-works>
 
 ## Related pages
 
-[[Stripe]]
+[[Node.js]] · [[Stripe]]

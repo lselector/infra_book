@@ -48,4 +48,4 @@ Source: <https://www.freecodecamp.org/news/how-to-build-your-first-saas/>
 
 ## Related pages
 
-[[Auth0]] · [[Authentication]] · [[CORS]] · [[Cloudflare]] · [[DigitalOcean]] · [[HTTP]] · [[PostgreSQL]] · [[Redis]] · [[Render]] · [[Security Headers]] · [[Stripe]]
+[[Auth0]] · [[Authentication]] · [[CORS]] · [[Cloudflare]] · [[DigitalOcean]] · [[HTTP]] · [[PostgreSQL]] · [[Redis]] · [[Render]] · [[Security Headers]] · [[Server-Side Rendering]] · [[Stripe]]

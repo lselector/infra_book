@@ -39,4 +39,4 @@ Source: <https://supabase.com/docs/guides/auth>
 
 ## Related pages
 
-[[Auth0]] · [[Authentication]] · [[Authorization]] · [[Clerk]] · [[Multi-Factor Authentication]] · [[Supabase Auth]]
+[[Auth0]] · [[Authentication]] · [[Authorization]] · [[Clerk]] · [[Multi-Factor Authentication]] · [[Next.js]] · [[Server-Side Rendering]] · [[Supabase Auth]]

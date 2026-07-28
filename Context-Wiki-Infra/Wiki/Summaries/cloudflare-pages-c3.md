@@ -38,4 +38,4 @@ Source: <https://developers.cloudflare.com/pages/get-started/c3/index.md>
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare Workers]] · [[Next.js]] · [[Wrangler]]

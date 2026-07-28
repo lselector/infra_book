@@ -45,4 +45,4 @@ Source: <https://web.dev/articles/rendering-on-the-web>
 
 ## Related pages
 
-[[Render]] · [[Service Worker]]
+[[Next.js]] · [[Render]] · [[Server-Side Rendering]] · [[Service Worker]]

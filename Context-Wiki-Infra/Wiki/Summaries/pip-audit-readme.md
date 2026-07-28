@@ -48,4 +48,4 @@ Source: <https://raw.githubusercontent.com/pypa/pip-audit/main/README.md>
 
 ## Related pages
 
-[[Authentication]] · [[GitHub Actions]] · [[HTTP]]
+[[Authentication]] · [[GitHub Actions]] · [[HTTP]] · [[pytest]]

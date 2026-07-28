@@ -47,4 +47,4 @@ Source: <https://sre.google/sre-book/monitoring-distributed-systems/>
 
 ## Related pages
 
-[[HTTP]] · [[Load Balancing]] · [[Monitoring and Alerting]] · [[Render]] · [[Service Level Objectives]]
+[[Failure Modes]] · [[HTTP]] · [[Load Balancing]] · [[Monitoring and Alerting]] · [[Render]] · [[Service Level Objectives]]

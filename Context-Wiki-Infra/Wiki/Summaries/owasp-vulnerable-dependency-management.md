@@ -43,4 +43,4 @@ Source: <https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Ma
 
 ## Related pages
 
-[[Docker]] · [[HTTP]] · [[Kubernetes]] · [[OWASP]] · [[OWASP Top 10]] · [[Trivy]]
+[[Container Images]] · [[Docker]] · [[HTTP]] · [[Kubernetes]] · [[OWASP]] · [[OWASP Top 10]] · [[Rust]] · [[Trivy]]

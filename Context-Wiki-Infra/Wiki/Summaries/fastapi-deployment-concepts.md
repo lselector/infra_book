@@ -48,4 +48,4 @@ Source: <https://fastapi.tiangolo.com/deployment/concepts/>
 
 ## Related pages
 
-[[Caddy]] · [[Certbot]] · [[Docker]] · [[Docker Compose]] · [[FastAPI]] · [[Kubernetes]] · [[Nginx]] · [[systemd]]
+[[Caddy]] · [[Certbot]] · [[Container Images]] · [[Docker]] · [[Docker Compose]] · [[FastAPI]] · [[Kubernetes]] · [[Nginx]] · [[systemd]]

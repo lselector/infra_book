@@ -42,7 +42,8 @@ production.
 
 [[Continuous Integration and Delivery]] ·
 [[Git-Driven Deployment]] · [[Secrets Management]] ·
-[[Twelve-Factor App]]
+[[Twelve-Factor App]] · [[Deployment Strategies]] ·
+[[Automated Testing]] · [[Chaos Engineering]]
 
 ## Sources
 

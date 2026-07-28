@@ -1,16 +1,22 @@
 ---
 type: Dashboard
 title: "The Ladder - Infra Stacks in Increasing Complexity"
-description: "Ten example stacks, each adding one capability, with cost, ops burden and the signal to climb."
+description: "Fourteen example stacks, each adding one capability, with cost, ops burden and the signal to climb."
 tags: [ladder, stacks, orientation, architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---
 
 # The Ladder — Infra Stacks in Increasing Complexity
 
-An example-based index. Ten rungs, each a working
+An example-based index. Fourteen rungs, each a working
 stack you could ship this week. Every rung adds
 **one** capability to the one below it.
+
+Rungs 1–10 are the main climb, from a static site to an
+audited SaaS. Rungs 11–14 are the specialist ones above
+it — containers, realtime, distributed serverless and a
+data platform — taken singly, when a specific problem
+names them.
 
 Before rung 1, see [[Development Setup]] — the tools on
 your own machine that all of this assumes.
@@ -281,6 +287,139 @@ contract requires it.
 
 ---
 
+## Rung 11 — Containers, and more than one machine
+
+**Example:** a product that has become three services in
+two languages — the web app, a worker, an image
+pipeline.
+
+| | |
+|---|---|
+| **Adds** | one build artifact, and per-service scaling |
+| **Stack** | rung 10 + [[Docker]] images built in CI + a registry + a scheduler: [[AWS Fargate]], Cloud Run or [[Kubernetes]] |
+| **Also** | health checks, rolling deploys with rollback, service discovery, per-service resource limits |
+| **Cost** | $150–600 |
+| **Ops burden** | high — you now operate a platform as well as an app |
+
+The prerequisite is not the orchestrator, it is the
+**stateless container**: sessions out of process,
+uploads in [[Object Storage]], config in the
+environment ([[Twelve-Factor App]]). Skip that and you
+get a cluster running one pod you are afraid to restart.
+
+Most teams should stop at the managed end of this rung —
+[[AWS Fargate]], Cloud Run, [[Fly.io]] — where you hand
+over an image and a replica count and never patch a
+control plane.
+
+**Climb when:** you genuinely have several services, in
+different languages or with different scaling shapes —
+not because containers look professional.
+
+*Wiki: [[Container Orchestration]] · [[Containers in Production]] · Raw: `03_deployments/`*
+
+---
+
+## Rung 12 — Realtime, and sticky sessions
+
+**Example:** collaborative editing, live dashboards,
+chat, anything that pushes instead of polling.
+
+| | |
+|---|---|
+| **Adds** | long-lived connections, and the affinity they force |
+| **Stack** | rung 11 + a WebSocket tier + a load balancer with cookie-based session affinity + [[Redis]] for shared state and pub/sub |
+| **Also** | connection draining on deploy, client reconnect-with-backoff, per-connection memory budgets |
+| **Cost** | $200–800 |
+| **Ops burden** | high — deploys now disconnect users |
+
+Two kinds of stickiness get confused here, and only one
+is legitimate. Pinning users because the app keeps
+sessions **in memory** is a crutch: put the state in
+[[Redis]] or a signed [[JSON Web Token]] and any
+instance can serve any request. Pinning because a
+**WebSocket is a live connection to one process** is
+correct — the connection *is* the state.
+
+The bill for affinity is uneven load, slower
+autoscaling, and deploys that are visible to users.
+Externalise state anyway, so stickiness stays an
+optimisation rather than a correctness requirement.
+
+**Climb when:** users must see each other's changes
+without refreshing.
+
+*Wiki: [[Sticky Sessions]] · [[Load Balancing]] · Raw: `04_network_storage_db/`*
+
+---
+
+## Rung 13 — Distributed serverless
+
+**Example:** bursty, asynchronous work — media
+processing, webhook fan-out, scheduled recalculation —
+where load arrives in spikes and idle should cost
+nothing.
+
+| | |
+|---|---|
+| **Adds** | independent scaling per unit of work, and scale-to-zero |
+| **Stack** | rung 11 + [[Amazon API Gateway]] + [[AWS Lambda]] (or Cloudflare Workers) + SQS / EventBridge + a dead-letter queue per consumer |
+| **Also** | correlation IDs, idempotency keys, tracing across invocations, DLQ depth alerts |
+| **Cost** | $0 idle, then per-request — cheap at spikes, expensive at steady high volume |
+| **Ops burden** | different, not lower — less to patch, much more to trace |
+
+The parts that stay synchronous stay on rung 11. What
+moves here is the work the user is not waiting for.
+Every consumer must be **idempotent**: delivery is
+at-least-once, so processing `order.paid` twice must not
+charge twice. Give every queue a dead-letter queue on
+day one and alert on its depth — a silent DLQ is a
+silent outage.
+
+**Climb when:** a queue and one worker
+([[Message Queues]]) genuinely stop coping, or the
+workload is so spiky that paying for idle capacity is
+the larger cost.
+
+*Wiki: [[Event-Driven Architecture]] · [[Serverless Architecture]] · Raw: `03_deployments/`, `04_network_storage_db/`*
+
+---
+
+## Rung 14 — A data platform
+
+**Example:** analytics over years of events, several
+teams querying the same tables, models trained on the
+history.
+
+| | |
+|---|---|
+| **Adds** | data that outgrows the application database |
+| **Stack** | rung 13 + Parquet on [[Object Storage]] as the lake + [[Apache Spark]] or [[Databricks]] + scheduled pipelines + a BI endpoint |
+| **Also** | table governance and access review, lineage, retention and PII policy, cost guardrails on clusters |
+| **Cost** | $300–3,000+, and climbing quietly |
+| **Ops burden** | a data engineer's job |
+
+The rung below this one is not a smaller cluster, it is
+**one large machine**: [[Polars]] or [[DuckDB]] over
+Parquet handles tens to hundreds of gigabytes in
+seconds, with nothing to operate
+([[DataFrames]]). A surprising number of "we need a data
+platform" conversations end there, permanently.
+
+If you do climb: keep clusters ephemeral and
+auto-terminating — the most common Spark invoice is for
+a cluster that ran nothing ([[Cost Control]]) — and keep
+the raw layer as plain Parquet you could read with
+anything.
+
+**Climb when:** the data does not fit or finish on the
+biggest single machine you can rent, or several teams
+need governed access to the same tables.
+
+*Wiki: [[Distributed Data Processing]] · [[DataFrames]] · Raw: `04_network_storage_db/`, `08_scaling_maturity/`*
+
+---
+
 ## The whole ladder at a glance
 
 | # | Stack | Adds | ~$/mo | Ops |
@@ -295,6 +434,38 @@ contract requires it.
 | 8 | + Firebase Auth | user accounts | 0–25 | tokens |
 | 9 | + Stripe, secrets, CI/CD | revenue + hygiene | 30–150 | change mgmt |
 | 10 | + replicas, IaC, SOC 2 | proof and scale | 200–1,000+ | a real job |
+| 11 | + containers, scheduler | many services | 150–600 | a platform |
+| 12 | + WebSockets, sticky LB | realtime | 200–800 | deploys hurt |
+| 13 | + Lambda, queues, DLQs | spiky async work | 0 + per-use | tracing |
+| 14 | + Parquet lake, Spark | analytics at scale | 300–3,000+ | a data job |
+
+Rungs 11–14 are not a sequence in the way 1–10 are. Once
+you are above rung 10, you add whichever of them your
+problem actually names — containers because you have
+several services, realtime because users must see each
+other, serverless because load is spiky, a data platform
+because the data outgrew the database. Most products
+need one of the four; almost none need all of them.
+
+## What each rung adds to the failure list
+
+Capability and failure arrive together. The list in
+[[Failure Modes]] is not a general warning — it is a
+per-rung inventory of what can now break:
+
+| From rung | You can now have |
+|---|---|
+| 1–4 | Almost nothing on the list. No server, no queue, no replica |
+| 5 | [[Single Point of Failure]] — the box |
+| 6 | [[Cache Stampede]] once you add a cache; [[Hot Partition]] once one key is popular |
+| 7–9 | [[Duplicate Processing]], [[Queue Backlog]], [[Poison Message]] — anything with a queue or a webhook |
+| 10 | [[Replication Lag]], and [[Split Brain]] if failover is automatic |
+| 11–13 | [[Cascading Failure]] and [[Retry Storm]] — several services calling each other |
+
+Two habits keep pace with the climb: make handlers
+[[Idempotency|idempotent]] before you add the first
+queue, and cause each new failure once on purpose
+([[Chaos Engineering]]) rather than meeting it at 3am.
 
 ## Two things worth noticing
 
@@ -317,10 +488,12 @@ answer really is impossible.
 * [[Topics]] — the keyword plan behind these rungs.
 * `myprompts/TOC_infra.md` — chapter 6 narrates this
   ladder; the per-rung chapter numbers are cited above.
+* [[Failure Modes]] — the ten ways the stacks above
+  break, and which rung introduces each.
 * `Raw/sources.md` — the source document for every
   technology named here.
 
 ---
 
 Created: 2026-07-27
-Last updated: 2026-07-27
+Last updated: 2026-07-28

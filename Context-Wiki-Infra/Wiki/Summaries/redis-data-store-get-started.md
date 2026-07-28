@@ -44,4 +44,4 @@ Source: <https://redis.io/docs/latest/develop/get-started/data-store/>
 
 ## Related pages
 
-[[Kubernetes]] · [[Redis]]
+[[Kubernetes]] · [[Node.js]] · [[Redis]] · [[Rust]]

@@ -43,4 +43,4 @@ Source: <https://developers.cloudflare.com/pages/get-started/git-integration/ind
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Node.js]] · [[Wrangler]]

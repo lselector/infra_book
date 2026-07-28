@@ -44,7 +44,8 @@ whole thing free.
 
 [[Cloudflare Pages]] · [[Cloudflare DNS]] ·
 [[Cloudflare Registrar]] · [[Cloudflare R2]] ·
-[[Content Delivery Network]]
+[[Content Delivery Network]] · [[Cloudflare Workers]] ·
+[[Cloudflare Pages Functions]]
 
 ## Sources
 

@@ -42,7 +42,10 @@ jurisdictions, an offence.
 
 [[OWASP Top 10]] · [[Dependency Auditing]] ·
 [[Penetration Testing]] · [[OWASP ZAP]] ·
-[[Security Headers]]
+[[Security Headers]] · [[Fuzz Testing]] ·
+[[Red Team and Blue Team]] · [[Automated Testing]] ·
+[[MITRE ATT&CK]] ·
+[[Continuous Integration and Delivery]]
 
 ## Sources
 

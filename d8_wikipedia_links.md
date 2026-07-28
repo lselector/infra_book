@@ -1,7 +1,7 @@
 # Outside Links (Wikipedia, or the project's own site)
 
-Every content page in the wiki — the 81 Concept pages and
-the 92 Entity pages — links out to a description of its
+Every content page in the wiki — the 109 Concept pages
+and the 118 Entity pages — links out to a description of its
 subject that this wiki did not write: the English
 Wikipedia article where one exists, and the project's own
 site where it does not. Both render in the page infobox
@@ -12,7 +12,7 @@ rung of the ladder it belongs to, what it costs, what it
 breaks. Wikipedia says what it is in general, who makes
 it, and when it appeared. One link joins the two without
 either having to repeat the other. Where Wikipedia has
-nothing — true of fifteen of the newer products here —
+nothing — true of twenty-one of the newer products —
 the vendor's own site is the next best authority, and
 far better than a dead end.
 
@@ -50,6 +50,17 @@ and a confidently wrong link is worse than no link:
   redirects to *Retransmission (data networks)*.
 - **Railway**, **Render**, **Postmark**, **Clerk** — all
   real English words, none of them about these products.
+- **Axum** — the Rust web framework has no article;
+  `Axum` is a town in the Tigray Region of Ethiopia.
+- **Actix** — redirects to *Actix Systems*, a graphics
+  adapter manufacturer that closed in 1998.
+- **OSS-Fuzz** — Google's fuzzing service has no article
+  at all, despite the tens of thousands of bugs it has
+  filed.
+- **AFL++**, **MITRE ATT&CK** — both exist but not under
+  the obvious title: *American Fuzzy Lop (software)* and
+  *ATT&CK*. A redirect today is a broken assumption
+  tomorrow, so the map stores the real one.
 
 `check` is what makes the map trustworthy. For every
 title it asks the MediaWiki API whether the page exists,
@@ -66,7 +77,7 @@ It exits non-zero if any title is missing, ambiguous, or
 has become a redirect — worth re-running occasionally,
 since Wikipedia titles move.
 
-The same command then fetches all fifteen website URLs
+The same command then fetches all twenty-one website URLs
 and prints their status. A `403` is reported as `WAF`
 rather than counted as a failure: some vendor sites
 (Drata's, on one run) sit behind a bot challenge that an
@@ -95,21 +106,26 @@ mistakes it for an article about CloudTrail.
 
 | | |
 |---|---|
-| Content pages | 173 |
-| Wikipedia article | 156 (128 distinct articles) |
-| Project website | 15 |
-| No outside link | 2 |
+| Content pages | 227 |
+| Wikipedia article | 203 |
+| Project website | 21 |
+| No outside link | 3 |
 
-The 15 on their own site are the products Wikipedia has
+The 21 on their own site are the products Wikipedia has
 no article for:
 
 | Page | Site |
 |---|---|
+| Actix Web | <https://actix.rs/> |
 | AWeber | <https://www.aweber.com/> |
+| Axum | <https://github.com/tokio-rs/axum> |
 | Clerk | <https://clerk.com/> |
 | Drata | <https://drata.com/> |
 | Fly.io | <https://fly.io/> |
 | Gitleaks | <https://gitleaks.io/> |
+| just | <https://just.systems/> |
+| Leptos | <https://leptos.dev/> |
+| OSS-Fuzz | <https://google.github.io/oss-fuzz/> |
 | Postmark | <https://postmarkapp.com/> |
 | Railway | <https://railway.com/> |
 | Render | <https://render.com/> |
@@ -120,15 +136,19 @@ no article for:
 | Uptime Kuma | <https://uptimekuma.org/> |
 | uv | <https://docs.astral.sh/uv/> |
 | Web3Forms | <https://web3forms.com/> |
+| wasm-bindgen | <https://rustwasm.github.io/docs/wasm-bindgen/> |
 
 If an article appears for one of them later, add the
 title to `links` and drop the `websites` entry — a page
 carries whichever it has, and Wikipedia takes precedence
 because it is the neutral description.
 
-The 2 with no outside link at all are `Cost Control` and
-`The Ladder`: this wiki's own framing, not subjects
-anybody else describes.
+The 3 with no outside link at all are `Cost Control`,
+`The Ladder` and `DataFrames`: the first two are this
+wiki's own framing, and the third has no encyclopedia
+article — Wikipedia's `Data frame` is about network
+frames, and its `DataFrame` does not exist. The three
+tools it names carry the links instead.
 
 Summaries carry no `wikipedia` field by design — a
 summary is *about a specific captured document*, not

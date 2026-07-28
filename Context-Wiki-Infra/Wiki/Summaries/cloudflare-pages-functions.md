@@ -37,4 +37,4 @@ Source: <https://developers.cloudflare.com/pages/functions/get-started/index.md>
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare Pages Functions]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare Pages Functions]] · [[Node.js]] · [[Wrangler]]

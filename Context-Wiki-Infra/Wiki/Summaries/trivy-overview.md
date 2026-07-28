@@ -31,4 +31,4 @@ Source: <https://trivy.dev/latest/docs/>
 
 ## Related pages
 
-[[Docker]] · [[GitHub Actions]] · [[GitLab CI]] · [[Kubernetes]] · [[Terraform]] · [[Trivy]]
+[[Docker]] · [[GitHub Actions]] · [[GitLab CI]] · [[Kubernetes]] · [[Node.js]] · [[Rust]] · [[Terraform]] · [[Trivy]]

@@ -39,7 +39,8 @@ which is the easiest way to arrive at it.
 ## Related
 
 [[Read Replicas]] · [[Multi-Tenant SaaS]] · [[Caching]] ·
-[[Relational Databases]]
+[[Relational Databases]] · [[Hot Partition]] ·
+[[Replication Lag]] · [[Failure Modes]]
 
 ## Sources
 

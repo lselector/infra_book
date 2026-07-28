@@ -48,4 +48,4 @@ Source: <https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Ch
 
 ## Related pages
 
-[[Authentication]] · [[Azure Key Vault]] · [[Envelope Encryption]] · [[HTTP]] · [[Hardware Security Module]] · [[HashiCorp Vault]] · [[Key Rotation]] · [[OWASP]] · [[Secrets Management]]
+[[Authentication]] · [[Azure Key Vault]] · [[Envelope Encryption]] · [[HTTP]] · [[Hardware Security Module]] · [[HashiCorp Vault]] · [[Key Rotation]] · [[Node.js]] · [[OWASP]] · [[Rust]] · [[Secrets Management]]

@@ -41,7 +41,8 @@ or when the cache must survive a restart.
 ## Related
 
 [[Caching]] · [[Message Queues]] · [[RabbitMQ]] ·
-[[Linux Server Hardening]]
+[[Linux Server Hardening]] · [[Cache Stampede]] ·
+[[Hot Partition]] · [[Queue Backlog]]
 
 ## Sources
 

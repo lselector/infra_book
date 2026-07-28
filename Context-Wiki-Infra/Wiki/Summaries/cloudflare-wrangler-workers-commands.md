@@ -48,4 +48,4 @@ Source: <https://developers.cloudflare.com/workers/wrangler/commands/workers/ind
 
 ## Related pages
 
-[[Authentication]] · [[Cloudflare]] · [[Deployment Environments]] · [[HTTP]] · [[Service Worker]] · [[Wrangler]]
+[[Authentication]] · [[Cloudflare]] · [[Cloudflare Workers]] · [[Deployment Environments]] · [[HTTP]] · [[Service Worker]] · [[Wrangler]]

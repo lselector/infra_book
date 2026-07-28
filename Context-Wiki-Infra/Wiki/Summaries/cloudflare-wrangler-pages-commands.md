@@ -46,4 +46,4 @@ Source: <https://developers.cloudflare.com/workers/wrangler/commands/pages/index
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]] · [[HTTP]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare Workers]] · [[HTTP]] · [[Wrangler]]

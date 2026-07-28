@@ -33,4 +33,4 @@ Source: <https://resend.com/docs/introduction>
 
 ## Related pages
 
-[[HTTP]] · [[Resend]] · [[Transactional Email]]
+[[HTTP]] · [[Next.js]] · [[Node.js]] · [[Resend]] · [[Rust]] · [[Transactional Email]]

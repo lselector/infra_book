@@ -38,4 +38,4 @@ Source: <https://developers.cloudflare.com/r2/index.md>
 
 ## Related pages
 
-[[CORS]] · [[Cloudflare]] · [[Cloudflare R2]] · [[Object Storage]]
+[[CORS]] · [[Cloudflare]] · [[Cloudflare R2]] · [[Cloudflare Workers]] · [[Object Storage]]

@@ -19,7 +19,7 @@ people's documentation (AWS, Cloudflare, MDN, OWASP and
 others), which are theirs to distribute, not mine. The
 source list, the registry and the downloader are all
 here, so `python raw_download.py` reproduces the corpus
-exactly. Everything else — the 163 hand-written wiki
+exactly. Everything else — the 227 hand-written wiki
 pages, the 271 summaries, the dashboards — is checked in
 and readable without downloading anything.
 
@@ -58,7 +58,7 @@ and readable without downloading anything.
   outside link attached to every content page: the
   English Wikipedia article, or the project's own site
   where Wikipedia has none. The curated maps, how targets
-  are verified, and why exactly two pages have neither.
+  are verified, and why exactly three pages have neither.
 
 ## Code
 
@@ -97,10 +97,13 @@ and readable without downloading anything.
   derived from [myprompts/TOC_infra.md](myprompts/TOC_infra.md).
   Start here for orientation:
   [Stacks.md](Context-Wiki-Infra/Dashboards/Stacks.md) —
-  an example-based ladder of ten stacks in increasing
-  order of complexity, from a static site on Cloudflare
-  Pages up to a replicated, SOC 2-audited SaaS, with
-  the cost, ops burden, and "climb when" signal for
+  an example-based ladder of fourteen stacks in
+  increasing order of complexity, from a static site on
+  Cloudflare Pages up to a replicated, SOC 2-audited
+  SaaS, and then the four specialist rungs above it
+  (containers and a scheduler, realtime with sticky
+  sessions, distributed serverless, a data platform),
+  with the cost, ops burden, and "climb when" signal for
   each rung. It is also the wiki server's front page.
   Before rung 1:
   [Development Setup.md](Context-Wiki-Infra/Dashboards/Development%20Setup.md)
@@ -128,9 +131,9 @@ and readable without downloading anything.
   Refresh or extend them with `python raw_download.py`
   (see [d6_raw_download.md](d6_raw_download.md)).
 
-  The wiki built from them holds **450 OKF pages** joined
-  by **3,399 wiki links**: 271 extractive summaries (one
-  per capture), 81 hand-written concept pages, 92
+  The wiki built from them holds **504 OKF pages** joined
+  by **4,811 wiki links**: 271 extractive summaries (one
+  per capture), 109 hand-written concept pages, 118
   hand-written entity pages, and the dashboards. Browse
   it with `./server_start.sh` at
   <http://localhost:8020>, or rebuild the generated

@@ -37,4 +37,4 @@ Source: <https://fastapi.tiangolo.com/deployment/manually/>
 
 ## Related pages
 
-[[Django]] · [[FastAPI]] · [[HTTP]]
+[[Django]] · [[FastAPI]] · [[HTTP]] · [[Rust]]

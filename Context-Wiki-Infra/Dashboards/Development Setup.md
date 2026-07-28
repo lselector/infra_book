@@ -146,6 +146,9 @@ brew install htop wget grep vim git fd
 # Python, packaging and virtualenvs, fast
 brew install uv
 
+# one file of project commands, instead of make
+brew install just
+
 # media handling
 brew install ffmpeg imagemagick
 
@@ -158,7 +161,9 @@ brew install coreutils diffutils
 
 On Ubuntu/Debian the same list is `apt install`, minus
 `uv` (install it with the upstream script). See [[uv]]
-for why it replaces `pip`, `venv` and `pyenv` at once.
+for why it replaces `pip`, `venv` and `pyenv` at once,
+and [[just]] for why a `justfile` beats a `Makefile` for
+the handful of commands every project accumulates.
 
 Keep it tidy: `brew update && brew upgrade`, then
 `brew cleanup`, every few weeks.
@@ -253,7 +258,7 @@ Then:
 | 4 | Shell | Comfortable with the [[Bash]] list above |
 | 5 | Editor | Installed, format-on-save configured |
 | 6 | AI agent | [[Claude Code]] running in your repo |
-| 7 | [[Homebrew]] | `brew install` list completed |
+| 7 | [[Homebrew]] | `brew install` list completed, [[just]] included |
 | 8 | [[Git]] / [[GitHub]] | `git config` set, account has MFA |
 | 9 | SSH | `ssh myserver` and `ssh -T git@github.com` both work |
 
@@ -266,7 +271,7 @@ you and a deployed site.
 * [[Stacks]] — the ten-rung ladder this page precedes.
 * [[Topics]] — the keyword plan behind the wiki.
 * [[Static Build Pipeline]] — the local build scripts
-  these tools run.
+  these tools run, and [[just]] as their front door.
 * [[Linux Server Hardening]] — the same care, applied to
   the machine at the other end of your SSH config.
 

@@ -48,4 +48,4 @@ Source: <https://cloud.google.com/kms/docs/hsm>
 
 ## Related pages
 
-[[Authorization]] · [[Encryption at Rest]] · [[HTTP]] · [[Hardware Security Module]] · [[Key Rotation]]
+[[Authorization]] · [[Encryption at Rest]] · [[HTTP]] · [[Hardware Security Module]] · [[Key Rotation]] · [[Node.js]]

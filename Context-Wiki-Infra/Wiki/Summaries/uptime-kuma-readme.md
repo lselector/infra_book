@@ -48,4 +48,4 @@ Source: <https://raw.githubusercontent.com/louislam/uptime-kuma/master/README.md
 
 ## Related pages
 
-[[Docker]] · [[Docker Compose]] · [[HTTP]] · [[Reverse Proxy]] · [[Uptime Kuma]]
+[[Docker]] · [[Docker Compose]] · [[HTTP]] · [[Node.js]] · [[Reverse Proxy]] · [[Uptime Kuma]]

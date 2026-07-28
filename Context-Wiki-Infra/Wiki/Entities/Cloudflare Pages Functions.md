@@ -37,7 +37,8 @@ surprising number of cases.
 ## Related
 
 [[Cloudflare Pages]] · [[Serverless Architecture]] ·
-[[Forms Without a Backend]] · [[Wrangler]]
+[[Forms Without a Backend]] · [[Wrangler]] ·
+[[Cloudflare Workers]] · [[Cold Starts]]
 
 ## Sources
 

@@ -455,3 +455,235 @@ and structural changes.
   supplied, `uptimekuma.org`. The project's own docs live
   at `uptime.kuma.pet` (repo: `louislam/uptime-kuma`);
   both answer, so this is a choice, not an error.
+
+## 2026-07-28 — Languages, data, and four more rungs
+
+* **23 new pages** covering the requested topics, in the
+  usual two layers. Concepts (7): `Sticky Sessions`,
+  `Container Orchestration`, `Event-Driven Architecture`,
+  `Distributed Data Processing`, `DataFrames`,
+  `Server-Side Rendering`, `WebAssembly`. Entities (16):
+  `Apache Spark`, `Databricks`, `pandas`, `Polars`,
+  `DuckDB`, `Apache Arrow`, `Node.js`, `React`,
+  `Next.js`, `Express`, `Rust`, `Axum`, `Actix Web`,
+  `Tokio`, `wasm-bindgen`, `Leptos`.
+  Concepts 81 -> 88, Entities 92 -> 108; the vault now
+  holds 473 pages and 3,872 links, still with no dangling
+  targets.
+* Two pages were added beyond what was asked for, because
+  the argument does not hold without them: `DuckDB` and
+  `Apache Arrow`. The advice throughout is "try one
+  machine first", and those are the two things that make
+  it true — Arrow is why moving between pandas, Polars
+  and DuckDB is free, and DuckDB is the SQL answer to
+  the same problem Polars solves with method chains.
+* **`Stacks` gained rungs 11–14**, above the audited-SaaS
+  rung 10, each in the existing format (stack, cost, ops
+  burden, climb-when signal):
+  11 containers and a scheduler ([[Docker]] images in CI,
+  [[AWS Fargate]] / Cloud Run / [[Kubernetes]]);
+  12 realtime with [[Sticky Sessions]] (WebSocket tier,
+  cookie affinity, [[Redis]] for shared state);
+  13 distributed serverless ([[AWS Lambda]], SQS /
+  EventBridge, dead-letter queues, idempotent consumers);
+  14 a data platform (Parquet lake on [[Object Storage]],
+  [[Apache Spark]] or [[Databricks]]).
+* Stated plainly on the page and in [[The Ladder]]:
+  **rungs 11–14 are not a sequence.** Above rung 10 you
+  add whichever one your problem names. Most products
+  that get there need one of the four; almost none need
+  all of them. The rung-12 entry makes the distinction
+  the whole topic turns on — affinity for a WebSocket is
+  correct, affinity because sessions live in process
+  memory is a crutch with a bill attached.
+* The new rungs cite wiki pages rather than chapter
+  numbers: `myprompts/TOC_infra.md` has no chapters for
+  this material yet, and inventing citations would have
+  been worse than admitting the gap.
+* `Topics.md` gained a `10_languages_and_data` section
+  (Node/React/Next, Rust/Tokio/Axum/Actix, Wasm via
+  wasm-bindgen and Leptos, pandas/Polars/DuckDB/Arrow,
+  Spark/Databricks) and the rung 11–14 keywords went into
+  `02_architectures`. Marked as having no `Raw/` folder —
+  these pages cite upstream documentation directly, like
+  the `00_dev_environment` set.
+* Outside links: 17 of the new pages got a Wikipedia
+  article, 4 their own site. `check` caught two more
+  name collisions of the kind that makes this map worth
+  curating — **Axum** is a town in Ethiopia, and
+  **Actix** redirects to a graphics-card maker that shut
+  down in 1998. `DataFrames` gets nothing: Wikipedia's
+  `Data frame` is about network frames.
+* `LINK_STOPLIST` gained **Express** and **React** after
+  reviewing what the crosslinker did with them: "S3
+  Express One Zone", "SQL Server Express Edition",
+  "express implicit dependency", and six summaries where
+  "react" was the verb, as in "react to production
+  issues". Roughly 40% noise in both cases. With them
+  stopped, 35 summaries picked up genuinely relevant
+  links instead — [[Node.js]] in 20, [[Rust]] in 9,
+  [[Next.js]] in 7.
+
+## 2026-07-28 — Failure modes, testing, micro-VMs, CI/CD
+
+* **30 new pages.** Concepts (21): the ten failure
+  modes — `Single Point of Failure`,
+  `Cascading Failure`, `Retry Storm`, `Cache Stampede`,
+  `Hot Partition`, `Replication Lag`,
+  `Duplicate Processing`, `Queue Backlog`,
+  `Poison Message`, `Split Brain` — under the overview
+  page `Failure Modes`, plus `Idempotency`,
+  `Chaos Engineering`, `Micro-VMs`, `Cold Starts`,
+  `Automated Testing`, `Fuzz Testing`,
+  `Red Team and Blue Team`, `Deployment Strategies`,
+  `Container Images` and `Docker Build Cache`.
+  Entities (9): `Firecracker`, `Cloudflare Workers`,
+  `Google Cloud Run`, `pytest`, `Playwright`, `AFL++`,
+  `OSS-Fuzz`, `MITRE ATT&CK`, `BuildKit`.
+  Concepts 88 -> 109, Entities 108 -> 117; the vault now
+  holds 503 pages and 4,760 links, still with no
+  dangling targets.
+* **The ten failure modes are one page each, indexed by
+  a table.** Each states the shape, what makes it
+  possible, the fix, and the metric that shows it —
+  because the metric is usually not error rate.
+  `Queue Backlog` and `Replication Lag` in particular
+  are failures where every dashboard stays green.
+  The overview page adds the part that belongs in this
+  wiki specifically: **which of these you can even
+  have**. At rungs 1–4 of [[Stacks]] most of the list
+  is unreachable, and each rung up adds failure modes as
+  reliably as it adds capability — the sharpest argument
+  [[The Ladder]] has.
+* Three supporting pages were written because the ten
+  do not stand up without them: `Idempotency` (the
+  property that makes retries and redelivery safe, cited
+  by four of the ten), `Chaos Engineering` (the ten as
+  experiments you can run in an afternoon, with a table
+  of nine of them), and `Failure Modes` itself.
+* **Micro-servers.** `Micro-VMs` covers the "starts in
+  milliseconds" claim with the comparison that makes it
+  meaningful — VM 30–60 s, micro-VM ~125 ms, container
+  0.5–2 s, V8 isolate < 5 ms — and says plainly that you
+  consume this rather than run it, unless isolating
+  other people's code *is* the product. `Cold Starts`
+  splits the latency into platform, runtime and **your
+  own init code**, which is the part that usually
+  dominates and the only part you control.
+  `Firecracker`, `Cloudflare Workers` and
+  `Google Cloud Run` are the three concrete platforms;
+  Workers and Cloud Run also filled real gaps — the wiki
+  had `Wrangler` and `Cloudflare Pages Functions` but no
+  page for the runtime underneath them.
+* **Testing.** `Automated Testing` ranks the layers by
+  what a small team gets back per hour of maintenance,
+  and names the first four tests to write (smoke test on
+  the deployed URL, the money path, a test for every bug
+  fixed, and a restore drill). `Fuzz Testing` separates
+  coverage-guided fuzzing ([[AFL++]], [[OSS-Fuzz]]) from
+  property-based testing, and says which one a web
+  developer should actually reach for. `pytest` and
+  `Playwright` are the tools; both are the first pages
+  here about testing rather than about deploying.
+* **Red team / blue team** is written against the
+  confusion that matters: a red team engagement tests
+  the *defenders*, a [[Penetration Testing]] engagement
+  tests the *software*. A comparison table, what the blue
+  team needs before an exercise means anything, and a
+  two-hour version two people can run this month with no
+  budget. `MITRE ATT&CK` gives both sides the vocabulary,
+  reduced to the five techniques a small SaaS is actually
+  breached by.
+* **CI/CD.** `Continuous Integration and Delivery` was a
+  short page; it now carries the anatomy of a real
+  pipeline (stages ordered by failure probability ÷ run
+  time), the two properties that matter more than the
+  stage list — **build once, deploy many** and fast
+  feedback first — how to keep it fast, and OIDC instead
+  of long-lived cloud keys. `Deployment Strategies` is
+  new alongside it: recreate / rolling / blue-green /
+  canary with the trade table, the expand-contract
+  migration that every zero-downtime strategy actually
+  depends on, and the observation that a deployment
+  strategy is really a rollback strategy.
+* **Docker.** `Container Images` (layers, multi-stage,
+  non-root, exec-form `CMD`, `.dockerignore`, tags vs
+  digests) and `Docker Build Cache` (the invalidation
+  rules, the dependency-manifest-first ordering, cache
+  export in CI, cache mounts), with `BuildKit` as the
+  engine page — build secrets and `--mount=type=cache`
+  are the two features worth adopting immediately. The
+  existing `Docker` and `Docker Compose` pages were
+  deliberately left short and now link out to these
+  rather than growing.
+* Ripple update across **31 existing pages**: the
+  queue pages point at the four queue failures,
+  `Read Replicas` at `Replication Lag` and `Split Brain`,
+  `Caching` at `Cache Stampede`, `Load Balancing` at the
+  first two failure modes, `Serverless Architecture` at
+  the micro-VM cluster, `Security Testing` and
+  `Penetration Testing` at the testing cluster, and
+  `Docker`, `Kubernetes`, `AWS Fargate`, `Fly.io`,
+  `AWS Lambda`, `Cloudflare`, `Wrangler` and the rest at
+  the new pages that describe what they do.
+* Outside links: 30 curated titles verified with
+  `wikipedia_links.py check` before `apply`. Four were
+  wrong on the first pass and the check caught all four —
+  `AFL++` redirects to *American Fuzzy Lop (software)*,
+  `Reliable messaging` redirects to *Reliability
+  (computer networking)*, `MITRE ATT&CK` is filed under
+  *ATT&CK*, and **OSS-Fuzz has no article at all**, so it
+  joins the twenty pages that link to their own site.
+  Coverage is now 203 Wikipedia articles, 20 project
+  sites, 3 with neither.
+* `Topics.md` gained an `11_reliability_and_failure`
+  section and new keyword blocks in `03_deployments`
+  (micro-VMs, cold starts, Dockerfile, build cache,
+  deployment strategies) and `05_ops_cicd_security`
+  (pipeline design, automated testing, fuzzing, red and
+  blue team). Marked as having no `Raw/` folder: the
+  reliability pages rest on captures already held under
+  other categories, and are cited as such.
+* Re-ran `wiki_build.py crosslink`: 47 summaries picked
+  up new links, [[Cloudflare Workers]] in 8 and
+  [[Container Images]] in 3. Nothing needed adding to
+  `LINK_STOPLIST` this round — the new names are
+  specific enough not to collide with ordinary prose.
+
+## 2026-07-28 — `just` as the project command runner
+
+* **New Entity page `just`** — the command runner, added
+  in place of `make`/`gmake` for the job almost everyone
+  actually uses `make` for: a menu of project commands.
+  A worked `justfile` for a stack in this wiki (clean,
+  images, build, serve, deploy with an argument, test,
+  fmt), and a nine-row comparison table covering the
+  specific `make` traps it removes — timestamp skipping,
+  required tabs, `.PHONY`, one shell per line, doubled
+  `$$`, and failing when run from a subdirectory.
+  Entities 117 -> 118; the vault now holds 504 pages and
+  4,811 links, no dangling targets.
+* Positioned honestly: **it is not a build system.** If
+  you need incremental rebuilds from file times, that is
+  still `make` or `ninja`. What `just` gives this wiki's
+  stacks is one committed file where the build and deploy
+  commands live, so [[Continuous Integration and Delivery]]
+  can call the same recipe a laptop does and the two
+  cannot drift.
+* Ripple update: `Development Setup` adds
+  `brew install just` to the rung-zero list and names it
+  in the checklist; `Static Build Pipeline` gains it as
+  the front door over the `s1_`…`s4_` scripts;
+  `Continuous Integration and Delivery`, `Homebrew` and
+  `uv` link to it.
+* Outside link: Wikipedia has no article — `Just
+  (command runner)` and `Just (software)` are both
+  missing — so it joins the pages linking to their own
+  site, <https://just.systems/>. Now 21 such pages.
+* **`just` went straight into `LINK_STOPLIST`.** As a
+  four-letter ordinary English word it matched 83
+  summaries on the first `crosslink` run ("just add",
+  "just works"), which would have made the link
+  meaningless. Stoplisted and re-run: 0 false matches,
+  and the 47 genuinely-changed summaries from the earlier
+  pass are unaffected.

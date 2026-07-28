@@ -38,4 +38,4 @@ Source: <https://fly.io/docs/launch/deploy/>
 
 ## Related pages
 
-[[Docker]] · [[Fly.io]] · [[HTTP]]
+[[Deployment Strategies]] · [[Docker]] · [[Fly.io]] · [[HTTP]]

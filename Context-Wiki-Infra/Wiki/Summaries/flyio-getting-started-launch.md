@@ -33,4 +33,4 @@ Source: <https://fly.io/docs/getting-started/launch/>
 
 ## Related pages
 
-[[Fly.io]]
+[[Firecracker]] · [[Fly.io]]

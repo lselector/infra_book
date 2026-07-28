@@ -32,4 +32,4 @@ Source: <https://docs.aws.amazon.com/lambda/latest/dg/welcome.html>
 
 ## Related pages
 
-[[AWS Lambda]] · [[Amazon S3]]
+[[AWS Lambda]] · [[Amazon S3]] · [[Firecracker]]

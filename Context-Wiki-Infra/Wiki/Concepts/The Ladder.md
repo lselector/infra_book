@@ -1,7 +1,7 @@
 ---
 type: Concept
 title: "The Ladder"
-description: "Ten example stacks in increasing complexity, each adding exactly one capability to the one below."
+description: "Fourteen example stacks in increasing complexity, each adding exactly one capability to the one below."
 tags: [architectures, orientation]
 timestamp: "2026-07-27T00:00:00Z"
 ---
@@ -31,6 +31,21 @@ is [[Stacks]].
 10. + [[SOC 2]], [[Read Replicas]],
     [[Infrastructure as Code]]
 
+Then four specialist rungs, taken singly rather than in
+order, when a specific problem names one:
+
+11. + [[Container Orchestration]] — several services,
+    scheduled across machines ([[Docker]],
+    [[AWS Fargate]], [[Kubernetes]])
+12. + realtime and [[Sticky Sessions]] — WebSockets,
+    affinity, [[Redis]] for shared state
+13. + [[Event-Driven Architecture]] — distributed
+    serverless, queues, [[AWS Lambda]], dead-letter
+    queues
+14. + [[Distributed Data Processing]] — a Parquet lake
+    on [[Object Storage]], [[Apache Spark]] or
+    [[Databricks]]
+
 ## The two observations worth carrying
 
 - **Rungs 1 to 4 have no server at all.** Content,
@@ -40,8 +55,15 @@ is [[Stacks]].
   machine. Everything above rung 5 is incremental by
   comparison. Check hard whether a rung-3 or rung-4 answer
   really is impossible before climbing.
+- **Rungs 11 to 14 are not a sequence.** Most products
+  that reach them need exactly one — the one their
+  problem names — and almost none need all four.
 
 ## Related
 
 [[Stacks]] · [[Cloud Service Models]] ·
-[[One-Box Deployment]] · [[Cost Control]]
+[[One-Box Deployment]] · [[Cost Control]] ·
+[[Container Orchestration]] · [[Sticky Sessions]] ·
+[[Event-Driven Architecture]] ·
+[[Distributed Data Processing]] · [[Failure Modes]] ·
+[[Micro-VMs]] · [[Deployment Strategies]]

@@ -43,4 +43,4 @@ Source: <https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention
 
 ## Related pages
 
-[[HTTP]] · [[Least Privilege]] · [[OWASP]]
+[[HTTP]] · [[Least Privilege]] · [[OWASP]] · [[Rust]]

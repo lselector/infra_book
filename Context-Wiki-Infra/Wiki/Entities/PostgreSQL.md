@@ -47,7 +47,9 @@ pgvector, and [[Read Replicas]] when you need them.
 
 [[SQLite]] · [[Relational Databases]] ·
 [[Database Backups]] · [[Connection Pooling]] ·
-[[PgBouncer]] · [[Read Replicas]]
+[[PgBouncer]] · [[Read Replicas]] ·
+[[Replication Lag]] · [[Hot Partition]] ·
+[[Split Brain]]
 
 ## Sources
 

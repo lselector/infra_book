@@ -33,6 +33,8 @@ format on save, AI coding agent, Claude Code,
 CLAUDE.md conventions, reviewing agent diffs,
 Homebrew, brew install, formulae and casks, uv,
 Python project and package management, uv.lock,
+just, justfile, command runner, recipes, just --list,
+just vs make, gmake, Makefile, .PHONY, dotenv-load,
 GitHub account, git config --global, .gitignore for
 secrets, secret scanning, ssh configuration,
 ~/.ssh/config, ssh-keygen ed25519, key per host,
@@ -40,6 +42,31 @@ authorized_keys, file permissions on keys
 note: no `Raw/` category folder — this Part is written
 from first-hand practice and vendor sites, not from the
 downloaded corpus.
+
+## 10_languages_and_data — Languages, Frameworks, Data
+keywords: Node.js, event loop, never block the event
+loop, npm ci, package-lock.json, PM2, process per core,
+Express, Fastify, Hono, React, components, SPA vs SSR
+vs SSG, Next.js, App Router, server components,
+hydration, ISR, output export, edge runtime, bundle
+size, code splitting,
+Rust, static binary, no garbage collector, Tokio, async
+runtime, spawn_blocking, Axum, extractors, Tower
+middleware, Actix Web, sqlx, tracing, small container
+images, distroless,
+Rust in the browser, WebAssembly, Wasm, wasm-bindgen,
+wasm-pack, web-sys, wasm-opt, bundle size budget,
+Leptos, Yew, Dioxus, signals, server functions,
+pandas, DataFrame, dtypes, memory blowup, Polars, lazy
+scan, predicate pushdown, multi-threaded, DuckDB,
+embedded OLAP, SQL over Parquet, Apache Arrow, columnar
+memory format, Parquet, one big machine first,
+Apache Spark, PySpark, partitions, shuffle, wide vs
+narrow transformations, broadcast join, data skew,
+ephemeral clusters, Databricks, Delta Lake, Unity
+Catalog, lakehouse, DBU cost, notebook drift
+note: no `Raw/` category folder yet — these pages cite
+upstream documentation directly.
 
 ## 01_foundations — Thinking About Infrastructure
 keywords: infrastructure for web and SaaS, IaaS vs
@@ -50,7 +77,15 @@ app, automation, "keep it boring"
 
 ## 02_architectures — Static to SaaS
 keywords: the ladder, stacks in increasing
-complexity, rung, worked example per stage,
+complexity, rungs 11-14 above the main climb,
+container orchestration, scheduler, rolling deploy,
+service discovery, stateless containers,
+realtime tier, WebSockets, sticky sessions, session
+affinity, cookie-based affinity, connection draining,
+distributed serverless, event-driven architecture,
+event bus, fan-out, idempotent consumers, dead-letter
+queue, correlation IDs, data platform, Parquet lake,
+rung, worked example per stage,
 climb-when signal, cost per stage, ops burden,
 when to stay put, no-server stack, first server,
 incremental architecture (see `Stacks.md`),
@@ -102,7 +137,24 @@ unattended upgrades, swap file, managed PaaS,
 Render, Fly.io,
 Railway, Heroku, serverless full-stack, Lambda,
 API Gateway, Docker Compose in production, ECS,
-Fargate, when you need Kubernetes
+Fargate, when you need Kubernetes,
+micro-servers, micro-VMs, Firecracker, boot in
+milliseconds, KVM, jailer, gVisor, Kata Containers,
+V8 isolate, Cloudflare Workers, Durable Objects, D1,
+KV, Google Cloud Run, scale to zero, min-instances,
+concurrency per instance, cold start, warm start,
+provisioned concurrency, lazy imports, connection
+reuse across invocations, p99 latency,
+Dockerfile, image layers, multi-stage build,
+distroless, non-root USER, exec-form CMD, SIGTERM
+handling, .dockerignore, image tags vs digests,
+build cache, layer invalidation, dependency layer
+ordering, BuildKit, buildx, cache mounts, build
+secrets, cache-from / cache-to, multi-platform
+build, deployment strategies, recreate, rolling
+deploy, blue-green, canary, expand/contract
+migration, feature flags, draining, rollback
+artifact
 
 ## 04_network_storage_db — Networking, Storage, DBs
 keywords: VPC, subnets, security groups, firewalls,
@@ -180,7 +232,26 @@ incident response plan, NIST SP 800-61, vendor
 management, subprocessors, shared responsibility
 model, AWS Artifact, provider SOC 2 report,
 security policies, risk assessment, security
-awareness training, CIS Controls
+awareness training, CIS Controls,
+CI/CD pipeline stages, fail fast ordering, build
+once deploy many, artifact promotion, dependency
+caching in CI, matrix builds, path filters, OIDC
+keyless deploy, pinning actions to a SHA,
+automated testing, test pyramid, unit vs
+integration vs end-to-end, smoke test after deploy,
+regression test for every bug, flaky tests, pytest,
+fixtures, parametrize, Playwright, auto-waiting,
+trace viewer, config validation tests, migration
+tests, fuzz testing, fuzzing, coverage-guided
+fuzzing, AFL++, libFuzzer, OSS-Fuzz,
+ClusterFuzzLite, property-based testing, Hypothesis,
+shrinking, sanitizers, ASan, seed corpus,
+dictionary, crash triage, red team, blue team,
+purple team, adversary simulation, detection gap,
+game day, tabletop exercise, MITRE ATT&CK, tactics
+and techniques, T1078 valid accounts, T1190 exploit
+public-facing application, authorized testing rules
+of engagement
 
 ## 06_product_patterns — Patterns by Product Type
 keywords: marketing/content site infra, catalog
@@ -250,6 +321,35 @@ compliance automation platform, Vanta, Drata,
 Secureframe, continuous control monitoring,
 ISO 27001, SOC 2 vs ISO 27001, customer security
 questionnaire, trust center
+
+## 11_reliability_and_failure — How Systems Break
+keywords: failure modes, typical types of failures,
+single point of failure, redundancy, fake redundancy,
+domain and certificate expiry as outages, cascading
+failure, load shedding, circuit breaker, bulkhead,
+headroom, graceful degradation, N-1 capacity, retry
+storm, exponential backoff, jitter, retry budget,
+retry at one layer, Retry-After, 429, cache stampede,
+dog-pile, thundering herd, single flight, mutex on
+miss, stale-while-revalidate, jittered TTL, cold
+cache, hot partition, data skew, partition key
+cardinality, key salting, celebrity key, replication
+lag, read-your-own-writes, routing reads, RPO,
+duplicate processing, at-least-once delivery,
+exactly-once myth, idempotency, idempotency key,
+unique constraint dedup, queue backlog, oldest
+message age, backpressure, bounded queue, autoscale
+on queue depth, poison message, dead-letter queue,
+redelivery count, replay, split brain, quorum,
+witness node, fencing, STONITH, leases, manual
+promotion, chaos engineering, steady state
+hypothesis, blast radius, game day, restore drill
+note: no `Raw/` category folder — these pages rest on
+captures already held elsewhere: the SRE Book
+(`09_appendices`, `05_ops_cicd_security`), AWS
+Well-Architected reliability (`08_scaling_maturity`),
+RabbitMQ work queues (`04_network_storage_db`) and
+the PostgreSQL standby/partitioning docs.
 
 ## 09_appendices — Reference Material
 keywords: starter stacks by use case, reference

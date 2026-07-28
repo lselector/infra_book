@@ -36,4 +36,4 @@ Source: <https://developers.cloudflare.com/workers/wrangler/install-and-update/i
 
 ## Related pages
 
-[[Cloudflare]] · [[Wrangler]]
+[[Cloudflare]] · [[Cloudflare Workers]] · [[Node.js]] · [[Wrangler]]

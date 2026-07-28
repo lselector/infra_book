@@ -38,4 +38,4 @@ Source: <https://cloud.google.com/learn/paas-vs-iaas-vs-saas>
 
 ## Related pages
 
-[[Cloud Service Models]] · [[Kubernetes]] · [[Object Storage]]
+[[Cloud Service Models]] · [[Container Orchestration]] · [[Kubernetes]] · [[Object Storage]] · [[Single Point of Failure]]

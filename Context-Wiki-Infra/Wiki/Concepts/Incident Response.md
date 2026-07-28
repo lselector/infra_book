@@ -50,7 +50,9 @@ are trying to recover.
 
 [[Monitoring and Alerting]] · [[Database Backups]] ·
 [[SOC 2]] · [[Audit Logging]] ·
-[[Service Level Objectives]]
+[[Service Level Objectives]] · [[Failure Modes]] ·
+[[Chaos Engineering]] · [[Red Team and Blue Team]] ·
+[[MITRE ATT&CK]]
 
 ## Sources
 

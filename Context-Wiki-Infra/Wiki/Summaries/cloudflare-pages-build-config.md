@@ -35,4 +35,4 @@ Source: <https://developers.cloudflare.com/pages/configuration/build-configurati
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Next.js]]

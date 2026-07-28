@@ -39,4 +39,4 @@ Source: <https://developers.cloudflare.com/pages/index.md>
 
 ## Related pages
 
-[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare R2]]
+[[Cloudflare]] · [[Cloudflare Pages]] · [[Cloudflare R2]] · [[Cloudflare Workers]] · [[Next.js]]

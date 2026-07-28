@@ -43,7 +43,9 @@ enough to pay for the complexity.
 ## Related
 
 [[Reverse Proxy]] · [[One-Box Deployment]] ·
-[[Read Replicas]] · [[The Ladder]]
+[[Read Replicas]] · [[The Ladder]] ·
+[[Single Point of Failure]] · [[Cascading Failure]] ·
+[[Sticky Sessions]] · [[Failure Modes]]
 
 ## Sources
 

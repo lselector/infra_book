@@ -37,4 +37,4 @@ Source: <https://developers.cloudflare.com/pages/configuration/headers/index.md>
 
 ## Related pages
 
-[[CORS]] · [[Cloudflare]] · [[Cloudflare Pages]] · [[HTTP]] · [[Security Headers]]
+[[CORS]] · [[Cloudflare]] · [[Cloudflare Pages]] · [[HTTP]] · [[Security Headers]] · [[Server-Side Rendering]]

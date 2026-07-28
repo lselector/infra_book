@@ -71,8 +71,8 @@ brew list        # what you actually have
 
 ## Related
 
-[[Development Setup]] · [[uv]] · [[iTerm2]] ·
-[[Bash]] · [[Ubuntu Server]]
+[[Development Setup]] · [[uv]] · [[just]] ·
+[[iTerm2]] · [[Bash]] · [[Ubuntu Server]]
 
 ## Sources
 

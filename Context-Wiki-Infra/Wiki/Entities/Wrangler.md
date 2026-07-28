@@ -48,7 +48,8 @@ release.
 
 [[Cloudflare Pages]] · [[Static Build Pipeline]] ·
 [[Continuous Integration and Delivery]] ·
-[[Secrets Management]]
+[[Secrets Management]] · [[Cloudflare Workers]] ·
+[[Deployment Strategies]]
 
 ## Sources
 

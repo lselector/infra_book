@@ -10,7 +10,7 @@ page. [[Development Setup]] covers the tools on
 your own machine first; [[Topics]] is the keyword
 plan.
 
-## Concepts (81)
+## Concepts (109)
 
 Ideas, patterns and practices — the "what and why" layer.
 
@@ -20,37 +20,54 @@ Ideas, patterns and practices — the "what and why" layer.
 - [[Audit Logging]] — An immutable record of who did what and when - required for compliance, invaluable during an incident.
 - [[Authentication]] — Proving who a user is - and the strong argument for never building it yourself.
 - [[Authorization]] — What an authenticated user may do - enforced on the server, in one place, failing closed.
+- [[Automated Testing]] — The tests worth writing on a small project, in the order they pay off - and the one that pays off first.
 - [[Automatic HTTPS]] — Certificates obtained, installed and renewed with no cron job and no human - the modern default.
 - [[Autoresponder Sequence]] — A pre-written series of emails sent on a schedule after signup - marketing email, not transactional.
 - [[Backend-Free Interactivity]] — Filtering, sorting, galleries and saved state in the browser, against generated data files.
 - [[CORS]] — The browser rule that stops one origin reading another's responses, and the headers that relax it.
 - [[Cache Busting]] — Changing an asset URL when its contents change, so caches can be told to keep everything forever.
+- [[Cache Stampede]] — A popular key expires and every request rebuilds it at once - the outage caused by the cache working as designed.
 - [[Caching]] — Keeping expensive answers around - and the two hard problems that come with it.
+- [[Cascading Failure]] — One component fails, its load moves to the others, and they fail in turn - the outage that spreads.
 - [[Catalog and Inventory Sites]] — Products, categories, detail pages and photo galleries - with no database and no admin panel.
+- [[Chaos Engineering]] — Breaking your own system on purpose, during office hours - and the two-hour version a small team can actually run.
 - [[Cloud Service Models]] — IaaS, PaaS, serverless and SaaS - who operates what, and what you give up for convenience.
+- [[Cold Starts]] — The first request after idle, and why it is slow - what the platform contributes, and what your code does.
 - [[Connection Pooling]] — Reusing database connections, because opening one is expensive and Postgres has a hard ceiling.
+- [[Container Images]] — What a Dockerfile actually produces - layers, multi-stage builds, and the small number of lines that matter.
+- [[Container Orchestration]] — Scheduling containers across machines - what you take on when one box stops being enough.
 - [[Containers in Production]] — Docker Compose on one box - most of the benefit of containers, almost none of the orchestration cost.
 - [[Content Delivery Network]] — Caching copies of your site near users - the cheapest performance win available to a small site.
-- [[Continuous Integration and Delivery]] — Automated test, build and deploy on push - and the minimum worth having on a small project.
+- [[Continuous Integration and Delivery]] — Automated test, build and deploy on push - the minimum worth having, and the pipeline it grows into.
 - [[Core Web Vitals]] — The three user-experience metrics Google measures, and the small number of fixes that move them.
 - [[Cost Control]] — Keeping the bill boring - budgets, alerts, and knowing which line items actually grow.
 - [[DNS Record Types]] — A, AAAA, CNAME, MX, TXT and the handful of records a small site actually needs.
+- [[DataFrames]] — Tables in memory, on one machine - where every data problem should start, and how far it now goes.
 - [[Database Backups]] — A backup you have never restored is not a backup - the nightly dump, the offsite copy, and the drill.
 - [[Database Sharding]] — Splitting data across databases by key - powerful, irreversible in practice, and rarely needed.
 - [[Dependency Auditing]] — Knowing when a library you depend on turns out to be vulnerable, and having a route to updating it.
 - [[Deployment Environments]] — Production, staging and previews - how many you need, and when a second one starts paying for itself.
+- [[Deployment Strategies]] — Recreate, rolling, blue-green and canary - what each costs, and the one that suits one server.
+- [[Distributed Data Processing]] — Splitting a dataset across a cluster - what Spark does, what it costs, and the single machine you should try first.
+- [[Docker Build Cache]] — Why the second build is fast and the third is not - the cache rules, and how to keep them working in CI.
 - [[Domain Names and DNS]] — How a name becomes an IP address, and what a registrar, nameserver and resolver each do.
 - [[Double Opt-In]] — Requiring a click in a confirmation email before adding someone to a list.
+- [[Duplicate Processing]] — The same message handled twice - why at-least-once delivery is the norm, and why the fix is in your handler.
 - [[Email Authentication]] — SPF, DKIM and DMARC - the three DNS records that let receivers verify your mail is really yours.
 - [[Email Deliverability]] — Whether your mail reaches the inbox - a reputation you build slowly and lose quickly.
 - [[Encryption at Rest]] — Encrypting stored data - what the provider does for you, and what remains your decision.
 - [[Encryption in Transit]] — TLS everywhere, including the hops you forgot - proxy to app, app to database, app to backup.
 - [[Envelope Encryption]] — Encrypt data with a data key, encrypt the data key with a KMS key - the pattern behind every cloud KMS.
+- [[Event-Driven Architecture]] — Services that react to events on a queue or bus instead of calling each other - the shape distributed serverless takes.
+- [[Failure Modes]] — The ten ways systems actually break in production - each with the signal that shows it and the fix that ends it.
 - [[File-Based CMS]] — A directory of JSON plus images as the content store - version-controlled, no database, no admin panel.
 - [[Forms Without a Backend]] — Accepting contact and quote requests on a static site by posting to somebody else's API.
+- [[Fuzz Testing]] — Throwing generated garbage at your code until it breaks - the cheapest way to find the inputs you never imagined.
 - [[Git-Driven Deployment]] — From SSH-and-git-pull to a pipeline - the progression, and why the first step is legitimate.
 - [[HTTP]] — Methods, status codes, headers and caching - the protocol every layer of this book manipulates.
 - [[Hardware Security Module]] — A tamper-resistant device that holds keys and never gives them back - and when you need a dedicated one.
+- [[Hot Partition]] — One shard, key or tenant taking most of the traffic - why adding machines does not help, and how to spread the load.
+- [[Idempotency]] — Doing the same thing twice having the same effect as doing it once - the property that makes retries safe.
 - [[Incident Response]] — A short written plan for the day it goes wrong, decided in advance rather than at 3am.
 - [[Infrastructure as Code]] — Declaring infrastructure in files - valuable when there is enough of it to forget.
 - [[JSON Web Token]] — A signed, self-describing token - convenient, and awkward to revoke.
@@ -61,6 +78,7 @@ Ideas, patterns and practices — the "what and why" layer.
 - [[Load Balancing]] — Spreading requests across several servers - and why a small project usually should not have one yet.
 - [[Managed PaaS]] — Push code, get a running service - paying money to not own a machine.
 - [[Message Queues]] — Handing slow work to a background worker so the request can return immediately.
+- [[Micro-VMs]] — Servers that boot in milliseconds - the technology that makes scale-to-zero practical, and where it fits.
 - [[Monitoring and Alerting]] — Knowing the site is down before your users tell you - starting with one uptime check.
 - [[Monolithic Web App]] — One deployable process serving HTML and handling writes - the right default for a small team.
 - [[Multi-Factor Authentication]] — A second factor - the highest-value security control per unit of effort, starting with your own accounts.
@@ -70,36 +88,47 @@ Ideas, patterns and practices — the "what and why" layer.
 - [[Object Storage]] — Buckets of files addressed by key - where user uploads, backups and big assets belong.
 - [[One-Box Deployment]] — Everything on a single small VPS - the cheapest way to run real server-side code, and where ops burden begins.
 - [[Penetration Testing]] — A human attacking your system on purpose - what it finds that scanners cannot, and when to buy one.
+- [[Poison Message]] — One message the consumer can never process - and the infinite retry loop that stops the whole queue.
 - [[Progressive Web App]] — A website that installs to the home screen and works offline, without an app store.
+- [[Queue Backlog]] — Producers outrunning consumers - the failure that hides behind a green dashboard until the queue is hours deep.
 - [[Read Replicas]] — Copies of the database that serve reads - the first real scaling step, with a lag you must design around.
+- [[Red Team and Blue Team]] — Attackers and defenders as roles, not job titles - what an exercise proves, and the version a tiny team can run.
 - [[Relational Databases]] — Tables, constraints and transactions - and the choice between SQLite, self-hosted Postgres and managed.
+- [[Replication Lag]] — The replica is behind the primary - the bug where a user saves a change and the next page says it never happened.
 - [[Responsive Design]] — One layout that works from a phone to a desktop - viewport, fluid layout, media queries, touch targets.
+- [[Retry Storm]] — Every client retrying at once - how a brief blip becomes a sustained outage, and the three lines that prevent it.
 - [[Reverse Proxy]] — The process in front of your app that terminates TLS, serves static files and forwards the rest.
 - [[SOC 2]] — An audited report on how you protect customer data - what it is, what it costs, and when to start.
 - [[SSH Key Authentication]] — Replacing passwords with keypairs - the single highest-value change on a new server.
 - [[Secrets Management]] — Where credentials live, how they get to the app, and what to do when one leaks.
 - [[Security Headers]] — A handful of response headers that shut down whole classes of browser attack.
 - [[Security Testing]] — Finding your own vulnerabilities first - the scan, the audit and the manual pass before launch.
+- [[Server-Side Rendering]] — Sending HTML instead of an empty div - the choice between CSR, SSR and SSG, and what each costs to run.
 - [[Serverless Architecture]] — Functions that run on demand and cost nothing at rest - with real constraints attached.
 - [[Service Level Objectives]] — A target for reliability you actually intend to meet, and the error budget it implies.
 - [[Service Worker]] — A script between your page and the network - the mechanism behind offline support and precaching.
 - [[Shared Responsibility Model]] — Which security controls your cloud provider owns and which remain yours - the question every audit asks.
 - [[Single Page Application and API]] — A static frontend calling a separate backend - clean separation, at the cost of CORS and auth plumbing.
+- [[Single Point of Failure]] — The one component whose loss takes everything with it - how to find yours, and when removing it is not worth it.
+- [[Split Brain]] — Two nodes both convinced they are the primary - the failure that corrupts data rather than stopping it.
 - [[Static Build Pipeline]] — Validate, optimise images, build, cache-bust, deploy - numbered scripts you run in order.
 - [[Static Site Hosting]] — Serving pre-built files from a CDN - no server, no patching, effectively no cost.
+- [[Sticky Sessions]] — Pinning a user to one backend instance - necessary for live connections, a crutch for everything else.
 - [[TLS and HTTPS]] — What a certificate proves, how it is issued and renewed, and why HTTPS is now the floor rather than an upgrade.
-- [[The Ladder]] — Ten example stacks in increasing complexity, each adding exactly one capability to the one below.
+- [[The Ladder]] — Fourteen example stacks in increasing complexity, each adding exactly one capability to the one below.
 - [[Transactional Email]] — Email your application sends because a user did something - receipts, resets, notifications.
 - [[Trust Services Criteria]] — The five criteria a SOC 2 report can cover, and what each asks of a small infrastructure.
 - [[Twelve-Factor App]] — A dozen conventions that make an app cheap to deploy, scale and move between hosts.
 - [[Unattended Upgrades]] — Letting the machine install its own security patches, because you will not.
 - [[VPC and Security Groups]] — The minimal network mental model - private subnets, and firewalls attached to instances.
 - [[Web App Manifest]] — The JSON file that tells a browser how to install your site as an app.
+- [[WebAssembly]] — Compiled code running in the browser at near-native speed - what it is genuinely good for, and what it is not.
 
-## Entities (92)
+## Entities (118)
 
 Concrete products, services and tools — the "which one" layer.
 
+- [[AFL++]] — The coverage-guided fuzzer most others descend from - instrument, mutate, keep what reaches new code.
 - [[AWS Artifact]] — Where you download AWS's own SOC 2 report to give your auditor.
 - [[AWS Backup]] — Policy-driven backups across AWS services, with vaults you cannot casually delete.
 - [[AWS CloudHSM]] — A dedicated, single-tenant HSM cluster - expensive, and required only when a contract says so.
@@ -112,16 +141,21 @@ Concrete products, services and tools — the "which one" layer.
 - [[AWS Secrets Manager]] — Managed secret storage with built-in rotation - and a per-secret monthly fee.
 - [[AWS Systems Manager Parameter Store]] — Free encrypted parameter storage - the cheap default for configuration and API keys on AWS.
 - [[AWeber]] — Long-established email marketing service - lists, sign-up forms and autoresponder campaigns.
+- [[Actix Web]] — The other mature Rust web framework - a multi-threaded actor runtime with a long benchmark pedigree.
 - [[Amazon API Gateway]] — The HTTP front door for Lambda functions - routing, auth and throttling.
 - [[Amazon EC2]] — AWS virtual machines - the IaaS baseline, worth it mainly when you are already in AWS.
 - [[Amazon RDS]] — Managed relational databases - you stop doing backups and patching, and start paying for it.
 - [[Amazon S3]] — The original object store - durable, ubiquitous, and metered on the way out.
 - [[Amazon SES]] — AWS's email sending service - about $0.10 per thousand, with real setup work.
 - [[Amazon VPC]] — Your private network in AWS - subnets, routing and security groups.
+- [[Apache Arrow]] — The columnar memory format every modern data tool shares - why moving between them is free.
+- [[Apache Spark]] — The distributed processing engine - what you move to when one machine genuinely cannot finish the job.
 - [[Auth0]] — Enterprise-grade identity - SAML, SSO and complex rules, at enterprise prices.
+- [[Axum]] — The default Rust web framework - Tokio's own, built on Tower middleware.
 - [[Azure Key Vault]] — Microsoft's combined store for keys, secrets and certificates.
 - [[Bash]] — The shell your servers run and your scripts target - the most portable skill in this wiki.
 - [[Bitwarden]] — Open-source password manager with a usable free tier - the first thing to install and the vault every other credential lives in.
+- [[BuildKit]] — Docker's build engine - parallel stages, cache mounts, build secrets, and multi-architecture images.
 - [[Caddy]] — A web server that obtains and renews TLS certificates by itself - the recommended reverse proxy here.
 - [[Certbot]] — The EFF's ACME client - how Nginx and Apache get Let's Encrypt certificates.
 - [[Claude Code]] — Anthropic's coding agent - reads the repository, runs commands and edits files, in the terminal or inside your editor.
@@ -131,17 +165,22 @@ Concrete products, services and tools — the "which one" layer.
 - [[Cloudflare Pages]] — Free static hosting on the edge, with Git builds, preview deployments and automatic TLS.
 - [[Cloudflare R2]] — S3-compatible object storage with no egress charges.
 - [[Cloudflare Registrar]] — Domains sold at cost - no renewal markup, no upsells.
+- [[Cloudflare Workers]] — Code on Cloudflare's edge in V8 isolates - no cold start worth measuring, and a runtime that is not Node.
 - [[Cloudflare]] — Registrar, DNS, CDN and static hosting in one account - the cheap front door for almost any small site.
 - [[CodeQL]] — GitHub's static analysis - queries your code as if it were a database.
+- [[Databricks]] — Managed Spark plus a lakehouse - the platform you buy when data processing becomes a team's job.
 - [[Dependabot]] — Automated pull requests for vulnerable and outdated dependencies.
 - [[DigitalOcean]] — VPS provider with excellent documentation - often the best first server.
 - [[Django]] — Batteries-included Python framework - admin, ORM and auth out of the box.
 - [[Docker Compose]] — Several containers defined in one file - the practical way to run containers on a single box.
 - [[Docker]] — Packaging an app with its dependencies so it runs the same everywhere.
 - [[Drata]] — Compliance automation platform - the main alternative to Vanta.
+- [[DuckDB]] — SQLite for analytics - an in-process column store that queries Parquet on disk or in object storage.
+- [[Express]] — The minimal Node.js web framework - the JavaScript equivalent of the FastAPI rung.
 - [[Fail2Ban]] — Watches logs and bans IPs that keep failing to log in.
 - [[FastAPI]] — A modern Python web framework - the backend assumed in this book's one-box stack.
 - [[Firebase Authentication]] — Google's hosted authentication - email, Google sign-in and MFA without building any of it.
+- [[Firecracker]] — Amazon's open-source micro-VM monitor - the thing under Lambda and Fargate that boots a VM in ~125 ms.
 - [[Fly.io]] — PaaS that runs your container close to users, with a CLI-first workflow.
 - [[Git]] — The version control system underneath everything here - your history, your rollback, and the trigger for most deployments.
 - [[GitHub Actions]] — CI/CD built into the repository - the default pipeline for projects in this book.
@@ -150,34 +189,45 @@ Concrete products, services and tools — the "which one" layer.
 - [[Gitleaks]] — Scans Git history for committed credentials - run it before you need it.
 - [[Google Cloud Audit Logs]] — Google Cloud's record of administrative and data access activity.
 - [[Google Cloud KMS]] — Google's key management service - the same envelope-encryption model, with CMEK across GCP.
+- [[Google Cloud Run]] — Give it a container image, get an autoscaling HTTPS service that scales to zero - the least-effort container host.
 - [[Google Secret Manager]] — Google Cloud's secret store - versioned, IAM-controlled, audit-logged.
 - [[Grafana Loki]] — Log aggregation that indexes labels rather than content - cheap to run.
 - [[HashiCorp Vault]] — Self-hostable secret management with dynamic, short-lived credentials.
 - [[Hetzner Cloud]] — European VPS provider with the best price-to-resource ratio in this book.
 - [[Homebrew]] — The package manager for macOS (and Linux) - one command to install the Unix tools, languages and libraries this wiki assumes.
 - [[Kubernetes]] — Container orchestration at cluster scale - and a clear-eyed account of when you do not need it.
+- [[Leptos]] — A full web UI framework in Rust - fine-grained reactivity, compiled to WebAssembly, with optional SSR.
 - [[Let's Encrypt]] — A free, automated certificate authority - the reason HTTPS stopped being a line item.
 - [[Lynis]] — Audits a running Linux system and tells you what hardening you actually missed.
+- [[MITRE ATT&CK]] — A free catalogue of how real attackers actually operate - the shared vocabulary for red and blue teams.
 - [[Mailchimp]] — The best-known email marketing platform - and the clearest documentation of the mechanics.
 - [[MariaDB]] — The MySQL-compatible fork - relevant mainly when something you inherited speaks MySQL.
+- [[Next.js]] — The React framework that renders per route - static, server or client, with the hosting bill to match.
 - [[Nginx]] — The incumbent reverse proxy and web server - more configuration, more control, certificates sold separately.
+- [[Node.js]] — JavaScript on the server - one language across the stack, and an event loop you must not block.
+- [[OSS-Fuzz]] — Google's free continuous fuzzing service for open-source projects - your library fuzzed forever, on their machines.
 - [[OWASP ZAP]] — A free web application scanner that runs happily in CI.
 - [[OWASP]] — The nonprofit behind the Top 10, ASVS, the testing guide and the cheat sheets.
 - [[PgBouncer]] — A tiny connection pooler in front of PostgreSQL - the fix for connection exhaustion.
+- [[Playwright]] — Browser automation for end-to-end tests - auto-waiting that kills most flakiness, and a headless browser in CI.
+- [[Polars]] — A multi-threaded, lazy DataFrame library in Rust - most of what people start a Spark cluster for, on one machine.
 - [[PostgreSQL]] — The default serious relational database - free, capable, and happy on the same box as your app.
 - [[Postmark]] — Transactional email with a deliverability reputation - more per message, far less setup.
 - [[Prometheus]] — Pull-based metrics and alerting - the open-source standard, and more than a small site needs.
 - [[Pulumi]] — Infrastructure as code in a real programming language.
 - [[RabbitMQ]] — A real message broker - for when a database table or Redis list is no longer enough.
 - [[Railway]] — The fastest path from repository to running service.
+- [[React]] — The component library most frontends are built with - and the question of whether your site needs one at all.
 - [[Redis]] — In-memory data store - cache, session store, rate limiter and simple queue.
 - [[Render]] — Conventional, predictable PaaS - connect a repo and get a URL.
 - [[Resend]] — Developer-first transactional email - modern SDKs, React email templates.
+- [[Rust]] — A compiled language with no runtime and no garbage collector - small containers, flat memory, and a slower first week.
 - [[SOPS]] — Encrypted secrets files that live in Git, decrypted by a KMS key.
 - [[SQLite]] — A whole database in one file, with no server - the right default for a very simple app.
 - [[Stripe]] — Payments and subscription billing - hosted checkout that keeps card data off your servers.
 - [[Supabase Auth]] — Authentication attached to a Postgres database, with row-level security as the authorisation model.
 - [[Terraform]] — The default infrastructure-as-code tool - declare resources, plan, apply.
+- [[Tokio]] — The async runtime under almost every Rust network service - the scheduler your handlers actually run on.
 - [[Trivy]] — One scanner for container images, filesystems, dependencies and IaC.
 - [[UFW]] — Uncomplicated Firewall - three commands between a fresh VPS and a closed one.
 - [[Ubuntu Server]] — The default Linux for a cheap VPS - long-term support, and the distribution every guide assumes.
@@ -189,9 +239,13 @@ Concrete products, services and tools — the "which one" layer.
 - [[Wrangler]] — Cloudflare's CLI - the command that deploys a folder to Pages.
 - [[Zed]] — A fast native code editor with an AI agent built in - one of several fine choices, and the one that starts quickest.
 - [[iTerm2]] — The terminal emulator most macOS developers use instead of Terminal.app - split panes, searchable scrollback, profiles.
+- [[just]] — A command runner with make's syntax and none of its traps - one justfile as the front door to a project.
+- [[pandas]] — The default Python DataFrame library - the one everything else integrates with.
+- [[pytest]] — The Python test runner - plain assert statements, fixtures instead of setup boilerplate, and the plugins worth having.
 - [[restic]] — Encrypted, deduplicated, incremental backups to almost any storage backend.
 - [[systemd]] — The Linux service manager - what makes your app start on boot and restart when it dies.
 - [[uv]] — A fast Python package and project manager that replaces pip, venv, pipx and pyenv with one binary.
+- [[wasm-bindgen]] — The bridge between Rust and JavaScript - what makes Rust in the browser practical rather than theoretical.
 
 ## Summaries (271)
 

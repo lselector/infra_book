@@ -41,7 +41,8 @@ nobody can say what is deployed.
 
 [[Continuous Integration and Delivery]] · [[Deployment Environments]] ·
 [[Static Build Pipeline]] · [[Infrastructure as Code]] ·
-[[Git]] · [[GitHub]] · [[Development Setup]]
+[[Git]] · [[GitHub]] · [[Development Setup]] ·
+[[Deployment Strategies]] · [[Automated Testing]]
 
 ## Sources
 

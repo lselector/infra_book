@@ -49,7 +49,9 @@ management under [[SOC 2]].
 [[Continuous Integration and Delivery]] ·
 [[Git-Driven Deployment]] · [[Secrets Management]] ·
 [[Deployment Environments]] · [[Dependabot]] ·
-[[GitHub]] · [[Git]]
+[[GitHub]] · [[Git]] · [[Deployment Strategies]] ·
+[[Automated Testing]] · [[Docker Build Cache]] ·
+[[BuildKit]]
 
 ## Sources
 
