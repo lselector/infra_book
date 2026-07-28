@@ -86,13 +86,34 @@ and readable without downloading anything.
   server.
 - [.claude/hooks/allow_local_dev.py](.claude/hooks/allow_local_dev.py)
   — Claude Code `PreToolUse` hook that auto-approves the
-  routine loop of this repo (the four build scripts, curl
-  against localhost, read-only filters like `head` and
-  `grep`) so it runs without a permission prompt.
-  Everything else falls through to the normal rules.
+  routine loop of this repo so it runs without a
+  permission prompt: the four build scripts, the three
+  `server_*.sh` control scripts, read-only filters
+  (`head`, `grep`, `ls`, `sed -n`, `find` without
+  `-delete`/`-exec`, …), `curl` doing a plain GET, `cd`
+  to a path inside the project, and the control words of
+  a one-line `for … do … done` loop.
+
+  That last group is the point of the hook. A permission
+  *rule* matches a command prefix, so a compound one-liner
+  — `cd X && for f in *; do grep … ; done` — can never
+  match one, and prompts even though every piece of it is
+  read-only. The hook judges each segment separately and
+  approves the whole command only if all of them pass.
+  Anything with command substitution, a redirect that
+  writes a real file, a non-GET `curl`, or a `cd` out of
+  the project falls through to the normal rules.
+
   Registered in `.claude/settings.local.json`, which is
   per-machine and gitignored, so copy that `hooks` block
   over after a fresh clone.
+- [.claude/settings.json](.claude/settings.json) — checked
+  in, and the part that survives a fresh clone: an
+  allowlist for the repo's own build scripts, the
+  `server_*.sh` control scripts, and the
+  `curl -s -o /dev/null -w` status probe. Read-only shell
+  built-ins (`ls`, `cat`, `grep`, `git status`, …) need no
+  entry — Claude Code already allows them.
 
 ## Wikis
 
