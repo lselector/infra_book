@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — custom headers and caching"
-description: "description: Set custom HTTP response headers for your Cloudflare Pages site using a headers file."
+description: "Set custom HTTP response headers for your Cloudflare Pages site using a headers file."
 resource: "https://developers.cloudflare.com/pages/configuration/headers/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-headers.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/configuration/headers/index.md>
 
 ## Opening
 
-> description: Set custom HTTP response headers for your Cloudflare Pages site using a _headers file.
+> Set custom HTTP response headers for your Cloudflare Pages site using a _headers file.
 > title: Headers
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

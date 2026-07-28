@@ -45,7 +45,8 @@ a rewrite.
 ## Related
 
 [[SQLite]] · [[PostgreSQL]] · [[Database Backups]] ·
-[[Connection Pooling]] · [[Read Replicas]]
+[[Connection Pooling]] · [[Read Replicas]] ·
+[[pgvector]]
 
 ## Sources
 

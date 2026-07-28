@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Wrangler CLI — install and update"
-description: "description: Get started by installing Wrangler, and update to newer versions by following this guide."
+description: "Get started by installing Wrangler, and update to newer versions by following this guide."
 resource: "https://developers.cloudflare.com/workers/wrangler/install-and-update/index.md"
 source_file: "Raw/03_deployments/cloudflare-wrangler-install.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/workers/wrangler/install-and-update/i
 
 ## Opening
 
-> description: Get started by installing Wrangler, and update to newer versions by following this guide.
+> Get started by installing Wrangler, and update to newer versions by following this guide.
 > title: Install/Update Wrangler
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

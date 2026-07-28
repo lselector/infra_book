@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "What is SSL / TLS? (Cloudflare)"
-description: "title: What is SSL? | Learning Center description: SSL (Secure Sockets Layer) is an encryption-based Internet security protocol for establishing authenticated and encrypted links between net"
+description: "title: What is SSL? | Learning Center SSL (Secure Sockets Layer) is an encryption-based Internet security protocol for establishing authenticated and encrypted links between networked comput"
 resource: "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
 source_file: "Raw/01_foundations/cloudflare-what-is-ssl.md"
 tags: [foundations, summary]
@@ -21,7 +21,7 @@ Source: <https://www.cloudflare.com/learning/ssl/what-is-ssl/>
 ## Opening
 
 > title: What is SSL? | Learning Center
-> description: SSL (Secure Sockets Layer) is an encryption-based Internet security protocol for establishing authenticated and encrypted links between networked computers.
+> SSL (Secure Sockets Layer) is an encryption-based Internet security protocol for establishing authenticated and encrypted links between networked computers.
 > image: https://www.cloudflare.com/preview.png
 > SSL (Secure Sockets Layer) is an encryption-based Internet security protocol for establishing authenticated and encrypted links between networked computers.
 

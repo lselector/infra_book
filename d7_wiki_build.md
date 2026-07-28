@@ -157,7 +157,10 @@ usually means a page you meant to write, or a typo.
 
 1. Add the source to `raw_sources.json` and run
    `python raw_download.py` (see
-   [d6_raw_download.md](d6_raw_download.md)).
+   [d6_raw_download.md](d6_raw_download.md)). A whole new
+   `Raw/` category also needs a line in `CATEGORY_TITLES`
+   there and one in `CATEGORY_TAGS` here, which sets the
+   tag every summary in that folder carries.
 2. `python wiki_build.py summaries` — the new capture
    gets a summary.
 3. Write or extend the Concept and Entity pages by hand,
@@ -181,4 +184,4 @@ usually means a page you meant to write, or a typo.
 ---
 
 Created: 2026-07-27
-Last updated: 2026-07-27
+Last updated: 2026-07-28

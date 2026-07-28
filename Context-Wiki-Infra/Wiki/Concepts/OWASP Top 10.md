@@ -30,8 +30,12 @@ the Open Worldwide Application Security Project.
 
 ## How to use it
 
-As a review checklist before launch, not as reading. Pair
-it with a [[Security Testing]] pass: the scanner finds
+As a review checklist before launch, not as reading. If
+the product includes an AI feature, run the companion
+[[OWASP Top 10 for LLM Applications]] beside it — that
+list covers the risks this one does not, and neither
+replaces the other. Pair both
+with a [[Security Testing]] pass: the scanner finds
 misconfiguration and known-vulnerable components; the list
 reminds you to check access control by hand, because no
 scanner can.
@@ -40,7 +44,8 @@ scanner can.
 
 [[Security Testing]] · [[Authorization]] ·
 [[Dependency Auditing]] · [[Security Headers]] ·
-[[Penetration Testing]]
+[[Penetration Testing]] ·
+[[OWASP Top 10 for LLM Applications]]
 
 ## Sources
 

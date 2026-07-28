@@ -52,7 +52,8 @@ them.
 
 [[Development Setup]] · [[Zed]] ·
 [[Visual Studio Code]] · [[Secrets Management]] ·
-[[Git-Driven Deployment]] · [[GitHub Actions]]
+[[Git-Driven Deployment]] · [[GitHub Actions]] ·
+[[Claude API]] · [[Model Context Protocol]]
 
 ## Sources
 

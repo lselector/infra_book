@@ -106,12 +106,12 @@ mistakes it for an article about CloudTrail.
 
 | | |
 |---|---|
-| Content pages | 233 |
-| Wikipedia article | 206 |
-| Project website | 24 |
+| Content pages | 250 |
+| Wikipedia article | 222 |
+| Project website | 25 |
 | No outside link | 3 |
 
-The 24 on their own site are the products Wikipedia has
+The 25 on their own site are the products Wikipedia has
 no article for:
 
 | Page | Site |
@@ -129,6 +129,7 @@ no article for:
 | just | <https://just.systems/> |
 | Leptos | <https://leptos.dev/> |
 | OSS-Fuzz | <https://google.github.io/oss-fuzz/> |
+| pgvector | <https://github.com/pgvector/pgvector> |
 | Postmark | <https://postmarkapp.com/> |
 | Railway | <https://railway.com/> |
 | Render | <https://render.com/> |

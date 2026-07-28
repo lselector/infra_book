@@ -44,7 +44,8 @@ requests, contact forms and applications all work this way.
 
 [[Web3Forms]] · [[Static Site Hosting]] ·
 [[Catalog and Inventory Sites]] ·
-[[Landing Page Email Capture]] · [[The Ladder]]
+[[Landing Page Email Capture]] · [[The Ladder]] ·
+[[Bot Protection]] · [[Cloudflare Turnstile]]
 
 ## Sources
 

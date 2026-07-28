@@ -43,7 +43,8 @@ request as local plaintext.
 ## Related
 
 [[Reverse Proxy]] · [[Caddy]] · [[Certbot]] ·
-[[TLS and HTTPS]] · [[One-Box Deployment]]
+[[TLS and HTTPS]] · [[One-Box Deployment]] ·
+[[Streaming Responses]]
 
 ## Sources
 

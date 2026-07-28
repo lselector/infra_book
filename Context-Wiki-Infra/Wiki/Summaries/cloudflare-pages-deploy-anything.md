@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — deploy any static site (framework guide)"
-description: "description: Deploy any static HTML website to Cloudflare Pages without a framework."
+description: "Deploy any static HTML website to Cloudflare Pages without a framework."
 resource: "https://developers.cloudflare.com/pages/framework-guides/deploy-anything/index.md"
 source_file: "Raw/07_playbooks/cloudflare-pages-deploy-anything.md"
 tags: [playbooks, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/framework-guides/deploy-anythin
 
 ## Opening
 
-> description: Deploy any static HTML website to Cloudflare Pages without a framework.
+> Deploy any static HTML website to Cloudflare Pages without a framework.
 > title: Static HTML
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

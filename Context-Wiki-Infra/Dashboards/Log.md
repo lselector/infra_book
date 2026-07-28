@@ -826,3 +826,125 @@ and structural changes.
   279 summaries, 518 OKF pages, 5,125 wiki links.
   `README.md` and `d8_wikipedia_links.md` updated to
   match.
+
+## 2026-07-28 — Adding AI to a SaaS
+
+* **New topic: the AI assistant panel**, the side-panel
+  chat that most SaaS products now ship, with the three
+  things that keep it from becoming a liability — usage
+  limits, protection from unauthorised use, and
+  protection from bots. Ten concept pages and seven
+  entity pages:
+  * `Concepts/AI Assistant Panel.md` — what the feature
+    is made of, the request path, thread storage, and
+    why the browser never talks to the provider.
+  * `Concepts/LLM API Integration.md` — the proxy
+    endpoint, model choice, prompt caching, batches,
+    retries, and what to log per call.
+  * `Concepts/Streaming Responses.md` — SSE to the
+    panel, the proxies that buffer it, reconnect versus
+    resumption, and cancelling on disconnect.
+  * `Concepts/Rate Limiting.md` — the general concept
+    the wiki was missing: algorithms, where to enforce,
+    what to key on, 429 and `Retry-After`, and why an AI
+    endpoint needs three limits rather than one.
+  * `Concepts/Usage Quotas and Metering.md` — token
+    accounting per tenant, hard and soft caps, billing
+    meters, and the five ways to lower the number.
+  * `Concepts/Prompt Injection.md` — why filtering does
+    not fix it, and designing so it does not matter.
+  * `Concepts/Bot Protection.md` — the layers, the
+    unauthenticated demo widget, and detection over
+    blocking.
+  * `Concepts/Retrieval-Augmented Generation.md` — the
+    cheaper things to try first, the pipeline, and the
+    tenant filter that belongs in the query.
+  * `Concepts/Tool Calling.md` — the loop, the
+    authorization rule, and where the confirm button
+    goes.
+  * `Concepts/OWASP Top 10 for LLM Applications.md` —
+    the 2025 list mapped to the pages that cover it.
+  * `Entities/Claude API.md`, `Model Context Protocol`,
+    `Cloudflare Turnstile`, `Cloudflare AI Gateway`,
+    `pgvector`, `Vercel AI SDK`, and
+    `NIST AI Risk Management Framework`.
+* **New `Raw/` category `12_ai_in_saas` with 28
+  captures** (279 → 307 documents, ~692,000 words):
+  Anthropic's model, pricing, streaming, caching,
+  context-window, batch, tool-use, MCP, rate-limit and
+  error docs; the MCP introduction; the OWASP LLM Top 10
+  and its prompt-injection cheat sheet; Cloudflare
+  Turnstile, bots, rate limiting rules and AI Gateway;
+  MDN on server-sent events, `EventSource`, 429 and
+  `Retry-After`; Stripe usage-based billing, meters and
+  usage recording; Redis `INCR`; pgvector; the NIST AI
+  RMF; and the Vercel AI SDK introduction. Registered in
+  `raw_download.py` and `wiki_build.py` (tag
+  `ai-in-saas`). The two Stripe hub pages were replaced
+  with the API-level pages, which carry actual content.
+* **Ripple updates** adding links both ways from
+  `Multi-Tenant SaaS`, `Cost Control`, `Caching`,
+  `Authorization`, `Authentication`, `Least Privilege`,
+  `Audit Logging`, `Security Testing`, `OWASP Top 10`,
+  `Security Headers`, `Reverse Proxy`, `Sticky Sessions`,
+  `Serverless Architecture`, `Retry Storm`,
+  `Cascading Failure`, `Queue Backlog`,
+  `Monitoring and Alerting`, `Dependency Auditing`,
+  `Relational Databases`, `Forms Without a Backend`,
+  `Cloudflare`, `PostgreSQL`, `Redis`, `Stripe`,
+  `Claude Code`, `Nginx`, `Caddy`, `OWASP`, `Web3Forms`,
+  `Next.js`, `Node.js` and `Amazon RDS`. `Stacks.md`
+  gains a *Sideways from rung 8* section — the assistant
+  is a feature bolted onto a stack, not a rung — and a
+  line in the per-rung failure inventory. `Topics.md`
+  gains the `12_ai_in_saas` keyword section.
+* **Two small tool fixes found while doing this.**
+  `wiki_build.py` read only `sys.argv[1]`, so the
+  documented `wiki_build.py crosslink index` silently
+  skipped the index step; it now accepts several steps
+  and runs them in build order. Summary leads now drop
+  docs-site chrome (`Last updated … View as Markdown`,
+  `Available on all plans`) and strip a leading
+  `description:`, which fixes the lead line and the
+  generated description on 26 pages.
+* Outside links: articles for all seventeen new pages
+  except `pgvector`, which has none and carries its own
+  site (website count 24 → 25; curated titles 233 →
+  250).
+* Counts after this pass: 121 concepts, 129 entities,
+  307 summaries, 563 OKF pages, 5,744 wiki links.
+  `README.md` and `d8_wikipedia_links.md` updated to
+  match.
+
+## 2026-07-28 — The AI assistant becomes rung 15
+
+* **`Stacks.md` gains a fifteenth rung.** The AI
+  assistant material added earlier the same day sat in an
+  unnumbered *Sideways from rung 8* section, which kept
+  it out of the ladder's own table of contents. It is now
+  **Rung 15 — Add an AI assistant**, in the house rung
+  format (Adds / Attaches at / Stack / Also / Cost / Ops
+  burden, the build order, and a "climb when" signal),
+  grouped with the specialist rungs 11–14 rather than
+  with the main climb.
+* It is the odd rung out and says so: it hangs off
+  **rung 8** — the first rung with user accounts, and so
+  the first rung with anybody to rate-limit — rather than
+  on top of rung 14. Below rung 8 it is a bad idea, and
+  the page now states why.
+* Ladder-wide updates for the new rung: the page
+  description and intro (fourteen → fifteen, "rungs
+  11–15 are the specialist ones"), the *whole ladder at a
+  glance* table (`| 15 | + AI assistant panel | answers
+  in the product | per token | a variable bill |`), the
+  *not a sequence* paragraph, and a row in the per-rung
+  failure inventory — prompt injection and unbounded
+  spend, the first failure on the ladder that arrives as
+  an invoice.
+* Mirrored everywhere the rung count is quoted:
+  `Topics.md` (both the `02_architectures` keywords and
+  the pointer at the top), the generated index preamble
+  in `wiki_build.py` ("fifteen-rung ladder"),
+  `Dashboards/Index.md` (regenerated), and `README.md`,
+  which now describes five specialist rungs beside the
+  main climb rather than four above it.

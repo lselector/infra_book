@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — custom domains"
-description: "description: Add custom domains and subdomains to your Cloudflare Pages project."
+description: "Add custom domains and subdomains to your Cloudflare Pages project."
 resource: "https://developers.cloudflare.com/pages/configuration/custom-domains/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-custom-domains.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/configuration/custom-domains/in
 
 ## Opening
 
-> description: Add custom domains and subdomains to your Cloudflare Pages project.
+> Add custom domains and subdomains to your Cloudflare Pages project.
 > title: Custom domains
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

@@ -1,23 +1,24 @@
 ---
 type: Dashboard
 title: "Simple Architecture, Simple Deploys"
-description: "Fourteen practical deploys, simplest first - each adding one capability, with cost, ops burden and the signal to climb."
+description: "Fifteen practical deploys, simplest first - each adding one capability, with cost, ops burden and the signal to climb."
 tags: [ladder, stacks, orientation, architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---
 
 # Simple Architecture, Simple Deploys
 
-An example-based index of fourteen practical deploys,
+An example-based index of fifteen practical deploys,
 simplest first. Each is a working stack you could ship
 this week, and each rung adds **one** capability to the
 one below it.
 
 Rungs 1–10 are the main climb, from a static site to an
-audited SaaS. Rungs 11–14 are the specialist ones above
-it — containers, realtime, distributed serverless and a
-data platform — taken singly, when a specific problem
-names them.
+audited SaaS. Rungs 11–15 are the specialist ones —
+containers, realtime, distributed serverless, a data
+platform, and an AI assistant — taken singly, when a
+specific problem names them. Rung 15 is the odd one out:
+it attaches at rung 8 rather than above rung 14.
 
 Before rung 1, see [[Development Setup]] — the tools on
 your own machine that all of this assumes.
@@ -437,6 +438,58 @@ need governed access to the same tables.
 
 ---
 
+## Rung 15 — Add an AI assistant
+
+**Example:** the side-panel chat every SaaS now ships —
+open on a record, ask about it, get an answer.
+
+| | |
+|---|---|
+| **Adds** | an assistant that can answer about what the user is looking at |
+| **Attaches at** | rung 8 — a backend that already knows who the user is |
+| **Stack** | rung 8 + one server endpoint + [[Claude API]] (or another provider) + [[Streaming Responses|SSE]] to the panel |
+| **Also** | per-tenant rate limits and quotas, usage metering, a chat-log table with a retention rule |
+| **Cost** | per token rather than per seat — $0 to unbounded |
+| **Ops burden** | +a variable cost line, +a new class of security review |
+
+The odd rung out: it hangs off rung 8 rather than sitting
+on top of rung 14, and you can add it the day you have
+user accounts. It is numbered here because it belongs to
+the same "add it when your problem names it" group as
+11–14, not because it is harder than a data platform.
+
+It is also the first part of most products with a
+genuinely variable unit cost — everything below this rung
+is priced per month, and this one is priced per use.
+
+**The build order that keeps it boring:** a server-side
+proxy endpoint ([[LLM API Integration]]) → streaming to
+the panel ([[Streaming Responses]]) → limits and metering
+([[Rate Limiting]], [[Usage Quotas and Metering]]) →
+protection from bots and unauthorised use
+([[Bot Protection]]) → grounding answers in your own data
+([[Retrieval-Augmented Generation]]) → and only then
+letting the assistant act ([[Tool Calling]]).
+
+Ship the read-only version first
+([[AI Assistant Panel]]). The browser never calls the
+provider — every request goes through your endpoint,
+which authenticates the user, checks their quota, and
+holds the only copy of the key
+([[Secrets Management]]).
+
+Below rung 8 this is a bad idea: with no accounts there
+is nobody to limit, and an unauthenticated endpoint that
+spends real money per call is found within days.
+
+**Climb when:** users are asking your support inbox
+questions the product already has the answer to — not
+because a competitor shipped a panel.
+
+*Wiki: [[AI Assistant Panel]] · [[LLM API Integration]] · [[Prompt Injection]] · Raw: `12_ai_in_saas/`*
+
+---
+
 ## The whole ladder at a glance
 
 | # | Stack | Adds | ~$/mo | Ops |
@@ -455,14 +508,18 @@ need governed access to the same tables.
 | 12 | + WebSockets, sticky LB | realtime | 200–800 | deploys hurt |
 | 13 | + Lambda, queues, DLQs | spiky async work | 0 + per-use | tracing |
 | 14 | + Parquet lake, Spark | analytics at scale | 300–3,000+ | a data job |
+| 15 | + AI assistant panel | answers in the product | per token | a variable bill |
 
-Rungs 11–14 are not a sequence in the way 1–10 are. Once
-you are above rung 10, you add whichever of them your
-problem actually names — containers because you have
-several services, realtime because users must see each
-other, serverless because load is spiky, a data platform
-because the data outgrew the database. Most products
-need one of the four; almost none need all of them.
+Rungs 11–15 are not a sequence in the way 1–10 are. You
+add whichever of them your problem actually names —
+containers because you have several services, realtime
+because users must see each other, serverless because
+load is spiky, a data platform because the data outgrew
+the database, an AI assistant because users keep asking
+questions the product could answer. Most products need
+one of the five; almost none need all of them. Rung 15 is
+the exception to the "above rung 10" rule — it only needs
+rung 8.
 
 ## What each rung adds to the failure list
 
@@ -478,6 +535,7 @@ per-rung inventory of what can now break:
 | 7–9 | [[Duplicate Processing]], [[Queue Backlog]], [[Poison Message]] — anything with a queue or a webhook |
 | 10 | [[Replication Lag]], and [[Split Brain]] if failover is automatic |
 | 11–13 | [[Cascading Failure]] and [[Retry Storm]] — several services calling each other |
+| 15 | [[Prompt Injection]], and unbounded spend — the first failure that arrives as an invoice |
 
 Two habits keep pace with the climb: make handlers
 [[Idempotency|idempotent]] before you add the first

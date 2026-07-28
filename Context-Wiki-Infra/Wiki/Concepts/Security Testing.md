@@ -27,7 +27,11 @@ on a schedule, with tools.
 5. **Container and IaC scan.** [[Trivy]], if you use them.
 6. **Manual access-control review.** Log in as user A and
    try to reach user B's records. No tool finds this.
-7. **Fix, then re-test.** The re-test is the step people
+7. **AI features, if you have any.** Walk the
+   [[OWASP Top 10 for LLM Applications]], and try the
+   obvious [[Prompt Injection]] cases against your own
+   assistant.
+8. **Fix, then re-test.** The re-test is the step people
    skip.
 
 ## The authorisation point
@@ -45,7 +49,8 @@ jurisdictions, an offence.
 [[Security Headers]] · [[Fuzz Testing]] ·
 [[Red Team and Blue Team]] · [[Automated Testing]] ·
 [[MITRE ATT&CK]] ·
-[[Continuous Integration and Delivery]]
+[[Continuous Integration and Delivery]] ·
+[[OWASP Top 10 for LLM Applications]] · [[Prompt Injection]]
 
 ## Sources
 

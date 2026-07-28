@@ -48,4 +48,4 @@ Source: <https://caddyserver.com/docs/automatic-https>
 
 ## Related pages
 
-[[ACME Protocol]] · [[Automatic HTTPS]] · [[Caddy]] · [[Cloudflare]] · [[HTTP]] · [[Key Rotation]] · [[Let's Encrypt]]
+[[ACME Protocol]] · [[Automatic HTTPS]] · [[Caddy]] · [[Cloudflare]] · [[HTTP]] · [[Key Rotation]] · [[Let's Encrypt]] · [[Rate Limiting]]

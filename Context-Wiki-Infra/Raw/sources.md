@@ -870,6 +870,93 @@ Format: `filename | title | source URL`
   Cloud-based SaaS architecture fundamentals (Usersnap) |
   https://usersnap.com/blog/cloud-based-saas-architecture-fundamentals/
 
+## 12_ai_in_saas — adding an AI assistant to a SaaS (LLM APIs, streaming, limits, abuse protection)
+
+- `anthropic-batch-processing.md` |
+  Message Batches API (Anthropic) |
+  https://platform.claude.com/docs/en/build-with-claude/batch-processing.md
+- `anthropic-context-windows.md` |
+  Context windows (Anthropic) |
+  https://platform.claude.com/docs/en/build-with-claude/context-windows.md
+- `anthropic-errors.md` |
+  API errors and HTTP status codes (Anthropic) |
+  https://platform.claude.com/docs/en/api/errors.md
+- `anthropic-mcp-connector.md` |
+  MCP connector (Anthropic) |
+  https://platform.claude.com/docs/en/agents-and-tools/mcp-connector.md
+- `anthropic-models-overview.md` |
+  Claude models overview (Anthropic) |
+  https://platform.claude.com/docs/en/about-claude/models/overview.md
+- `anthropic-pricing.md` |
+  Claude API pricing (Anthropic) |
+  https://platform.claude.com/docs/en/about-claude/pricing.md
+- `anthropic-prompt-caching.md` |
+  Prompt caching (Anthropic) |
+  https://platform.claude.com/docs/en/build-with-claude/prompt-caching.md
+- `anthropic-rate-limits.md` |
+  API rate limits (Anthropic) |
+  https://platform.claude.com/docs/en/api/rate-limits.md
+- `anthropic-streaming.md` |
+  Streaming Messages (Anthropic) |
+  https://platform.claude.com/docs/en/build-with-claude/streaming.md
+- `anthropic-tool-use.md` |
+  Tool use overview (Anthropic) |
+  https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview.md
+- `cloudflare-ai-gateway.md` |
+  Cloudflare AI Gateway |
+  https://developers.cloudflare.com/ai-gateway/
+- `cloudflare-bots.md` |
+  Cloudflare bot management overview |
+  https://developers.cloudflare.com/bots/
+- `cloudflare-rate-limiting-rules.md` |
+  Cloudflare rate limiting rules |
+  https://developers.cloudflare.com/waf/rate-limiting-rules/
+- `cloudflare-turnstile.md` |
+  Cloudflare Turnstile - CAPTCHA alternative |
+  https://developers.cloudflare.com/turnstile/
+- `mcp-introduction.md` |
+  Model Context Protocol - getting started |
+  https://modelcontextprotocol.io/docs/getting-started/intro
+- `mdn-eventsource.md` |
+  EventSource API (MDN) |
+  https://developer.mozilla.org/en-US/docs/Web/API/EventSource
+- `mdn-http-429.md` |
+  429 Too Many Requests (MDN) |
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/429
+- `mdn-retry-after.md` |
+  Retry-After header (MDN) |
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Retry-After
+- `mdn-server-sent-events.md` |
+  Using server-sent events (MDN) |
+  https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+- `nist-ai-rmf.md` |
+  NIST AI Risk Management Framework |
+  https://www.nist.gov/itl/ai-risk-management-framework
+- `owasp-llm-prompt-injection-cheatsheet.md` |
+  OWASP LLM Prompt Injection Prevention Cheat Sheet |
+  https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
+- `owasp-llm-top-ten.md` |
+  OWASP Top 10 for LLM Applications |
+  https://genai.owasp.org/llm-top-10/
+- `pgvector-readme.md` |
+  pgvector - vector similarity search for PostgreSQL |
+  https://github.com/pgvector/pgvector
+- `redis-incr.md` |
+  INCR - Redis rate limiting pattern |
+  https://redis.io/docs/latest/commands/incr/
+- `stripe-recording-usage.md` |
+  Record usage with the API (Stripe) |
+  https://docs.stripe.com/billing/subscriptions/usage-based/recording-usage-api
+- `stripe-usage-based-billing.md` |
+  Usage-based billing implementation guide (Stripe) |
+  https://docs.stripe.com/billing/subscriptions/usage-based/implementation-guide
+- `stripe-usage-meters.md` |
+  Configure a billing meter (Stripe) |
+  https://docs.stripe.com/billing/subscriptions/usage-based/meters/configure
+- `vercel-ai-sdk-introduction.md` |
+  AI SDK introduction (Vercel) |
+  https://ai-sdk.dev/docs/introduction
+
 ## Local reference implementations (not downloads)
 
 Some of the static-site material in this wiki is drawn

@@ -87,7 +87,8 @@ and a half hours *if nothing new arrives*.
 [[Hot Partition]] · [[RabbitMQ]] · [[Redis]] ·
 [[Event-Driven Architecture]] ·
 [[Monitoring and Alerting]] ·
-[[Service Level Objectives]]
+[[Service Level Objectives]] ·
+[[Rate Limiting]]
 
 ## Sources
 

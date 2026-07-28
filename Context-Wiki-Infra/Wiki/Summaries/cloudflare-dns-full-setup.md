@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare DNS — full setup (change nameservers)"
-description: "description: If you want to use Cloudflare as your primary DNS provider and manage your DNS records, your domain should be using a full setup."
+description: "If you want to use Cloudflare as your primary DNS provider and manage your DNS records, your domain should be using a full setup."
 resource: "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/index.md"
 source_file: "Raw/03_deployments/cloudflare-dns-full-setup.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/inde
 
 ## Opening
 
-> description: If you want to use Cloudflare as your primary DNS provider and manage your DNS records, your domain should be using a full setup.
+> If you want to use Cloudflare as your primary DNS provider and manage your DNS records, your domain should be using a full setup.
 > title: Set up a primary zone (Full setup)
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

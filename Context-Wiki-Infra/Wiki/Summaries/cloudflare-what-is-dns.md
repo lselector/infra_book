@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "What is DNS? (Cloudflare Learning Center)"
-description: "title: What is DNS? | Learning Center description: The Domain Name System (DNS) is the phonebook of the Internet."
+description: "title: What is DNS? | Learning Center The Domain Name System (DNS) is the phonebook of the Internet."
 resource: "https://www.cloudflare.com/learning/dns/what-is-dns/"
 source_file: "Raw/01_foundations/cloudflare-what-is-dns.md"
 tags: [foundations, summary]
@@ -21,7 +21,7 @@ Source: <https://www.cloudflare.com/learning/dns/what-is-dns/>
 ## Opening
 
 > title: What is DNS? | Learning Center
-> description: The Domain Name System (DNS) is the phonebook of the Internet. It translates human-readable domain names to machine-readable IP addresses.
+> The Domain Name System (DNS) is the phonebook of the Internet. It translates human-readable domain names to machine-readable IP addresses.
 > image: https://www.cloudflare.com/preview.png
 > The Domain Name System (DNS) is the phonebook of the Internet. It translates human-readable domain names to machine-readable IP addresses.
 

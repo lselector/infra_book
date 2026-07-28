@@ -40,7 +40,8 @@ in any [[Security Testing]] scan.
 ## Related
 
 [[TLS and HTTPS]] · [[Encryption in Transit]] ·
-[[Security Testing]] · [[Reverse Proxy]] · [[CORS]]
+[[Security Testing]] · [[Reverse Proxy]] · [[CORS]] ·
+[[Prompt Injection]]
 
 ## Sources
 

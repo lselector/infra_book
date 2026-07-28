@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — build configuration"
-description: "description: Set build commands, output directories, and framework presets for Cloudflare Pages projects."
+description: "Set build commands, output directories, and framework presets for Cloudflare Pages projects."
 resource: "https://developers.cloudflare.com/pages/configuration/build-configuration/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-build-config.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/configuration/build-configurati
 
 ## Opening
 
-> description: Set build commands, output directories, and framework presets for Cloudflare Pages projects.
+> Set build commands, output directories, and framework presets for Cloudflare Pages projects.
 > title: Build configuration
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

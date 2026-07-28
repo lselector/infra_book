@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — redirects"
-description: "description: Define URL redirects for your Cloudflare Pages site using a redirects file."
+description: "Define URL redirects for your Cloudflare Pages site using a redirects file."
 resource: "https://developers.cloudflare.com/pages/configuration/redirects/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-redirects.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/configuration/redirects/index.m
 
 ## Opening
 
-> description: Define URL redirects for your Cloudflare Pages site using a _redirects file.
+> Define URL redirects for your Cloudflare Pages site using a _redirects file.
 > title: Redirects
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

@@ -37,7 +37,8 @@ credible answer that costs nothing.
 ## Related
 
 [[OWASP Top 10]] · [[OWASP ZAP]] · [[Security Testing]] ·
-[[Penetration Testing]] · [[Authorization]]
+[[Penetration Testing]] · [[Authorization]] ·
+[[OWASP Top 10 for LLM Applications]]
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "What is load balancing? (Cloudflare)"
-description: "title: What is load balancing? | How load balancers work description: Load balancing is the process of distributing traffic among multiple servers to improve a service or application's perfo"
+description: "title: What is load balancing? | How load balancers work Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and re"
 resource: "https://www.cloudflare.com/learning/performance/what-is-load-balancing/"
 source_file: "Raw/01_foundations/cloudflare-what-is-load-balancing.md"
 tags: [foundations, summary]
@@ -21,7 +21,7 @@ Source: <https://www.cloudflare.com/learning/performance/what-is-load-balancing/
 ## Opening
 
 > title: What is load balancing? | How load balancers work
-> description: Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and reliability.
+> Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and reliability.
 > image: https://www.cloudflare.com/preview.png
 > Load balancing is the process of distributing traffic among multiple servers to improve a service or application's performance and reliability.
 

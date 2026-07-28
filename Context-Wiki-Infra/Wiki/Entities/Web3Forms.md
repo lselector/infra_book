@@ -51,7 +51,8 @@ treat a submission as trusted input.
 
 [[Forms Without a Backend]] · [[Static Site Hosting]] ·
 [[Catalog and Inventory Sites]] ·
-[[Landing Page Email Capture]]
+[[Landing Page Email Capture]] ·
+[[Bot Protection]]
 
 ## Sources
 

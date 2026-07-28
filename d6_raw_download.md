@@ -30,8 +30,12 @@ a flat array of objects, one per document:
 }
 ```
 
-* `cat` — one of the nine `Raw/` category folders, which
-  mirror the Parts of [myprompts/TOC_infra.md](myprompts/TOC_infra.md).
+* `cat` — one of the ten `Raw/` category folders, which
+  mirror the Parts of [myprompts/TOC_infra.md](myprompts/TOC_infra.md),
+  plus `12_ai_in_saas` for the AI-assistant material
+  added later. A new folder needs an entry in
+  `CATEGORY_TITLES` here and in `CATEGORY_TAGS` in
+  `wiki_build.py`.
 * `file` — the destination filename inside that folder.
 * `title` — human-readable title, used in the provenance
   header and in `Raw/sources.md`.
@@ -166,4 +170,4 @@ superseded capture so the registry stays accurate.
 ---
 
 Created: 2026-07-27
-Last updated: 2026-07-27
+Last updated: 2026-07-28

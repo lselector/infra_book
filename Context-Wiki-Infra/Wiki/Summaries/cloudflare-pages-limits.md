@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — platform limits and pricing tiers"
-description: "description: Build, deployment, and custom domain limits for Cloudflare Pages by plan type."
+description: "Build, deployment, and custom domain limits for Cloudflare Pages by plan type."
 resource: "https://developers.cloudflare.com/pages/platform/limits/index.md"
 source_file: "Raw/09_appendices/cloudflare-pages-limits.md"
 tags: [reference, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/platform/limits/index.md>
 
 ## Opening
 
-> description: Build, deployment, and custom domain limits for Cloudflare Pages by plan type.
+> Build, deployment, and custom domain limits for Cloudflare Pages by plan type.
 > title: Limits
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

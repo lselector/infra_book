@@ -48,4 +48,4 @@ Source: <https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/
 
 ## Related pages
 
-[[Authentication]] · [[Authorization]] · [[PostgreSQL]] · [[Relational Databases]]
+[[Authentication]] · [[Authorization]] · [[PostgreSQL]] · [[Rate Limiting]] · [[Relational Databases]]

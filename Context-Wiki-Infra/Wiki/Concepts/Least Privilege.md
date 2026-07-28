@@ -42,7 +42,8 @@ material for an [[Access Review]].
 
 [[Authorization]] · [[Secrets Management]] ·
 [[Access Review]] · [[Shared Responsibility Model]] ·
-[[SOC 2]]
+[[SOC 2]] ·
+[[Tool Calling]] · [[Prompt Injection]]
 
 ## Sources
 

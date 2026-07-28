@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare cache — purge cached content"
-description: "description: Remove cached content from Cloudflare edge servers."
+description: "Remove cached content from Cloudflare edge servers."
 resource: "https://developers.cloudflare.com/cache/how-to/purge-cache/index.md"
 source_file: "Raw/03_deployments/cloudflare-cache-purge.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/cache/how-to/purge-cache/index.md>
 
 ## Opening
 
-> description: Remove cached content from Cloudflare edge servers.
+> Remove cached content from Cloudflare edge servers.
 > title: Purge cache
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)
@@ -36,4 +36,4 @@ Source: <https://developers.cloudflare.com/cache/how-to/purge-cache/index.md>
 
 ## Related pages
 
-[[Cloudflare]]
+[[Cloudflare]] · [[Rate Limiting]]

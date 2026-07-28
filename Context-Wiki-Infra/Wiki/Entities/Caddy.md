@@ -52,7 +52,8 @@ later in a way an Nginx server block plus a
 ## Related
 
 [[Reverse Proxy]] · [[Automatic HTTPS]] ·
-[[ACME Protocol]] · [[Nginx]] · [[One-Box Deployment]]
+[[ACME Protocol]] · [[Nginx]] · [[One-Box Deployment]] ·
+[[Streaming Responses]]
 
 ## Sources
 

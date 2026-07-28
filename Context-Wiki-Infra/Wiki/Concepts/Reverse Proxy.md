@@ -44,7 +44,8 @@ from `127.0.0.1` and builds `http://` redirect URLs.
 
 [[Automatic HTTPS]] · [[TLS and HTTPS]] ·
 [[One-Box Deployment]] · [[Load Balancing]] ·
-[[Security Headers]]
+[[Security Headers]] ·
+[[Streaming Responses]]
 
 ## Sources
 

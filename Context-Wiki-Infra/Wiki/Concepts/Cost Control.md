@@ -28,6 +28,7 @@ amount. Surprises come from a handful of specific places.
 | Managed database | often the largest single line on a small stack |
 | Logs and metrics retention | ingestion charges accumulate silently |
 | Idle load balancers and volumes | billed whether used or not |
+| Model API tokens | per token, so it scales with use rather than seats |
 
 ## The structural answers
 
@@ -39,6 +40,10 @@ amount. Surprises come from a handful of specific places.
   is genuinely required.
 - Delete unused resources; a monthly sweep pays for
   itself.
+- A per-tenant cap on any AI feature, metered before it
+  is billed — the one line item that grows with how much
+  your users like the product
+  ([[Usage Quotas and Metering]]).
 - A rented VPS instead of a hyperscaler footprint, where
   the load balancer, NAT gateway and managed database in
   the table above simply have no line item — see
@@ -48,7 +53,8 @@ amount. Surprises come from a handful of specific places.
 
 [[Cloud Service Models]] · [[Managed PaaS]] ·
 [[Object Storage]] · [[The Ladder]] · [[Anti-Patterns]] ·
-[[VPS Instead of Hyperscaler]] · [[Self-Hosted PaaS]]
+[[VPS Instead of Hyperscaler]] · [[Self-Hosted PaaS]] ·
+[[Usage Quotas and Metering]] · [[Rate Limiting]]
 
 ## Sources
 

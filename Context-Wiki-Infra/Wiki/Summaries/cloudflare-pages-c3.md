@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — create-cloudflare CLI (C3)"
-description: "description: Use C3 (create-cloudflare CLI) to set up and deploy new applications using framework-specific setup guides to ensure each new application follows Cloudflare and any third-party"
+description: "Use C3 (create-cloudflare CLI) to set up and deploy new applications using framework-specific setup guides to ensure each new application follows Cloudflare and any third-party best practice"
 resource: "https://developers.cloudflare.com/pages/get-started/c3/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-c3.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/get-started/c3/index.md>
 
 ## Opening
 
-> description: Use C3 (`create-cloudflare` CLI) to set up and deploy new applications using framework-specific setup guides to ensure each new application follows Cloudflare and any third-party best practices for deployment.
+> Use C3 (`create-cloudflare` CLI) to set up and deploy new applications using framework-specific setup guides to ensure each new application follows Cloudflare and any third-party best practices for deployment.
 > title: C3 CLI
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

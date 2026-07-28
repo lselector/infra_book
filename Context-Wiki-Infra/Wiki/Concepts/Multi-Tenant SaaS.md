@@ -42,7 +42,8 @@ closed.
 ## Related
 
 [[Relational Databases]] · [[Authorization]] ·
-[[SOC 2]] · [[Database Sharding]]
+[[SOC 2]] · [[Database Sharding]] ·
+[[Retrieval-Augmented Generation]] · [[AI Assistant Panel]]
 
 ## Sources
 

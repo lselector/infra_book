@@ -49,7 +49,8 @@ pgvector, and [[Read Replicas]] when you need them.
 [[Database Backups]] · [[Connection Pooling]] ·
 [[PgBouncer]] · [[Read Replicas]] ·
 [[Replication Lag]] · [[Hot Partition]] ·
-[[Split Brain]]
+[[Split Brain]] ·
+[[pgvector]]
 
 ## Sources
 

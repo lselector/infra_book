@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "DNS record types explained (Cloudflare)"
-description: "title: DNS records | Learning Center description: DNS records are instructions that live in authoritative DNS servers providing information about a domain including its IP address."
+description: "title: DNS records | Learning Center DNS records are instructions that live in authoritative DNS servers providing information about a domain including its IP address."
 resource: "https://www.cloudflare.com/learning/dns/dns-records/"
 source_file: "Raw/01_foundations/cloudflare-dns-records.md"
 tags: [foundations, summary]
@@ -21,7 +21,7 @@ Source: <https://www.cloudflare.com/learning/dns/dns-records/>
 ## Opening
 
 > title: DNS records | Learning Center
-> description: DNS records are instructions that live in authoritative DNS servers providing information about a domain including its IP address.
+> DNS records are instructions that live in authoritative DNS servers providing information about a domain including its IP address.
 > image: https://www.cloudflare.com/preview.png
 > DNS records are instructions that live in authoritative DNS servers providing information about a domain including its IP address.
 

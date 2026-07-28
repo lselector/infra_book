@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — deploy by direct upload"
-description: "description: Upload your prebuilt assets to Pages and deploy them via the Wrangler CLI or the Cloudflare dashboard."
+description: "Upload your prebuilt assets to Pages and deploy them via the Wrangler CLI or the Cloudflare dashboard."
 resource: "https://developers.cloudflare.com/pages/get-started/direct-upload/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-direct-upload.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/get-started/direct-upload/index
 
 ## Opening
 
-> description: Upload your prebuilt assets to Pages and deploy them via the Wrangler CLI or the Cloudflare dashboard.
+> Upload your prebuilt assets to Pages and deploy them via the Wrangler CLI or the Cloudflare dashboard.
 > title: Direct Upload
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

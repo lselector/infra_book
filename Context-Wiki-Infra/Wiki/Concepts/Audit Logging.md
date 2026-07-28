@@ -47,7 +47,8 @@ important ones into [[Monitoring and Alerting]].
 
 [[Monitoring and Alerting]] · [[SOC 2]] ·
 [[Trust Services Criteria]] · [[Incident Response]] ·
-[[Access Review]]
+[[Access Review]] ·
+[[Tool Calling]]
 
 ## Sources
 

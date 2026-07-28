@@ -14,7 +14,7 @@ Derived from `myprompts/TOC_infra.md`; one section
 per Part, matching the `Raw/` category folders.
 
 See also [Stacks.md](Stacks.md) — *Simple Architecture,
-Simple Deploys*, the same material arranged as fourteen
+Simple Deploys*, the same material arranged as fifteen
 example stacks, simplest first (the sidebar calls it
 Practical Deploys) — and
 [Development Setup.md](Development%20Setup.md), the
@@ -83,7 +83,7 @@ app, automation, "keep it boring"
 
 ## 02_architectures — Static to SaaS
 keywords: the ladder, stacks in increasing
-complexity, rungs 11-14 above the main climb,
+complexity, rungs 11-15 beside the main climb,
 container orchestration, scheduler, rolling deploy,
 service discovery, stateless containers,
 realtime tier, WebSockets, sticky sessions, session
@@ -368,6 +368,46 @@ captures already held elsewhere: the SRE Book
 Well-Architected reliability (`08_scaling_maturity`),
 RabbitMQ work queues (`04_network_storage_db`) and
 the PostgreSQL standby/partitioning docs.
+
+## 12_ai_in_saas — Adding AI to Your SaaS
+keywords: rung 15 of `Stacks.md`, AI assistant panel, side panel chat, in-app
+assistant, chat UI, LLM API integration, model provider,
+server-side proxy endpoint, never call the provider from
+the browser, API key handling, Claude API, Messages API,
+model tiers, model routing by feature, pinned model id,
+stateless conversation, system prompt, context window,
+max_tokens, prompt caching, cached prefix, batch
+processing, token counting, provider outage, degraded
+mode, streaming responses, server-sent events, SSE,
+EventSource, text deltas, chunked fetch, proxy buffering,
+proxy_buffering off, X-Accel-Buffering, heartbeat,
+idle timeout, cancel on disconnect, rate limiting, token
+bucket, sliding window, fixed window, concurrency cap,
+Redis INCR, 429 Too Many Requests, Retry-After,
+rate limit headers, per-tenant limits, usage quotas,
+metering, token accounting, input and output tokens,
+cost per tenant, hard cap vs soft cap, overage, credits,
+usage-based billing, Stripe billing meters, meter events,
+budget alerts, bot protection, unauthenticated demo
+widget, Cloudflare Turnstile, CAPTCHA alternative,
+siteverify, bot score, Cloudflare bot management, WAF
+rate limiting rules, signup abuse, credential sharing,
+anomaly detection, prompt injection, direct and indirect
+injection, untrusted content, system prompt leakage,
+improper output handling, excessive agency, unbounded
+consumption, OWASP Top 10 for LLM Applications, OWASP
+LLM prompt injection cheat sheet, NIST AI Risk Management
+Framework, govern map measure manage, AI section of a
+security questionnaire, retrieval-augmented generation,
+RAG, chunking, embeddings, vector search, pgvector, HNSW,
+IVFFlat, cosine distance, hybrid search, citations,
+tenant filter in the query, reindexing on model change,
+tool calling, function calling, tool definitions, tool
+result, agentic loop, confirmation for side effects,
+idempotent tools, audit log of tool calls, Model Context
+Protocol, MCP server, MCP connector, Cloudflare AI
+Gateway, provider fallback, Vercel AI SDK, streamText,
+chat transcript storage, retention
 
 ## 09_appendices — Reference Material
 keywords: starter stacks by use case, reference

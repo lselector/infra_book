@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare R2 — object storage without egress fees"
-description: "description: Cloudflare R2 is a cost-effective, scalable object storage solution for cloud-native apps, web content, and data lakes without egress fees."
+description: "Cloudflare R2 is a cost-effective, scalable object storage solution for cloud-native apps, web content, and data lakes without egress fees."
 resource: "https://developers.cloudflare.com/r2/index.md"
 source_file: "Raw/04_network_storage_db/cloudflare-r2-overview.md"
 tags: [storage-and-databases, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/r2/index.md>
 
 ## Opening
 
-> description: Cloudflare R2 is a cost-effective, scalable object storage solution for cloud-native apps, web content, and data lakes without egress fees.
+> Cloudflare R2 is a cost-effective, scalable object storage solution for cloud-native apps, web content, and data lakes without egress fees.
 > title: Cloudflare R2
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

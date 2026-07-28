@@ -45,7 +45,8 @@ Step 3 is what keeps you portable.
 [[Authorization]] · [[JSON Web Token]] ·
 [[OAuth 2.0 and OpenID Connect]] ·
 [[Multi-Factor Authentication]] ·
-[[Firebase Authentication]]
+[[Firebase Authentication]] ·
+[[Bot Protection]]
 
 ## Sources
 

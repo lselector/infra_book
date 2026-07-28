@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Registrar — register or transfer a domain"
-description: "description: Register and manage domains at cost with Cloudflare."
+description: "Register and manage domains at cost with Cloudflare."
 resource: "https://developers.cloudflare.com/registrar/index.md"
 source_file: "Raw/03_deployments/cloudflare-registrar-overview.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/registrar/index.md>
 
 ## Opening
 
-> description: Register and manage domains at cost with Cloudflare.
+> Register and manage domains at cost with Cloudflare.
 > title: Cloudflare Registrar
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

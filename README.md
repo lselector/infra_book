@@ -7,7 +7,7 @@ Notes on how to create and maintain your own knowledge base wiki (context wiki) 
 ```bash
 pip install flask markdown pyyaml requests html2text beautifulsoup4
 
-python raw_download.py       # fetch the 279 source documents into Raw/
+python raw_download.py       # fetch the 307 source documents into Raw/
 python wiki_build.py all     # build summaries, cross-link, rebuild the index
 python wikipedia_links.py apply   # add the Wikipedia link to each page
 ./server_start.sh            # browse at http://localhost:8020
@@ -19,8 +19,8 @@ people's documentation (AWS, Cloudflare, MDN, OWASP and
 others), which are theirs to distribute, not mine. The
 source list, the registry and the downloader are all
 here, so `python raw_download.py` reproduces the corpus
-exactly. Everything else — the 233 hand-written wiki
-pages, the 279 summaries, the dashboards — is checked in
+exactly. Everything else — the 250 hand-written wiki
+pages, the 307 summaries, the dashboards — is checked in
 and readable without downloading anything.
 
 ## Documents
@@ -107,28 +107,35 @@ and readable without downloading anything.
   Start here for orientation:
   [Stacks.md](Context-Wiki-Infra/Dashboards/Stacks.md) —
   *Simple Architecture, Simple Deploys*, an
-  example-based ladder of fourteen stacks in
+  example-based ladder of fifteen stacks in
   increasing order of complexity, from a static site on
   Cloudflare Pages up to a replicated, SOC 2-audited
-  SaaS, and then the four specialist rungs above it
+  SaaS, and then the five specialist rungs beside it
   (containers and a scheduler, realtime with sticky
-  sessions, distributed serverless, a data platform),
-  with the cost, ops burden, and "climb when" signal for
-  each rung. It is also the wiki server's front page,
+  sessions, distributed serverless, a data platform, and
+  an AI assistant panel), with the cost, ops burden, and
+  "climb when" signal for each rung. It is also the wiki server's front page,
   where the sidebar links to it as **Practical Deploys**.
   Before rung 1:
   [Development Setup.md](Context-Wiki-Infra/Dashboards/Development%20Setup.md)
   — the tools on your own machine (Unix environment,
   password manager, terminal, bash, editor, AI coding
   agent, Homebrew, GitHub and SSH config).
-  Sources collected in `Raw/` are grouped into nine
+  Rung 15 is **adding an AI assistant** — the side-panel
+  chat most SaaS products now ship. It attaches at rung 8
+  rather than above rung 14: the server-side proxy
+  endpoint, streaming to the panel, per-tenant rate
+  limits and usage quotas, protection from unauthorised
+  use and bots, prompt injection, retrieval and tool
+  calling.
+  Sources collected in `Raw/` are grouped into ten
   category folders (`01_foundations` …
-  `09_appendices`) and registered in
+  `09_appendices`, plus `12_ai_in_saas`) and registered in
   [Raw/sources.md](Context-Wiki-Infra/Raw/sources.md).
 
   `Raw/` is populated by `python raw_download.py` (it is
   gitignored — see Quick start above) and holds
-  **279 documents (~621,000 words)** from vendor and
+  **307 documents (~692,000 words)** from vendor and
   standards
   documentation — Cloudflare, Caddy, nginx, Ubuntu,
   systemd, Let's Encrypt, AWS, Fly.io, Docker,
@@ -138,13 +145,14 @@ and readable without downloading anything.
   ZAP, CloudTrail and Cloud Audit Logs, NIST, CIS
   Controls, SOC 2 guidance, Amazon SES, the Google SRE
   Book, Web3Forms, AWeber, Stripe, MDN, web.dev,
-  Terraform and others.
+  Terraform, the Anthropic Claude API docs, the OWASP
+  LLM Top 10, pgvector and others.
   Refresh or extend them with `python raw_download.py`
   (see [d6_raw_download.md](d6_raw_download.md)).
 
-  The wiki built from them holds **518 OKF pages** joined
-  by **5,125 wiki links**: 279 extractive summaries (one
-  per capture), 111 hand-written concept pages, 122
+  The wiki built from them holds **563 OKF pages** joined
+  by **5,744 wiki links**: 307 extractive summaries (one
+  per capture), 121 hand-written concept pages, 129
   hand-written entity pages, and the dashboards. Browse
   it with `./server_start.sh` at
   <http://localhost:8020>, or rebuild the generated

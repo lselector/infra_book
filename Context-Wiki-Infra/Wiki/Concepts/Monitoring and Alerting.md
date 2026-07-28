@@ -37,7 +37,8 @@ requiring action trains everyone to ignore alerts.
 [[Service Level Objectives]] · [[Audit Logging]] ·
 [[Incident Response]] · [[Prometheus]] · [[Uptime Kuma]] ·
 [[Failure Modes]] · [[Queue Backlog]] ·
-[[Replication Lag]] · [[Chaos Engineering]]
+[[Replication Lag]] · [[Chaos Engineering]] ·
+[[Usage Quotas and Metering]]
 
 ## Sources
 

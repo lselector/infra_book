@@ -80,7 +80,8 @@ is a large part of the
 [[Single Point of Failure]] · [[Load Balancing]] ·
 [[Sticky Sessions]] · [[Connection Pooling]] ·
 [[Monitoring and Alerting]] · [[Incident Response]] ·
-[[Anti-Patterns]] · [[Chaos Engineering]]
+[[Anti-Patterns]] · [[Chaos Engineering]] ·
+[[Rate Limiting]]
 
 ## Sources
 

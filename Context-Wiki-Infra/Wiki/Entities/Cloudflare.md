@@ -22,6 +22,11 @@ the TLS certificate — at no cost for a small project.
   preview deployments.
 - CDN, TLS, HTTP/3 and DDoS absorption by default.
 - [[Cloudflare R2]] for object storage with no egress fee.
+- [[Cloudflare Turnstile]] — an invisible CAPTCHA
+  replacement that works on any site, Cloudflare-hosted
+  or not.
+- [[Cloudflare AI Gateway]] — logging, caching and rate
+  limiting in front of the model providers.
 
 ## Why it is the default here
 
@@ -45,7 +50,8 @@ whole thing free.
 [[Cloudflare Pages]] · [[Cloudflare DNS]] ·
 [[Cloudflare Registrar]] · [[Cloudflare R2]] ·
 [[Content Delivery Network]] · [[Cloudflare Workers]] ·
-[[Cloudflare Pages Functions]]
+[[Cloudflare Pages Functions]] ·
+[[Cloudflare Turnstile]] · [[Cloudflare AI Gateway]]
 
 ## Sources
 

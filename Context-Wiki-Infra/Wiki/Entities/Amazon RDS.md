@@ -45,7 +45,8 @@ restore. See [[Encryption at Rest]].
 
 [[PostgreSQL]] · [[Relational Databases]] ·
 [[Read Replicas]] · [[Encryption at Rest]] ·
-[[Cost Control]]
+[[Cost Control]] ·
+[[pgvector]]
 
 ## Sources
 

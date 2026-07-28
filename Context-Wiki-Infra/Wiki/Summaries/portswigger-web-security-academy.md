@@ -38,4 +38,4 @@ Source: <https://portswigger.net/web-security>
 
 ## Related pages
 
-[[Authentication]] · [[CORS]] · [[HTTP]] · [[Security Testing]]
+[[Authentication]] · [[CORS]] · [[HTTP]] · [[Prompt Injection]] · [[Security Testing]]

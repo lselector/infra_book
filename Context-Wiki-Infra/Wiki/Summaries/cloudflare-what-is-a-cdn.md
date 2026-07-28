@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "What is a CDN? (Cloudflare)"
-description: "title: What is a CDN? | Learning Center description: A content delivery network (CDN) is a geographically distributed group of servers that speeds up the delivery of web content by caching i"
+description: "title: What is a CDN? | Learning Center A content delivery network (CDN) is a geographically distributed group of servers that speeds up the delivery of web content by caching it closer to u"
 resource: "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/"
 source_file: "Raw/01_foundations/cloudflare-what-is-a-cdn.md"
 tags: [foundations, summary]
@@ -21,7 +21,7 @@ Source: <https://www.cloudflare.com/learning/cdn/what-is-a-cdn/>
 ## Opening
 
 > title: What is a CDN? | Learning Center
-> description: A content delivery network (CDN) is a geographically distributed group of servers that speeds up the delivery of web content by caching it closer to users.
+> A content delivery network (CDN) is a geographically distributed group of servers that speeds up the delivery of web content by caching it closer to users.
 > image: https://www.cloudflare.com/preview.png
 > A content delivery network (CDN) is a geographically distributed group of servers that speeds up the delivery of web content by caching it closer to users.
 

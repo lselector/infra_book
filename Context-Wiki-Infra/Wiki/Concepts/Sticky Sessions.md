@@ -70,7 +70,8 @@ Affinity here is correct, not lazy.
 [[Load Balancing]] · [[Read Replicas]] · [[Redis]] ·
 [[Container Orchestration]] · [[Deployment Environments]] ·
 [[Anti-Patterns]] · [[Event-Driven Architecture]] ·
-[[Deployment Strategies]] · [[Cloudflare Workers]]
+[[Deployment Strategies]] · [[Cloudflare Workers]] ·
+[[Streaming Responses]]
 
 ## Sources
 

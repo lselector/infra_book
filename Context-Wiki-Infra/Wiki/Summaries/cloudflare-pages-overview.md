@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — overview"
-description: "description: Deploy full-stack applications instantly to the Cloudflare global network with Pages."
+description: "Deploy full-stack applications instantly to the Cloudflare global network with Pages."
 resource: "https://developers.cloudflare.com/pages/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-overview.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/index.md>
 
 ## Opening
 
-> description: Deploy full-stack applications instantly to the Cloudflare global network with Pages.
+> Deploy full-stack applications instantly to the Cloudflare global network with Pages.
 > title: Cloudflare Pages
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

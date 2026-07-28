@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages Functions — get started"
-description: "description: Create and deploy your first Pages Function on Cloudflare Pages."
+description: "Create and deploy your first Pages Function on Cloudflare Pages."
 resource: "https://developers.cloudflare.com/pages/functions/get-started/index.md"
 source_file: "Raw/09_appendices/cloudflare-pages-functions.md"
 tags: [reference, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/functions/get-started/index.md>
 
 ## Opening
 
-> description: Create and deploy your first Pages Function on Cloudflare Pages.
+> Create and deploy your first Pages Function on Cloudflare Pages.
 > title: Get started
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

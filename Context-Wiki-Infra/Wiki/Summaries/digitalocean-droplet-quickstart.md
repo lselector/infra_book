@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "DigitalOcean — Droplet quickstart"
-description: "title: Droplet Quickstart description: Just the essentials to go from zero to working in a few minutes."
+description: "title: Droplet Quickstart Just the essentials to go from zero to working in a few minutes."
 resource: "https://docs.digitalocean.com/products/droplets/getting-started/quickstart/"
 source_file: "Raw/03_deployments/digitalocean-droplet-quickstart.md"
 tags: [deployments, summary]
@@ -21,7 +21,7 @@ Source: <https://docs.digitalocean.com/products/droplets/getting-started/quickst
 ## Opening
 
 > title: Droplet Quickstart
-> description: Just the essentials to go from zero to working in a few minutes.
+> Just the essentials to go from zero to working in a few minutes.
 > product: Droplets
 > url: https://docs.digitalocean.com/products/droplets/getting-started/quickstart/
 

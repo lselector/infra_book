@@ -96,6 +96,9 @@ CATEGORY_TITLES = {
     "09_appendices":
         "09_appendices — starter stacks, diagrams, "
         "further reading, case study",
+    "12_ai_in_saas":
+        "12_ai_in_saas — adding an AI assistant to a SaaS "
+        "(LLM APIs, streaming, limits, abuse protection)",
 }
 
 

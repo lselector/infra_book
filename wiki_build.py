@@ -55,6 +55,7 @@ CATEGORY_TAGS = {
     "07_playbooks": "playbooks",
     "08_scaling_maturity": "scaling",
     "09_appendices": "reference",
+    "12_ai_in_saas": "ai-in-saas",
 }
 
 # Page names too short or too common to auto-link
@@ -64,6 +65,13 @@ CATEGORY_TAGS = {
 LINK_STOPLIST = {"Caching", "Firewall", "Monitoring",
                  "Bash", "GitHub", "Express", "React",
                  "just", "Invoke"}
+
+# Docs-site chrome that survives the HTML to Markdown
+# pass and would otherwise become the lead line of a
+# summary, and its one-sentence description.
+NOISE_LEAD = re.compile(
+    r"^(last updated\b.*view as markdown"
+    r"|available on all plans\b)", re.I)
 
 
 # --------------------------------------------------------------
@@ -108,6 +116,10 @@ def lead_paragraphs(body):
             continue
         if line.startswith(("*", "-", "```", "<a ")):
             continue
+        if NOISE_LEAD.match(line):
+            continue
+        if line.lower().startswith("description: "):
+            line = line[len("description: "):]
         if len(line) > LEAD_CHARS:
             line = line[:LEAD_CHARS].rsplit(" ", 1)[0] + " ..."
         out.append(quote_safe(line))
@@ -333,7 +345,7 @@ def build_index():
         "`wiki_build.py index` — do not hand-edit.",
         "",
         "Start with [[Stacks]] — *Simple Architecture,",
-        "Simple Deploys*, the fourteen-rung ladder of",
+        "Simple Deploys*, the fifteen-rung ladder of",
         "example stacks. It is the site's front page, and",
         "the sidebar calls it Practical Deploys.",
         "[[Development Setup]] covers the tools on your own",
@@ -358,18 +370,22 @@ def build_index():
 
 # --------------------------------------------------------------
 def main():
-    """Run one build step, or all of them in order."""
-    cmd = sys.argv[1] if len(sys.argv) > 1 else "all"
-    if cmd in ("summaries", "all"):
-        build_summaries()
-    if cmd in ("crosslink", "all"):
-        crosslink()
-    if cmd in ("index", "all"):
-        build_index()
-    if cmd not in ("summaries", "crosslink",
-                   "index", "all"):
+    """Run the named build steps, or all of them."""
+    # Several steps may be named in one call, e.g.
+    # "crosslink index"; they always run in build order.
+    order = {"summaries": 0, "crosslink": 1, "index": 2}
+    steps = sys.argv[1:] or ["all"]
+    if any(s not in order and s != "all" for s in steps):
         print("usage: wiki_build.py "
               "summaries|crosslink|index|all")
+        return
+    if "all" in steps:
+        steps = list(order)
+    run = {"summaries": build_summaries,
+           "crosslink": crosslink,
+           "index": build_index}
+    for step in sorted(set(steps), key=order.get):
+        run[step]()
 
 
 # --------------------------------------------------------------

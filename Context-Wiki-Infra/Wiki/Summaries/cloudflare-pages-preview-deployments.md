@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — preview deployments"
-description: "description: Preview new versions of your Cloudflare Pages project with unique URLs before deploying to production."
+description: "Preview new versions of your Cloudflare Pages project with unique URLs before deploying to production."
 resource: "https://developers.cloudflare.com/pages/configuration/preview-deployments/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-preview-deployments.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/configuration/preview-deploymen
 
 ## Opening
 
-> description: Preview new versions of your Cloudflare Pages project with unique URLs before deploying to production.
+> Preview new versions of your Cloudflare Pages project with unique URLs before deploying to production.
 > title: Preview deployments
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

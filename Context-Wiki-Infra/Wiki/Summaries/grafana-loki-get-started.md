@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Grafana Loki — get started with log aggregation"
-description: "title: 'Get started with Grafana Loki | Grafana Loki documentation' description: 'Provides an overview of the steps for implementing Grafana Loki to collect and view logs.' Loki is a horizon"
+description: "title: 'Get started with Grafana Loki | Grafana Loki documentation' 'Provides an overview of the steps for implementing Grafana Loki to collect and view logs.' Loki is a horizontally scalabl"
 resource: "https://grafana.com/docs/loki/latest/get-started/"
 source_file: "Raw/05_ops_cicd_security/grafana-loki-get-started.md"
 tags: [ops-and-security, summary]
@@ -21,7 +21,7 @@ Source: <https://grafana.com/docs/loki/latest/get-started/>
 ## Opening
 
 > title: "Get started with Grafana Loki | Grafana Loki documentation"
-> description: "Provides an overview of the steps for implementing Grafana Loki to collect and view logs."
+> "Provides an overview of the steps for implementing Grafana Loki to collect and view logs."
 > Loki is a horizontally scalable, highly available, multi-tenant log aggregation system inspired by Prometheus. It’s designed to be very cost-effective and easy to operate. It doesn’t index the contents of the logs, but rather a set of labels for each log stream. Note that the entire content of the ...
 > Because all Loki implementations are unique, the installation process is different for every customer. But there are some steps in the process that are common to every installation.
 

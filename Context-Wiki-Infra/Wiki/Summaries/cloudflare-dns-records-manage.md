@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare DNS — manage DNS records"
-description: "description: Create, edit, and delete DNS records for your zone."
+description: "Create, edit, and delete DNS records for your zone."
 resource: "https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/index.md"
 source_file: "Raw/03_deployments/cloudflare-dns-records-manage.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-
 
 ## Opening
 
-> description: Create, edit, and delete DNS records for your zone.
+> Create, edit, and delete DNS records for your zone.
 > title: Manage DNS records
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

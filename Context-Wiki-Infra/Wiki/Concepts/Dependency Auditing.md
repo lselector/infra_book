@@ -44,7 +44,8 @@ number.
 
 [[Security Testing]] · [[OWASP Top 10]] ·
 [[Continuous Integration and Delivery]] ·
-[[Unattended Upgrades]] · [[Dependabot]]
+[[Unattended Upgrades]] · [[Dependabot]] ·
+[[OWASP Top 10 for LLM Applications]]
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare DNS — email records (SPF, DKIM, DMARC, MX)"
-description: "description: Configure MX, SPF, DKIM, and DMARC records for email."
+description: "Configure MX, SPF, DKIM, and DMARC records for email."
 resource: "https://developers.cloudflare.com/dns/manage-dns-records/how-to/email-records/index.md"
 source_file: "Raw/06_product_patterns/cloudflare-dns-email-records.md"
 tags: [product-patterns, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/dns/manage-dns-records/how-to/email-r
 
 ## Opening
 
-> description: Configure MX, SPF, DKIM, and DMARC records for email.
+> Configure MX, SPF, DKIM, and DMARC records for email.
 > title: Set up email records
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

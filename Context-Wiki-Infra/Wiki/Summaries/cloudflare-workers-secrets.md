@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Workers / Pages — storing secrets"
-description: "description: Store sensitive information, like API keys and auth tokens, in your Worker."
+description: "Store sensitive information, like API keys and auth tokens, in your Worker."
 resource: "https://developers.cloudflare.com/workers/configuration/secrets/index.md"
 source_file: "Raw/05_ops_cicd_security/cloudflare-workers-secrets.md"
 tags: [ops-and-security, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/workers/configuration/secrets/index.m
 
 ## Opening
 
-> description: Store sensitive information, like API keys and auth tokens, in your Worker.
+> Store sensitive information, like API keys and auth tokens, in your Worker.
 > title: Secrets
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Wrangler CLI — Workers commands (dev, deploy, versions)"
-description: "description: Wrangler commands for creating, developing, deploying, and managing Workers."
+description: "Wrangler commands for creating, developing, deploying, and managing Workers."
 resource: "https://developers.cloudflare.com/workers/wrangler/commands/workers/index.md"
 source_file: "Raw/03_deployments/cloudflare-wrangler-workers-commands.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/workers/wrangler/commands/workers/ind
 
 ## Opening
 
-> description: Wrangler commands for creating, developing, deploying, and managing Workers.
+> Wrangler commands for creating, developing, deploying, and managing Workers.
 > title: Workers
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

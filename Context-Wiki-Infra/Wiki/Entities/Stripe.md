@@ -43,7 +43,8 @@ multi-month detour.
 
 [[Authentication]] · [[Secrets Management]] ·
 [[Deployment Environments]] · [[Transactional Email]] ·
-[[SOC 2]]
+[[SOC 2]] ·
+[[Usage Quotas and Metering]]
 
 ## Sources
 

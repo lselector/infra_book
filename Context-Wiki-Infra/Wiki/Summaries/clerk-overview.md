@@ -37,4 +37,4 @@ Source: <https://clerk.com/docs>
 
 ## Related pages
 
-[[Authentication]] · [[Authorization]] · [[Clerk]] · [[Next.js]] · [[Rust]]
+[[Authentication]] · [[Authorization]] · [[Bot Protection]] · [[Clerk]] · [[Next.js]] · [[Rust]]

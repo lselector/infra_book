@@ -80,7 +80,8 @@ synchronised before anything goes wrong — stagger them.
 [[Failure Modes]] · [[Cascading Failure]] ·
 [[Cache Stampede]] · [[Duplicate Processing]] ·
 [[Idempotency]] · [[Queue Backlog]] ·
-[[Monitoring and Alerting]] · [[HTTP]]
+[[Monitoring and Alerting]] · [[HTTP]] ·
+[[Rate Limiting]]
 
 ## Sources
 

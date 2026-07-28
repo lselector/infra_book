@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Wrangler CLI — pages commands (wrangler pages deploy)"
-description: "description: Wrangler commands for configuring Cloudflare Pages."
+description: "Wrangler commands for configuring Cloudflare Pages."
 resource: "https://developers.cloudflare.com/workers/wrangler/commands/pages/index.md"
 source_file: "Raw/03_deployments/cloudflare-wrangler-pages-commands.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/workers/wrangler/commands/pages/index
 
 ## Opening
 
-> description: Wrangler commands for configuring Cloudflare Pages.
+> Wrangler commands for configuring Cloudflare Pages.
 > title: Pages
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

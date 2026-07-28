@@ -1672,5 +1672,173 @@
     "file": "coolify-installation.md",
     "title": "Coolify — installation on your own server",
     "url": "https://coolify.io/docs/get-started/installation"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-models-overview.md",
+    "title": "Claude models overview (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/about-claude/models/overview.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-pricing.md",
+    "title": "Claude API pricing (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/about-claude/pricing.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-streaming.md",
+    "title": "Streaming Messages (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/streaming.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-prompt-caching.md",
+    "title": "Prompt caching (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-rate-limits.md",
+    "title": "API rate limits (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/api/rate-limits.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-errors.md",
+    "title": "API errors and HTTP status codes (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/api/errors.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-context-windows.md",
+    "title": "Context windows (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-batch-processing.md",
+    "title": "Message Batches API (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-tool-use.md",
+    "title": "Tool use overview (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "anthropic-mcp-connector.md",
+    "title": "MCP connector (Anthropic)",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/mcp-connector.md"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "mcp-introduction.md",
+    "title": "Model Context Protocol - getting started",
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "owasp-llm-top-ten.md",
+    "title": "OWASP Top 10 for LLM Applications",
+    "url": "https://genai.owasp.org/llm-top-10/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "owasp-llm-prompt-injection-cheatsheet.md",
+    "title": "OWASP LLM Prompt Injection Prevention Cheat Sheet",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "cloudflare-turnstile.md",
+    "title": "Cloudflare Turnstile - CAPTCHA alternative",
+    "url": "https://developers.cloudflare.com/turnstile/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "cloudflare-bots.md",
+    "title": "Cloudflare bot management overview",
+    "url": "https://developers.cloudflare.com/bots/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "cloudflare-rate-limiting-rules.md",
+    "title": "Cloudflare rate limiting rules",
+    "url": "https://developers.cloudflare.com/waf/rate-limiting-rules/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "cloudflare-ai-gateway.md",
+    "title": "Cloudflare AI Gateway",
+    "url": "https://developers.cloudflare.com/ai-gateway/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "mdn-server-sent-events.md",
+    "title": "Using server-sent events (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "mdn-eventsource.md",
+    "title": "EventSource API (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "mdn-http-429.md",
+    "title": "429 Too Many Requests (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/429"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "mdn-retry-after.md",
+    "title": "Retry-After header (MDN)",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Retry-After"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "stripe-usage-based-billing.md",
+    "title": "Usage-based billing implementation guide (Stripe)",
+    "url": "https://docs.stripe.com/billing/subscriptions/usage-based/implementation-guide"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "stripe-recording-usage.md",
+    "title": "Record usage with the API (Stripe)",
+    "url": "https://docs.stripe.com/billing/subscriptions/usage-based/recording-usage-api"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "redis-incr.md",
+    "title": "INCR - Redis rate limiting pattern",
+    "url": "https://redis.io/docs/latest/commands/incr/"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "pgvector-readme.md",
+    "title": "pgvector - vector similarity search for PostgreSQL",
+    "url": "https://github.com/pgvector/pgvector"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "nist-ai-rmf.md",
+    "title": "NIST AI Risk Management Framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "vercel-ai-sdk-introduction.md",
+    "title": "AI SDK introduction (Vercel)",
+    "url": "https://ai-sdk.dev/docs/introduction"
+  },
+  {
+    "cat": "12_ai_in_saas",
+    "file": "stripe-usage-meters.md",
+    "title": "Configure a billing meter (Stripe)",
+    "url": "https://docs.stripe.com/billing/subscriptions/usage-based/meters/configure"
   }
 ]

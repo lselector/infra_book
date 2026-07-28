@@ -1,7 +1,7 @@
 ---
 type: Summary
 title: "Cloudflare Pages — Git integration (GitHub/GitLab builds)"
-description: "description: Connect your Git provider to Pages."
+description: "Connect your Git provider to Pages. title: Git integration image: https://developers.cloudflare.com/og-docs.png Skip to content"
 resource: "https://developers.cloudflare.com/pages/get-started/git-integration/index.md"
 source_file: "Raw/03_deployments/cloudflare-pages-git-integration.md"
 tags: [deployments, summary]
@@ -20,7 +20,7 @@ Source: <https://developers.cloudflare.com/pages/get-started/git-integration/ind
 
 ## Opening
 
-> description: Connect your Git provider to Pages.
+> Connect your Git provider to Pages.
 > title: Git integration
 > image: https://developers.cloudflare.com/og-docs.png
 > [Skip to content](#main-content)

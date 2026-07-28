@@ -36,7 +36,8 @@ it deliberately.
 
 [[Authentication]] · [[Least Privilege]] ·
 [[Multi-Tenant SaaS]] · [[Security Testing]] ·
-[[Access Review]]
+[[Access Review]] ·
+[[Tool Calling]] · [[Prompt Injection]]
 
 ## Sources
 

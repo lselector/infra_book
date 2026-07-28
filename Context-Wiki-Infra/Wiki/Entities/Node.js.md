@@ -67,7 +67,8 @@ only a JS runtime can do.
 [[React]] · [[Next.js]] · [[Express]] ·
 [[Server-Side Rendering]] · [[FastAPI]] ·
 [[Reverse Proxy]] · [[Twelve-Factor App]] ·
-[[Container Orchestration]] · [[Sticky Sessions]]
+[[Container Orchestration]] · [[Sticky Sessions]] ·
+[[Vercel AI SDK]]
 
 ## Sources
 

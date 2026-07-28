@@ -23,6 +23,10 @@ does not repeat it.
    [[Message Queues]].
 4. **Materialised results in the database** — a table you
    refresh on a schedule.
+5. **Prompt caching at the model provider** — a stable
+   request prefix re-read at a fraction of the input
+   price, and one of the largest savings available on an
+   AI feature ([[LLM API Integration]]).
 
 ## Why it matters here
 
@@ -42,7 +46,8 @@ second place that writes forgets.
 [[Content Delivery Network]] · [[Cache Busting]] ·
 [[Redis]] · [[Read Replicas]] · [[Service Worker]] ·
 [[Cache Stampede]] · [[Docker Build Cache]] ·
-[[Failure Modes]]
+[[Failure Modes]] ·
+[[LLM API Integration]] · [[Usage Quotas and Metering]]
 
 ## Sources
 

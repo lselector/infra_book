@@ -56,7 +56,8 @@ and skip the tier entirely.
 [[React]] · [[Node.js]] · [[Server-Side Rendering]] ·
 [[Cloudflare Pages]] · [[Cloudflare Pages Functions]] ·
 [[Static Site Hosting]] · [[Docker]] · [[Caddy]] ·
-[[Core Web Vitals]]
+[[Core Web Vitals]] ·
+[[Vercel AI SDK]]
 
 ## Sources
 
