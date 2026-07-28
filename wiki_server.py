@@ -7,7 +7,8 @@ listings, page infoboxes from OKF frontmatter, backlinks
 ("what links here"), and full-text search.
 
 "/" serves the page named by HOME_PAGE (Stacks — the
-ladder of example stacks); NAV_PAGES are pinned above
+ladder of example stacks, shown in the sidebar as
+HOME_LABEL); NAV_PAGES are pinned above
 the section list in the sidebar.
 
 Usage:
@@ -24,7 +25,7 @@ Usage:
 Requires: flask, markdown, pyyaml.
 
 Created: 2026-07-15
-Last updated: 2026-07-27
+Last updated: 2026-07-28
 """
 
 import html
@@ -55,6 +56,7 @@ SECTION_DIRS = {
 # The page served at "/", and the pages pinned above
 # the section list in the sidebar, in order.
 HOME_PAGE = "Stacks"
+HOME_LABEL = "Practical Deploys"
 NAV_PAGES = ["Development Setup", "Index"]
 
 RAW_DIR = WIKI_ROOT / "Raw"
@@ -90,9 +92,10 @@ nav { width:180px; padding:20px 12px;
 nav h3 { font-size:0.85em; color:#54595d;
   border-bottom:1px solid #c8ccd1;
   padding-bottom:4px; }
-nav ul { list-style:none; padding-left:6px;
+nav ul { list-style:disc; padding-left:20px;
   margin:6px 0; }
 nav li { margin:4px 0; }
+nav li::marker { color:#a2a9b1; }
 nav li.home { font-weight:bold; }
 nav hr { border:0;
   border-top:1px solid #eaecf0; margin:8px 6px; }
@@ -195,7 +198,7 @@ def nav_items(idx):
     """Pinned sidebar entries: home page, then key pages."""
     items = [
         '<li class="home"><a href="/">'
-        f"{html.escape(HOME_PAGE)}</a></li>"
+        f"{html.escape(HOME_LABEL)}</a></li>"
     ]
     for name in NAV_PAGES:
         if name not in idx:
@@ -385,7 +388,7 @@ def make_snippet(text, pos, qlen):
 # --------------------------------------------------------------
 @app.route("/")
 def home():
-    """Main page: the Stacks ladder."""
+    """Main page: the ladder of practical deploys."""
     idx = page_index()
     if HOME_PAGE in idx:
         _, path = idx[HOME_PAGE]
@@ -397,7 +400,7 @@ def home():
     else:
         content = (f"<h1>{html.escape(HOME_PAGE)} page"
                    " not found</h1>")
-    return page_html(HOME_PAGE, content, idx)
+    return page_html(HOME_LABEL, content, idx)
 
 
 # --------------------------------------------------------------
@@ -583,7 +586,7 @@ def not_found(_err):
     return page_html(
         "Page not found",
         "<h1>Page not found</h1>"
-        '<p>Try the <a href="/">Stacks</a> ladder, the '
+        '<p>Try <a href="/">Practical Deploys</a>, the '
         '<a href="/wiki/Index">Index</a>, or the search '
         "box above.</p>", idx
     ), 404

@@ -271,7 +271,8 @@ you and a deployed site.
 
 ## See also
 
-* [[Stacks]] — the ten-rung ladder this page precedes.
+* [[Stacks]] — *Simple Architecture, Simple Deploys*,
+  the ladder this page precedes.
 * [[Topics]] — the keyword plan behind the wiki.
 * [[Static Build Pipeline]] — the local build scripts
   these tools run, and [[just]] as their front door.

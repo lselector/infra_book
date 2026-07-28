@@ -37,7 +37,8 @@ it is the default recommendation.
 ## Related
 
 [[One-Box Deployment]] · [[DigitalOcean]] ·
-[[Ubuntu Server]] · [[Cost Control]]
+[[Ubuntu Server]] · [[Cost Control]] ·
+[[VPS Instead of Hyperscaler]] · [[Kamal]] · [[Coolify]]
 
 ## Sources
 

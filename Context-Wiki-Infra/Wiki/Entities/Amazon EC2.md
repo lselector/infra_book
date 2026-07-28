@@ -25,7 +25,10 @@ micro instances upward.
 
 Purely as a cheap box. A comparable [[Hetzner Cloud]] or
 [[DigitalOcean]] instance costs less and involves far less
-surrounding configuration.
+surrounding configuration — and the load balancer, NAT
+gateway and managed database that usually come with it
+cost more than the instance does. The whole comparison is
+[[VPS Instead of Hyperscaler]].
 
 ## Watch out for
 
@@ -40,7 +43,8 @@ surrounding configuration.
 ## Related
 
 [[One-Box Deployment]] · [[VPC and Security Groups]] ·
-[[Cost Control]] · [[Cloud Service Models]]
+[[Cost Control]] · [[Cloud Service Models]] ·
+[[VPS Instead of Hyperscaler]]
 
 ## Sources
 

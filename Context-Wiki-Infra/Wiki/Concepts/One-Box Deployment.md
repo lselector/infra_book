@@ -23,6 +23,15 @@ acquire a computer to look after.
 - [[SQLite]] or [[PostgreSQL]] on the same disk.
 - Nightly backups off the box.
 
+## Getting code onto it
+
+`git pull` and a `systemctl restart` is the honest
+starting point. When you want zero-downtime deploys and
+rollback, [[Kamal]] adds them over SSH with no daemon on
+the box; [[Coolify]] adds a whole dashboard instead. The
+cost case for choosing this over AWS at all is
+[[VPS Instead of Hyperscaler]].
+
 ## Why it matters here
 
 It is astonishingly capable. A single modern 2-vCPU
@@ -44,7 +53,8 @@ Kubernetes at this stage is the definitive
 
 [[Linux Server Hardening]] · [[Reverse Proxy]] ·
 [[Database Backups]] · [[Monolithic Web App]] ·
-[[Managed PaaS]]
+[[Managed PaaS]] · [[VPS Instead of Hyperscaler]] ·
+[[Self-Hosted PaaS]] · [[Kamal]] · [[Coolify]]
 
 ## Sources
 

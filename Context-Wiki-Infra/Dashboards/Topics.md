@@ -13,9 +13,10 @@ The plan and checklist for building this wiki
 Derived from `myprompts/TOC_infra.md`; one section
 per Part, matching the `Raw/` category folders.
 
-See also [Stacks.md](Stacks.md) — the same material
-arranged as a ten-rung ladder of example stacks in
-increasing order of complexity — and
+See also [Stacks.md](Stacks.md) — *Simple Architecture,
+Simple Deploys*, the same material arranged as fourteen
+example stacks, simplest first (the sidebar calls it
+Practical Deploys) — and
 [Development Setup.md](Development%20Setup.md), the
 tools on your own machine that come before rung 1.
 
@@ -140,7 +141,19 @@ renewal, reverse_proxy directive, Caddy vs Nginx,
 Nginx, systemd service, Let's Encrypt, certbot,
 unattended upgrades, swap file, managed PaaS,
 Render, Fly.io,
-Railway, Heroku, serverless full-stack, Lambda,
+Railway, Heroku,
+VPS instead of hyperscaler, cheap VPS vs AWS,
+cost of an ALB and NAT gateway, egress pricing,
+leaving the cloud, no vendor lock-in,
+self-hosted PaaS, open-source Heroku alternative,
+Coolify, coolify install script, Coolify Cloud,
+push to deploy on your own server, one-click databases,
+preview deploys per pull request, Dokku, CapRover,
+Kamal, kamal deploy, kamal setup, deploy.yml,
+kamal-proxy, zero-downtime container deploy over SSH,
+accessories, destinations, asset bridging,
+imperative deploys vs state reconciliation,
+serverless full-stack, Lambda,
 API Gateway, Docker Compose in production, ECS,
 Fargate, when you need Kubernetes,
 micro-servers, micro-VMs, Firecracker, boot in

@@ -55,8 +55,8 @@ Port: **8020** (constant `PORT` in the script).
 
 | Feature | Details |
 |---------|---------|
-| Main page | Renders `Dashboards/Stacks.md` — the ladder of example stacks (constant `HOME_PAGE`) |
-| Pinned nav | `Stacks` (top, bold), then `Development Setup` and `Index` above the section list (constant `NAV_PAGES`) |
+| Main page | Renders `Dashboards/Stacks.md` — *Simple Architecture, Simple Deploys*, the ladder of example stacks (constant `HOME_PAGE`) |
+| Pinned nav | `Practical Deploys` (top, bold — the front page, labelled by constant `HOME_LABEL`), then `Development Setup` and `Index` above the section list (constant `NAV_PAGES`) |
 | Wiki links | `[[Name]]` and `[[Name\|alias]]` become links; links to missing pages show in red |
 | Sections | Sidebar navigation to Concepts, Entities, Summaries, Dashboards with page counts |
 | Infobox | OKF frontmatter (type, description, wikipedia, website, resource, source_file, tags) rendered as a floating box; `resource` becomes a clickable source link and `source_file` links to the capture in `Raw/` |

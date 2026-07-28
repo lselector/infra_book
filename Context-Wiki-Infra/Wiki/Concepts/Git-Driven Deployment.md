@@ -24,6 +24,10 @@ Deployment is the act of making the server match a commit.
 4. **Preview environments** per pull request — see
    [[Deployment Environments]].
 
+On your own box, [[Kamal]] covers steps 2 and 3 without a
+platform, and [[Coolify]] covers 1 through 4 with one —
+see [[Self-Hosted PaaS]].
+
 ## Why it matters here
 
 Step 1 is not shameful. What matters is that the commit
@@ -42,7 +46,8 @@ nobody can say what is deployed.
 [[Continuous Integration and Delivery]] · [[Deployment Environments]] ·
 [[Static Build Pipeline]] · [[Infrastructure as Code]] ·
 [[Git]] · [[GitHub]] · [[Development Setup]] ·
-[[Deployment Strategies]] · [[Automated Testing]]
+[[Deployment Strategies]] · [[Automated Testing]] ·
+[[Kamal]] · [[Coolify]] · [[Self-Hosted PaaS]]
 
 ## Sources
 

@@ -29,6 +29,14 @@ see the operating system.
 latency), [[Render]] (conventional, predictable),
 [[Railway]] (fastest to first deploy).
 
+## The cheaper version of the same idea
+
+Run the platform yourself on a rented box: [[Coolify]]
+gives you the dashboard and push-to-deploy, [[Kamal]]
+gives you just the deploy. You keep the ergonomics and
+pay VPS prices — and inherit the operating. See
+[[Self-Hosted PaaS]] and [[VPS Instead of Hyperscaler]].
+
 ## Watch out for
 
 - Free tiers that sleep. A cold start on a marketing site
@@ -42,7 +50,8 @@ latency), [[Render]] (conventional, predictable),
 ## Related
 
 [[Cloud Service Models]] · [[One-Box Deployment]] ·
-[[Serverless Architecture]] · [[Cost Control]]
+[[Serverless Architecture]] · [[Cost Control]] ·
+[[Self-Hosted PaaS]] · [[VPS Instead of Hyperscaler]]
 
 ## Sources
 

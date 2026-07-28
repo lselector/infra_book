@@ -743,3 +743,86 @@ and structural changes.
   (software)` and `Pyinvoke` are both missing), so it
   links to <https://www.pyinvoke.org/>. Coverage is now
   204 articles, 22 project sites, 3 with neither.
+
+## 2026-07-28 — Renaming the front page
+
+* **The front page is now titled "Simple Architecture,
+  Simple Deploys"**, replacing "The Ladder — Infra Stacks
+  in Increasing Complexity". The old title named the
+  organising device (a ladder of stacks); the new one
+  names what the reader wants.
+* **The sidebar calls it "Practical Deploys."** New
+  `HOME_LABEL` constant in `wiki_server.py`, used for the
+  pinned top entry, the browser tab title and the 404
+  page. `HOME_PAGE` still resolves the file, so the
+  display name and the page key are now separate things.
+* **The file stays `Dashboards/Stacks.md` and the page
+  key stays `Stacks`** — deliberately. Around thirty
+  pages link to it as `[[Stacks]]`, including every
+  failure-mode and ladder reference; renaming the file
+  would break all of them to change a label that the
+  server can override in one line. Three names now serve
+  three jobs: `Stacks` is the identifier, *Simple
+  Architecture, Simple Deploys* is the title on the page,
+  *Practical Deploys* is the navigation label.
+* Stale descriptions fixed where they were found: the
+  generated index preamble (`wiki_build.py`) still said
+  "ten-rung" after rungs 11–14 were added, as did
+  `Topics.md` and `Development Setup`. All now say
+  fourteen and name the new title. `d5_wiki_server.md`
+  documents `HOME_LABEL` beside `HOME_PAGE`, and
+  `README.md` names both the title and the sidebar label.
+
+## 2026-07-28 — Cheap VPS deployment, Kamal and Coolify
+
+* **New topic: deploying to a cheap VPS instead of AWS.**
+  Two concept pages and two entity pages, filling the
+  gap between `One-Box Deployment` (the shape of the
+  stack) and `Managed PaaS` (paying not to own it):
+  * `Concepts/VPS Instead of Hyperscaler.md` — where the
+    hyperscaler bill actually comes from (the load
+    balancer, NAT gateway and managed database, not the
+    instance), what you give up by leaving, the four-step
+    recipe, the four ways to deploy onto the box, and
+    when to stay on AWS anyway.
+  * `Concepts/Self-Hosted PaaS.md` — the Coolify/Dokku/
+    CapRover category: Heroku ergonomics on hardware you
+    rent, with the control plane as the new thing you
+    operate.
+  * `Entities/Kamal.md` — Basecamp's imperative,
+    zero-downtime container deploys over SSH;
+    `deploy.yml`, `kamal-proxy`, accessories,
+    destinations, asset bridging.
+  * `Entities/Coolify.md` — the install script, the
+    dashboard on port 8000, one-click databases, the
+    2 vCPU / 2 GB floor, and Coolify Cloud as the
+    hosted alternative.
+* **8 new captures in `Raw/03_deployments/`** (271 → 279):
+  `kamal-home`, `kamal-installation`,
+  `kamal-configuration`, `kamal-readme`,
+  `coolify-home`, `coolify-introduction`,
+  `coolify-installation`, `coolify-readme`, with
+  summaries generated for each. `kamal-readme` is short
+  (~120 words) because the upstream README is a pointer
+  to the docs site, not a navigation-only capture.
+  `kamal-deploy.org/docs/configuration/` was a
+  table-of-contents page and was replaced with
+  `.../configuration/overview/`.
+* **Ripple updates** adding links both ways from
+  `One-Box Deployment`, `Managed PaaS`,
+  `Containers in Production`, `Git-Driven Deployment`,
+  `Cost Control`, `The Ladder`, `Amazon EC2`,
+  `Hetzner Cloud`, `DigitalOcean` and `Docker Compose`.
+  `Stacks.md` gains the VPS-versus-AWS note at rung 5 and
+  the Kamal-without-a-scheduler option at rung 11;
+  `Topics.md` gains the keywords under `03_deployments`.
+* Outside links: `Virtual private server` and
+  `Self-hosting (network)` for the two concepts —
+  the obvious `Self-hosting (web services)` turned out
+  to be a redirect. Kamal and Coolify have no Wikipedia
+  article, so they carry their own sites; the website
+  count goes 22 → 24.
+* Counts after this pass: 111 concepts, 122 entities,
+  279 summaries, 518 OKF pages, 5,125 wiki links.
+  `README.md` and `d8_wikipedia_links.md` updated to
+  match.

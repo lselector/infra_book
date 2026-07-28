@@ -7,7 +7,7 @@ Notes on how to create and maintain your own knowledge base wiki (context wiki) 
 ```bash
 pip install flask markdown pyyaml requests html2text beautifulsoup4
 
-python raw_download.py       # fetch the 271 source documents into Raw/
+python raw_download.py       # fetch the 279 source documents into Raw/
 python wiki_build.py all     # build summaries, cross-link, rebuild the index
 python wikipedia_links.py apply   # add the Wikipedia link to each page
 ./server_start.sh            # browse at http://localhost:8020
@@ -19,8 +19,8 @@ people's documentation (AWS, Cloudflare, MDN, OWASP and
 others), which are theirs to distribute, not mine. The
 source list, the registry and the downloader are all
 here, so `python raw_download.py` reproduces the corpus
-exactly. Everything else — the 229 hand-written wiki
-pages, the 271 summaries, the dashboards — is checked in
+exactly. Everything else — the 233 hand-written wiki
+pages, the 279 summaries, the dashboards — is checked in
 and readable without downloading anything.
 
 ## Documents
@@ -84,6 +84,15 @@ and readable without downloading anything.
 - `server_start.sh` / `server_stop.sh` /
   `server_restart.sh` — control scripts for the wiki
   server.
+- [.claude/hooks/allow_local_dev.py](.claude/hooks/allow_local_dev.py)
+  — Claude Code `PreToolUse` hook that auto-approves the
+  routine loop of this repo (the four build scripts, curl
+  against localhost, read-only filters like `head` and
+  `grep`) so it runs without a permission prompt.
+  Everything else falls through to the normal rules.
+  Registered in `.claude/settings.local.json`, which is
+  per-machine and gitignored, so copy that `hooks` block
+  over after a fresh clone.
 
 ## Wikis
 
@@ -97,14 +106,16 @@ and readable without downloading anything.
   derived from [myprompts/TOC_infra.md](myprompts/TOC_infra.md).
   Start here for orientation:
   [Stacks.md](Context-Wiki-Infra/Dashboards/Stacks.md) —
-  an example-based ladder of fourteen stacks in
+  *Simple Architecture, Simple Deploys*, an
+  example-based ladder of fourteen stacks in
   increasing order of complexity, from a static site on
   Cloudflare Pages up to a replicated, SOC 2-audited
   SaaS, and then the four specialist rungs above it
   (containers and a scheduler, realtime with sticky
   sessions, distributed serverless, a data platform),
   with the cost, ops burden, and "climb when" signal for
-  each rung. It is also the wiki server's front page.
+  each rung. It is also the wiki server's front page,
+  where the sidebar links to it as **Practical Deploys**.
   Before rung 1:
   [Development Setup.md](Context-Wiki-Infra/Dashboards/Development%20Setup.md)
   — the tools on your own machine (Unix environment,
@@ -117,11 +128,11 @@ and readable without downloading anything.
 
   `Raw/` is populated by `python raw_download.py` (it is
   gitignored — see Quick start above) and holds
-  **271 documents (~615,000 words)** from vendor and
+  **279 documents (~621,000 words)** from vendor and
   standards
   documentation — Cloudflare, Caddy, nginx, Ubuntu,
   systemd, Let's Encrypt, AWS, Fly.io, Docker,
-  Kubernetes, SQLite, PostgreSQL, Redis, GitHub Actions,
+  Kamal, Coolify, Kubernetes, SQLite, PostgreSQL, Redis, GitHub Actions,
   Firebase Auth, AWS KMS and Google Cloud KMS, HashiCorp
   Vault, OWASP (Top 10, WSTG, ASVS, cheat sheets), OWASP
   ZAP, CloudTrail and Cloud Audit Logs, NIST, CIS
@@ -131,9 +142,9 @@ and readable without downloading anything.
   Refresh or extend them with `python raw_download.py`
   (see [d6_raw_download.md](d6_raw_download.md)).
 
-  The wiki built from them holds **506 OKF pages** joined
-  by **4,880 wiki links**: 271 extractive summaries (one
-  per capture), 109 hand-written concept pages, 120
+  The wiki built from them holds **518 OKF pages** joined
+  by **5,125 wiki links**: 279 extractive summaries (one
+  per capture), 111 hand-written concept pages, 122
   hand-written entity pages, and the dashboards. Browse
   it with `./server_start.sh` at
   <http://localhost:8020>, or rebuild the generated

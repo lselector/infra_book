@@ -22,7 +22,8 @@ is [[Stacks]].
 3. + [[Forms Without a Backend]] — [[Web3Forms]]
 4. + [[Landing Page Email Capture]] — [[AWeber]]
 5. + a server — [[One-Box Deployment]], [[Caddy]],
-   [[FastAPI]]
+   [[FastAPI]] (on a rented VPS, not AWS —
+   [[VPS Instead of Hyperscaler]])
 6. + a database — [[SQLite]] or [[PostgreSQL]]
 7. + [[Transactional Email]] — [[Amazon SES]]
 8. + [[Authentication]] — [[Firebase Authentication]]
@@ -66,4 +67,5 @@ order, when a specific problem names one:
 [[Container Orchestration]] · [[Sticky Sessions]] ·
 [[Event-Driven Architecture]] ·
 [[Distributed Data Processing]] · [[Failure Modes]] ·
-[[Micro-VMs]] · [[Deployment Strategies]]
+[[Micro-VMs]] · [[Deployment Strategies]] ·
+[[VPS Instead of Hyperscaler]] · [[Self-Hosted PaaS]]

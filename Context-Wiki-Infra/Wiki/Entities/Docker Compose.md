@@ -54,7 +54,8 @@ when there is one machine. See
 [[Docker]] · [[Containers in Production]] ·
 [[One-Box Deployment]] · [[Secrets Management]] ·
 [[Container Images]] · [[Docker Build Cache]] ·
-[[Deployment Strategies]] · [[Automated Testing]]
+[[Deployment Strategies]] · [[Automated Testing]] ·
+[[Kamal]] · [[Coolify]]
 
 ## Sources
 

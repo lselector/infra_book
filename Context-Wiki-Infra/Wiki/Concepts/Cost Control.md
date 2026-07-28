@@ -39,11 +39,16 @@ amount. Surprises come from a handful of specific places.
   is genuinely required.
 - Delete unused resources; a monthly sweep pays for
   itself.
+- A rented VPS instead of a hyperscaler footprint, where
+  the load balancer, NAT gateway and managed database in
+  the table above simply have no line item — see
+  [[VPS Instead of Hyperscaler]].
 
 ## Related
 
 [[Cloud Service Models]] · [[Managed PaaS]] ·
-[[Object Storage]] · [[The Ladder]] · [[Anti-Patterns]]
+[[Object Storage]] · [[The Ladder]] · [[Anti-Patterns]] ·
+[[VPS Instead of Hyperscaler]] · [[Self-Hosted PaaS]]
 
 ## Sources
 

@@ -194,6 +194,18 @@ Format: `filename | title | source URL`
 - `cloudflare-wrangler-workers-commands.md` |
   Wrangler CLI — Workers commands (dev, deploy, versions) |
   https://developers.cloudflare.com/workers/wrangler/commands/workers/index.md
+- `coolify-home.md` |
+  Coolify — self-hostable open-source alternative to Heroku, Netlify and Vercel |
+  https://coolify.io/
+- `coolify-installation.md` |
+  Coolify — installation on your own server |
+  https://coolify.io/docs/get-started/installation
+- `coolify-introduction.md` |
+  Coolify — introduction and what it does |
+  https://coolify.io/docs/get-started/introduction
+- `coolify-readme.md` |
+  Coolify — GitHub README (coollabsio) |
+  https://raw.githubusercontent.com/coollabsio/coolify/main/README.md
 - `digitalocean-droplet-quickstart.md` |
   DigitalOcean — Droplet quickstart |
   https://docs.digitalocean.com/products/droplets/getting-started/quickstart/
@@ -218,6 +230,18 @@ Format: `filename | title | source URL`
 - `hetzner-create-a-server.md` |
   Hetzner Cloud — creating a server |
   https://docs.hetzner.com/cloud/servers/getting-started/creating-a-server
+- `kamal-configuration.md` |
+  Kamal — configuration overview (deploy.yml) |
+  https://kamal-deploy.org/docs/configuration/overview/
+- `kamal-home.md` |
+  Kamal — deploy web apps anywhere, from bare metal to cloud VMs |
+  https://kamal-deploy.org/
+- `kamal-installation.md` |
+  Kamal — installation and first deploy |
+  https://kamal-deploy.org/docs/installation/
+- `kamal-readme.md` |
+  Kamal — GitHub README (Basecamp) |
+  https://raw.githubusercontent.com/basecamp/kamal/main/README.md
 - `kubernetes-overview.md` |
   Kubernetes — what is Kubernetes? |
   https://kubernetes.io/docs/concepts/overview/

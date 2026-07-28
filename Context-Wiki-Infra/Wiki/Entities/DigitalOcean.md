@@ -37,7 +37,8 @@ step — make it deliberately, on the signals in
 ## Related
 
 [[One-Box Deployment]] · [[Hetzner Cloud]] ·
-[[Ubuntu Server]] · [[Linux Server Hardening]]
+[[Ubuntu Server]] · [[Linux Server Hardening]] ·
+[[VPS Instead of Hyperscaler]] · [[Kamal]] · [[Coolify]]
 
 ## Sources
 

@@ -1624,5 +1624,53 @@
     "file": "aws-ses-custom-mail-from.md",
     "title": "Amazon SES — using a custom MAIL FROM domain (SPF alignment, MX record)",
     "url": "https://docs.aws.amazon.com/ses/latest/dg/mail-from.html"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "kamal-home.md",
+    "title": "Kamal — deploy web apps anywhere, from bare metal to cloud VMs",
+    "url": "https://kamal-deploy.org/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "kamal-readme.md",
+    "title": "Kamal — GitHub README (Basecamp)",
+    "url": "https://raw.githubusercontent.com/basecamp/kamal/main/README.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "coolify-home.md",
+    "title": "Coolify — self-hostable open-source alternative to Heroku, Netlify and Vercel",
+    "url": "https://coolify.io/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "coolify-readme.md",
+    "title": "Coolify — GitHub README (coollabsio)",
+    "url": "https://raw.githubusercontent.com/coollabsio/coolify/main/README.md"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "kamal-installation.md",
+    "title": "Kamal — installation and first deploy",
+    "url": "https://kamal-deploy.org/docs/installation/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "kamal-configuration.md",
+    "title": "Kamal — configuration overview (deploy.yml)",
+    "url": "https://kamal-deploy.org/docs/configuration/overview/"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "coolify-introduction.md",
+    "title": "Coolify — introduction and what it does",
+    "url": "https://coolify.io/docs/get-started/introduction"
+  },
+  {
+    "cat": "03_deployments",
+    "file": "coolify-installation.md",
+    "title": "Coolify — installation on your own server",
+    "url": "https://coolify.io/docs/get-started/installation"
   }
 ]

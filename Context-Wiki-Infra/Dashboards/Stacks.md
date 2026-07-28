@@ -1,16 +1,17 @@
 ---
 type: Dashboard
-title: "The Ladder - Infra Stacks in Increasing Complexity"
-description: "Fourteen example stacks, each adding one capability, with cost, ops burden and the signal to climb."
+title: "Simple Architecture, Simple Deploys"
+description: "Fourteen practical deploys, simplest first - each adding one capability, with cost, ops burden and the signal to climb."
 tags: [ladder, stacks, orientation, architectures]
 timestamp: "2026-07-27T00:00:00Z"
 ---
 
-# The Ladder — Infra Stacks in Increasing Complexity
+# Simple Architecture, Simple Deploys
 
-An example-based index. Fourteen rungs, each a working
-stack you could ship this week. Every rung adds
-**one** capability to the one below it.
+An example-based index of fourteen practical deploys,
+simplest first. Each is a working stack you could ship
+this week, and each rung adds **one** capability to the
+one below it.
 
 Rungs 1–10 are the main climb, from a static site to an
 audited SaaS. Rungs 11–14 are the specialist ones above
@@ -152,6 +153,15 @@ Caddy earns its place here: two lines of Caddyfile and
 HTTPS certificates are issued and renewed
 automatically. This is the rung where you inherit SSH
 keys, a firewall, unattended upgrades, and backups.
+
+Rent the box from a VPS provider rather than AWS — the
+same app on a hyperscaler footprint costs roughly ten
+times this, mostly in load balancer, NAT gateway and
+managed database charges. See
+[[VPS Instead of Hyperscaler]]. When `git pull` stops
+being enough, [[Kamal]] adds zero-downtime deploys and
+rollback over SSH, and [[Coolify]] adds a whole
+push-to-deploy dashboard ([[Self-Hosted PaaS]]).
 
 **Climb when:** you need data to survive a restart, or
 to query it.
@@ -311,6 +321,13 @@ Most teams should stop at the managed end of this rung —
 [[AWS Fargate]], Cloud Run, [[Fly.io]] — where you hand
 over an image and a replica count and never patch a
 control plane.
+
+There is also a cheaper end. [[Kamal]] deploys the same
+container images across a handful of rented VPSs with
+zero downtime and no scheduler at all, which covers
+"three services, two machines" for the cost of the
+machines. You give up rescheduling and autoscaling; see
+[[VPS Instead of Hyperscaler]].
 
 **Climb when:** you genuinely have several services, in
 different languages or with different scaling shapes —

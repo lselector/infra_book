@@ -1,7 +1,7 @@
 # Outside Links (Wikipedia, or the project's own site)
 
-Every content page in the wiki — the 109 Concept pages
-and the 120 Entity pages — links out to a description of its
+Every content page in the wiki — the 111 Concept pages
+and the 122 Entity pages — links out to a description of its
 subject that this wiki did not write: the English
 Wikipedia article where one exists, and the project's own
 site where it does not. Both render in the page infobox
@@ -12,7 +12,7 @@ rung of the ladder it belongs to, what it costs, what it
 breaks. Wikipedia says what it is in general, who makes
 it, and when it appeared. One link joins the two without
 either having to repeat the other. Where Wikipedia has
-nothing — true of twenty-two of the newer products —
+nothing — true of twenty-four of the newer products —
 the vendor's own site is the next best authority, and
 far better than a dead end.
 
@@ -77,7 +77,7 @@ It exits non-zero if any title is missing, ambiguous, or
 has become a redirect — worth re-running occasionally,
 since Wikipedia titles move.
 
-The same command then fetches all twenty-two website URLs
+The same command then fetches all twenty-four website URLs
 and prints their status. A `403` is reported as `WAF`
 rather than counted as a failure: some vendor sites
 (Drata's, on one run) sit behind a bot challenge that an
@@ -106,12 +106,12 @@ mistakes it for an article about CloudTrail.
 
 | | |
 |---|---|
-| Content pages | 229 |
-| Wikipedia article | 204 |
-| Project website | 22 |
+| Content pages | 233 |
+| Wikipedia article | 206 |
+| Project website | 24 |
 | No outside link | 3 |
 
-The 22 on their own site are the products Wikipedia has
+The 24 on their own site are the products Wikipedia has
 no article for:
 
 | Page | Site |
@@ -120,10 +120,12 @@ no article for:
 | AWeber | <https://www.aweber.com/> |
 | Axum | <https://github.com/tokio-rs/axum> |
 | Clerk | <https://clerk.com/> |
+| Coolify | <https://coolify.io/> |
 | Drata | <https://drata.com/> |
 | Fly.io | <https://fly.io/> |
 | Gitleaks | <https://gitleaks.io/> |
 | Invoke | <https://www.pyinvoke.org/> |
+| Kamal | <https://kamal-deploy.org/> |
 | just | <https://just.systems/> |
 | Leptos | <https://leptos.dev/> |
 | OSS-Fuzz | <https://google.github.io/oss-fuzz/> |

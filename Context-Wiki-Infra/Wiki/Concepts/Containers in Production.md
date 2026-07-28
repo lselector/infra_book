@@ -29,6 +29,14 @@ without a control plane.
 - Keeps the door open to [[AWS Fargate]] or [[Kubernetes]]
   later without a rewrite.
 
+## Shipping the containers
+
+Compose describes what runs; it does not deploy. For that,
+[[Kamal]] pushes an image and switches traffic with no
+downtime, and [[Coolify]] wraps the whole loop in a
+dashboard — both onto the same cheap box, see
+[[VPS Instead of Hyperscaler]].
+
 ## Watch out for
 
 - Compose is not a scheduler. It will not reschedule onto
@@ -44,7 +52,8 @@ without a control plane.
 [[Docker]] · [[Docker Compose]] · [[Kubernetes]] ·
 [[One-Box Deployment]] · [[Deployment Environments]] ·
 [[Container Images]] · [[Docker Build Cache]] ·
-[[BuildKit]] · [[Deployment Strategies]] · [[Micro-VMs]]
+[[BuildKit]] · [[Deployment Strategies]] · [[Micro-VMs]] ·
+[[Kamal]] · [[Coolify]] · [[Self-Hosted PaaS]]
 
 ## Sources
 
